@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>CSR Roadmap</title>
   </head>
@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-success navbar-dark">
       <div class="container-fluid">
-        <a href="#" class="navbar-brand">CSR Accreditation</a>
+        <a href="#" class="navbar-brand"><img src="./assets/images/CSR-A_Logo-RGB-WO.png" alt="" style="height: 70px;"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
@@ -42,6 +42,9 @@
               <a href="#philanthropic" class="nav-link">Philanthropic</a>
             </li>
             <li class="navbar-item">
+              <a href="#location" class="nav-link">Your CSR Location</a>
+            </li>
+            <li class="navbar-item">
               <a href="#benefits" class="nav-link">CSR Benefits</a>
             </li>
           </ul>
@@ -51,15 +54,14 @@
 
     <!-- Mainpage -->
     <section class="bg-light p-2">
-      <div class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./slide.jpg" class="img-fluid" alt="...">
-              <div class="carousel-caption d-none d-md-block d-sm-block">
-                <div class="position-relative">
-                  <div class="position-absolute bottom-0 start-0">
-                    <h5>CSR Road Map - Where are you?</h5>
+              <img src="./assets/images/CSR-A_Office Selfie 2.jpg" class="d-block w-100 m-0 img-fluid" alt="...">
+              <div class="carousel-caption d-none d-md-block d-sm-block start-0 end-0 bottom-0">
+                <div>
+                  <div class="lead text-light p-3">
+                    <h5><b> CSR Road Map - Where are you?</b></h5>
                   <p>This exercise is designed to give participants 'snapshot' of where their organization is located on the CSR road map
                   of zero to full engagement. The questoins included are generic with some flexibility for individual
                   or specific action to influence the results. For a full list of CSR activity
@@ -70,12 +72,10 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Roadmap -->
-    <section class="bg-light pt-2" id="roadmap">
-      <div class="shadow-sm p-3 mb-3 bg-body rounded">
+    <section class="bg-light p-4" id="roadmap">
         <div class="container-fluid pt-2">
           <div class="position-relative">
             <div class="position-absolute top-0 end-0">
@@ -83,247 +83,218 @@
               <p class="text-success d-none d-md-block">CSR Accreditation</p>
             </div>
             <div>
-              <h1 class="display-6 text-success d-sm-flex">How to use the CSR road map...</h1>
+              <h1 class="display-3 text-success d-sm-flex">How to use the CSR road map...</h1>
             </div>
             <div class="pt-4">
-              <p class="text-dark">
+              <p class="text-dark lead">
                 This road map is intended to give you a quick visual representation of where your organisation sits in regard to socially responsible activity currently undertaken.
               </p>
-              <p class="text-dark">
+              <p class="text-dark lead">
                 The road map is separated into 4 sections that correspond to our Four Pillars system - <b>Environment, Workplace, Community</b> and <b>Philanthropy</b>. Each Pillar has 5 questions, with 4 possible responses and an optional 6th input that allows you to score for activity outside the scope of the questions.
               </p>
-              <p class="text-dark">
-                Simply respond to the questions by checking the boxes that describes your level of activity. Because the roap map works by counting your positive responses you must click the boxes to the left of your answer too, so idf you are involved in leading action also check the limited and positive boxes to score 3.
+              <p class="text-dark lead">
+                Simply respond to the questions by checking the boxes that describes your level of activity. Because the roap map works by counting your positive responses you must click the boxes to the left of your answer too, so if you are involved in leading action also check the limited and positive boxes to score 3.
               </p>
-              <p class="text-dark">
+              <p class="text-dark lead">
                 When you have answered the questions count up all the positive 'green' squares and enter them into the total bar at the bottom of the page and more on to the next Pillar.
               </p>
             </div>
-            <h1 class="text-success pt-2">
+            <h1 class="text-success pt-2 display-6">
               When you have completed all Four Pillars go to the results page which reveals you where you are on your journey...
             </h1>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Environmental -->
     <section class="bg-success text-light" id="environmental">
       <div class="container-fluid p-5">
         <div class="container">
-          <div class="row">
+          <div class="row clearfix">
             <div class="col">
-              <p class="text-light">icon</p>
+              <i class="fab fa-envira fa-5x fa-flip-horizontal"></i>
             </div>
             <div class="col-6">
-              <h1 class="display-6 text-light">Environment Activity Map</h1>
+              <h1 class="display-6 text-light d-grid">Environment Activity Map</h1>
             </div>
-            <div class="col">
-              <p class="text-light text-end">CSR Accreditation</p>
+            <div class="col d-none d-md-block text-end">
+              <img src="./assets/images/CSR-A_Logo-RGB-WO.png" style="height: 70px;" alt="">
             </div>
           </div>
-          <div class="row justify-content-md-center p-3">
-              <label for="#" class="col-lg-3 col-form-label d-inline-block">Current Position Locator For</label>
+          <div class="row justify-content-center align-middle p-3">
+              <label for="#" class="col-lg-3 col-form-label d-inline-flex">Current Position Locator For</label>
               <div class="col-sm-4">
-                <input type="password" class="form-control d-inline-block" id="inputPassword">
+                <input type="text" class="form-control d-inline-flex" id="inputPassword">
             </div>
           </div>
-
-          <div class="row pt-4">
-            <div class="col-4">
-              <h5 class="text-light">ACTIVITY LIST</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">NO ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">LIMITED ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">POSITIVE ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">LEADING ACTION</h5>
-            </div>
+          <div class="py-3 px-0 table-responsive">
+            <table class="table table-borderless text-light">
+              <thead>
+                <tr>
+                  <th scope="col">ACTIVITY LIST</th>
+                      <th scope="col">NO ACTION</th>
+                      <th scope="col">LIMITED ACTION</th>
+                      <th scope="col">POSITIVE ACTION</th>
+                      <th scope="col">LEADING ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row ">
+                    
+                  </th>
+                  <th class="fw-light">
+                    You currently have no written policy in place that addresses this area or issue.
+                  </th>
+                  <th class="fw-light">
+                    There has been some action in this area but it is ad hoc and unmonitored.
+                  </th>
+                  <th class="fw-light">
+                    You have a policy in place that is routinely actioned and regularly reviewed.
+                  </th>
+                  <th class="fw-light">
+                    Innovative policy has been devised to provide positive outcomes in this area.
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation implement and monitor energy saving initiatives such as LED and low energy lighting and heating systems?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation provide for sustainable resource use such as recycled paper, refillable printer catridges and fair trade suppliers?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                   Does your organisation have a travel policy in place such as low carbon driving incentives - hybrid and electric vehicles?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation operate sustainale supply chan policy to montor supplier actvity such as product miles and localise suppliers?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a waste management policy such as recycling used paper and card, furniture, computers and other equipment?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Please use this row for any other activity not previously mentioned. (OPTIONAL)
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <b>TOTAL CURRENT ENVIRONMENTAL ACTIVITY</b>
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="row pt-4">
-            <div class="col-4">
-            </div>
-            <div class="col">
-              <span class="text-light">You currently have no written policy in place that addresses this area or issue.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">There has been some action in this area but it is ad hoc and unmonitored.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">You have a policy in place that is routinely actioned and regularly reviewed.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">Innovative policy has been devised to provide positive outcomes in this area.</span>
-            </div>
-          </div>
-      
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation implement and monitor energy saving initiatives such as LED and low energy lighting and heating systems?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation provide for sustainable resource use such as recycled paper, refillable printer catridges and fair trade suppliers?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation have a travel policy in place such as low carbon driving incentives - hybrid and electric vehicles?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation operate a sustainable supply chain policy to monitor supplier activity such as product miles and localise suppliers?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation have a waste management policy such as recycling used paper and card, furniture, computers and other equipment?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Please use this row for any other activity not previously mentioned. (OPTIONAL)</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-              <span class="text-light"><b>TOTAL CURRENT ENVIRONMENTAL ACTIVITY</b></span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
+         
           </div>
       </div>
     </section>
@@ -334,7 +305,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <p class="text-success">icon</p>
+              <i class="fas fa-clock fa-5x text-success"></i>
             </div>
             <div class="col-6">
               <h1 class="display-6 text-success">Workplace Activity Map</h1>
@@ -343,208 +314,179 @@
               <p class="text-success text-end">CSR Accreditation</p>
             </div>
           </div>
-          <div class="row justify-content-md-center p-3">
-              <label for="#" class="col-lg-3 col-form-label d-inline-block">Current Position Locator For</label>
-              <div class="col-sm-4">
-                <input type="password" class="form-control d-inline-block" id="inputPassword">
-            </div>
+          <div class="row justify-content-center align-middle p-3">
+            <label for="#" class="col-lg-3 col-form-label d-inline-flex">Current Position Locator For</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control d-inline-flex" id="inputPassword">
           </div>
-
-          <div class="row pt-4">
-            <div class="col-4">
-              <h5 class="text-success">ACTIVITY LIST</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">NO ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">LIMITED ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">POSITIVE ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">LEADING ACTION</h5>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-            </div>
-            <div class="col">
-              <span class="text-success">You currently have no written policy in place that addresses this area or issue.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">There has been some action in this area but it is ad hoc and unmonitored.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">You have a policy in place that is routinely actioned and regularly reviewed.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">Innovative policy has been devised to provide positive outcomes in this area.</span>
-            </div>
-          </div>
-      
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation have a CSR policy that includes an apprenticeship scheme?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation have a CSR policy that includes a diversity & inclusion process?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation have a CSR policy that includes training schemes, employee advancement, skills training?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation have a CSR policy that includes health & well-being programmes and education?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisatio have a CSR policy that includes family commitment, childcare subsidies, parental leave, carer facilities?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Please use this row for any policy not previously mentioned. (OPTIONAL)</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-              <span class="text-success"><b>TOTAL CURRENT WORKPLACE ACTIVITY</b></span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
+        </div>
+          <div class="pt-3 table-responsive">
+            <table class="table table-borderless text-success">
+              <thead>
+                <tr>
+                  <th scope="col">ACTIVITY LIST</th>
+                      <th scope="col">NO ACTION</th>
+                      <th scope="col">LIMITED ACTION</th>
+                      <th scope="col">POSITIVE ACTION</th>
+                      <th scope="col">LEADING ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    
+                  </th>
+                  <th class="fw-light">
+                    You currently have no written policy in place that addresses this area or issue.
+                  </th>
+                  <th class="fw-light">
+                    There has been some action in this area but it is ad hoc and unmonitored.
+                  </th>
+                  <th class="fw-light">
+                    You have a policy in place that is routinely actioned and regularly reviewed.
+                  </th>
+                  <th class="fw-light">
+                    Innovative policy has been devised to provide positive outcomes in this area.
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a CSR policy that includes an apprenticeship scheme?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a CSR policy that includes a diversity & inclusion process?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a CSR policy that includes training schemes, employee advancement, skills training?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a CSR policy that includes health & well-being programmes and education?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation have a CSR policy that includes family commitment, childcare subsidies, parental leave, carer facilities?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Please use this row for any policy not previously mentioned. (OPTIONAL)
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <b>TOTAL CURRENT WORKPLACE ACTIVITY</b>
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>          
           </div>
       </div>
     </section>
@@ -555,217 +497,188 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <i class="bi bi-people-fill"></i>
+              <i class="fas fa-users fa-5x"></i>
             </div>
             <div class="col-6">
               <h1 class="display-6 text-light">Community Activity Map</h1>
             </div>
-            <div class="col">
-              <p class="text-light text-end">CSR Accreditation</p>
+            <div class="col text-end d-none d-md-block">
+              <img src="./assets/images/CSR-A_Logo-RGB-WO.png" style="height: 70px;" alt="">
             </div>
           </div>
-          <div class="row justify-content-md-center p-3">
-              <label for="#" class="col-lg-3 col-form-label d-inline-block">Current Position Locator For</label>
-              <div class="col-sm-4">
-                <input type="password" class="form-control d-inline-block" id="inputPassword">
-            </div>
+          <div class="row justify-content-center align-middle p-3">
+            <label for="#" class="col-lg-3 col-form-label d-inline-flex">Current Position Locator For</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control d-inline-flex" id="inputPassword">
           </div>
-
-          <div class="row pt-4">
-            <div class="col-4">
-              <h5 class="text-light">ACTIVITY LIST</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">NO ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">LIMITED ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">POSITIVE ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-light">LEADING ACTION</h5>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-            </div>
-            <div class="col">
-              <span class="text-light">You currently have no written policy in place that addresses this area or issue.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">There has been some action in this area but it is ad hoc and unmonitored.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">You have a policy in place that is routinely actioned and regularly reviewed.</span>
-            </div>
-            <div class="col">
-              <span class="text-light">Innovative policy has been devised to provide positive outcomes in this area.</span>
-            </div>
-          </div>
-      
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation support a community project such as community hub?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation provide support to your community in terms of local people employed and use of local business & services?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation provide support to school & colleges?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation provide support to an enterprise scheme?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Does your organisation record and impact report on outcomes from community involvement?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-light">Please use this row for any other community activity in which your organisation is involved. (OPTIONAL)</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-              <span class="text-light"><b>TOTAL CURRENT COMMUNITY ACTIVITY</b></span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
+        </div>
+          <div class="pt-3 table-responsive">
+            <table class="table table-borderless text-light">
+              <thead>
+                <tr>
+                  <th scope="col">ACTIVITY LIST</th>
+                      <th scope="col">NO ACTION</th>
+                      <th scope="col">LIMITED ACTION</th>
+                      <th scope="col">POSITIVE ACTION</th>
+                      <th scope="col">LEADING ACTION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    
+                  </th>
+                  <th class="fw-light">
+                    You currently have no written policy in place that addresses this area or issue.
+                  </th>
+                  <th class="fw-light">
+                    There has been some action in this area but it is ad hoc and unmonitored.
+                  </th>
+                  <th class="fw-light">
+                    You have a policy in place that is routinely actioned and regularly reviewed.
+                  </th>
+                  <th class="fw-light">
+                    Innovative policy has been devised to provide positive outcomes in this area.
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation support a community project such as community hub?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation provide support to your community in terms of local people employed and use of local business & services?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation provide support to school & colleges?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light"> 
+                    Does your organisation provide support to an enterprise scheme?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation record and impact report on outcomes from community involvement?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-light">
+                    Please use this row for any other community activity in which your organisation is involved. (OPTIONAL)
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <b>TOTAL CURRENT COMMUNITY ACTIVITY</b>
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                    <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>   
           </div>
       </div>
     </section>
@@ -777,7 +690,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <p class="text-success">icon</p>
+              <i class="fas fa-hands-helping fa-5x"></i>
             </div>
             <div class="col-6">
               <h1 class="display-6 text-success">Philanthropic Activity Map</h1>
@@ -786,224 +699,525 @@
               <p class="text-success text-end">CSR Accreditation</p>
             </div>
           </div>
-          <div class="row justify-content-md-center p-3">
-              <label for="#" class="col-lg-3 col-form-label d-inline-block">Current Position Locator For</label>
-              <div class="col-sm-4">
-                <input type="password" class="form-control d-inline-block" id="inputPassword">
-            </div>
+          <div class="row justify-content-center align-middle p-3">
+            <label for="#" class="col-lg-3 col-form-label d-inline-flex">Current Position Locator For</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control d-inline-flex" id="inputPassword">
           </div>
+        </div>
 
-          <div class="row pt-4">
-            <div class="col-4">
-              <h5 class="text-success">ACTIVITY LIST</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">NO ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">LIMITED ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">POSITIVE ACTION</h5>
-            </div>
-            <div class="col">
-              <h5 class="text-success">LEADING ACTION</h5>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-            </div>
-            <div class="col">
-              <span class="text-success">You currently have no written policy in place that addresses this area or issue.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">There has been some action in this area but it is ad hoc and unmonitored.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">You have a policy in place that is routinely actioned and regularly reviewed.</span>
-            </div>
-            <div class="col">
-              <span class="text-success">Innovative policy has been devised to provide positive outcomes in this area.</span>
-            </div>
-          </div>
-      
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation have a policy in place for supporting charities?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation give financial donations to charity?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation give to charity in terms of pro bono time and services?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation support staff in any independent philanthropic activity?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Does your organisation record and impact report on outcomes from philanthropic involvement?</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-
-          <div class="row pt-2">
-            <div class="col-4">
-              <span class="text-success">Please use this row for any other activity not previously mentioned. (OPTIONAL)</span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-4">
-              <span class="text-success"><b>TOTAL CURRENT PHILANTHROPIC ACTIVITY</b></span>
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-            <div class="col">
-              <input type="checkbox" class="form-check-input" value=""> 
-            </div>
-          </div>
+         <div class="pt-3 table-responsive">
+          <table class="table table-borderless text-success">
+            <thead>
+              <tr>
+                <th scope="col" >ACTIVITY LIST</th>
+                    <th scope="col">NO ACTION</th>
+                    <th scope="col">LIMITED ACTION</th>
+                    <th scope="col">POSITIVE ACTION</th>
+                    <th scope="col">LEADING ACTION</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  
+                </th>
+                <th class="fw-light">
+                  You currently have no written policy in place that addresses this area or issue.
+                </th>
+                <th class="fw-light">
+                  There has been some action in this area but it is ad hoc and unmonitored.
+                </th>
+                <th class="fw-light">
+                  You have a policy in place that is routinely actioned and regularly reviewed.
+                </th>
+                <th class="fw-light">
+                  Innovative policy has been devised to provide positive outcomes in this area.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-light">
+                  Does your organisation have a policy in place for supporting charities?
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-light">
+                  Does your organisation give financial donations to charity?
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-light">
+                  Does your organisation give to charity in terms of pro bono time and services?
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fw-light">
+                  Does your organisation support staff in any independent philanthropic activity?
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+              </tr>
+              <tr>
+              <tr>
+                  <th scope="row" class="fw-light">
+                    Does your organisation record and impact report on outcomes from philanthropic involvement?
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                  <th>
+                    <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                  </th>
+                </tr>
+                <tr>
+                <th scope="row" class="fw-light">
+                  Please use this row for any other activity not previously mentioned. (OPTIONAL)
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <b>TOTAL CURRENT PHILANTHROPIC ACTIVITY</b>
+                </th>
+                <th class="grid">
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th class="grid">
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th class="grid">
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th class="grid">
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+      </div>
       </div>
     </section>
 
-    <section class="bg-success text-light">
+    
+
+    <section class="bg-success text-light" id="location">
       <div class="containter-fluid p-5">
         <div class="row">
           <div class="col-10">
-            <h1 class="display-6 text-start text-light">Your Location on the CSR Activity Map</h1>
+            <h1 class="display-5 text-start text-light d-inline-block">Your Location on the CSR Activity Map</h1>
           </div>
-          <div class="col-2">
-            <p class="text-light d-none d-md-block">CSR Accreditation</p>
+          <div class="col-2 d-md-block">
+            <p class="text-light text-end d-none d-md-block">CSR Accreditation</p>
           </div>
         </div>
+        <div class="row p-3">
+          <label for="#" class="text-start col-lg-3 col-md-6 col-sm-4 col-form-label">Current Position Locator For</label>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <input type="text" class="form-control" id="inputPassword">
+        </div>
+      </div>
+      <div class="pt-3 table-responsive">
+        <table class="table table-borderless text-light">
+          <thead>
+            <tr>
+              <th scope="col" >NO ACTION</th>
+              <th scope="col">CSR AWARE</th>
+              <th scope="col">CSR ACTIVE</th>
+              <th scope="col" class="col-lg-3">CSR PROFICIENT</th>
+              <th scope="col" class="col-lg-3">CSR LEADER</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="fw-light">
+                  You currently take no action in this area or are not aware of any taken.
+                </th>
+                <th class="fw-light">
+                  There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
+                </th>
+                <th class="fw-light">
+                  You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations.
+                </th>
+                <th class="fw-light">
+                  You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
+                  <li>Protects the environment</li>
+                  <li>Looks after staff</li>
+                  <li>Actively engages with community</li>
+                  <li>Gives to charity</li>
+                  Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
+                </th>
+                <th class="fw-light">
+                  You are a socially responsible organisation that records and constantly improves.
+                  <li>Protects and enhances the environment (including supply chain partners).</li>
+                  <li>First class staff engagement and HR policies.</li>
+                  <li>Is a leader in the community.</li>
+                  <li>Promotes, supports and engages with charity long-term</li>
+                  You are a productive, profitable and resilent organisation.
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fs-6 fw-light d-block">
+                  <span><i class="fab fa-envira fa-flip-horizontal"></i> Environment</span>
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fs-6 fw-light">
+                  <span><i class="fas fa-clock"></i> Workplace</span>
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fs-6 fw-light">
+                  <span><i class="fas fa-users"></i> Communty</span>
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+              </tr>
+              <tr>
+                <th scope="row" class="fs-6 fw-light">
+                  <span><i class="fas fa-hands-helping"></i> Philanthropic</span>
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+                <th>
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                  <input type="checkbox" class="form-check-input" value="" style="width: 30px; height: 30px;"> 
+                </th>
+              </tr>
+            </tbody>
+        </table>
+      </div>
       </div>
     </section>
+
+    <section class="text-success bg-light">
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 class="display-5 text-success d-inline-block">
+              <b>Benefits</b> of good CSR policy
+            </h1>
+            <p class="text-secondary pt-3 pb-3">
+              Achieving <b class="text-success">CSR Accreditation</b> offers your organisation the opportunity to talk about the positive activity you are engaged in.
+              It is an invaluable marketing tool for spreading the word about what a great organisation you are, both to work with and to work for.
+              Accreditation is a powerful message to promote companies on social media channels. People want to read stories with positive purpose and outcomes.
+            </p>
+            <p class="text-success lead">
+              <b>
+                These stories are essential to building your brand reputation, overall profitablity and bottom line.
+              </b>
+            </p>
+            </div>
+            <div class="col-sm-6">
+              <div class="card bg-success rounded" style="width: 36.8rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-light lead"><b>CSR Training Courses</b></h5>
+                  <br>
+                  <h6 class="card-subtitle mb-2 text-light lead">Explore CSR and learn how your organisation can benefit.</h6>
+                  <br>
+                  <p class="card-text text-light">
+                    This training course helps organisations understand how they can create a CSR policy that supports environmental, workplace, community and philanthropic issues and how they can work in ways that deliver positive outcomes.
+                  </p>
+                  <p class="card-text text-light">
+                    This training course is for those who wish to develop their CSR policy including CEOs/MDs, executive teams, senior leadership, HR managers and CSR professionals. It is also suitable for anyone who wants to gain a better understanding of the importance of CSR in the workplace.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-sm-6">
+              <div class="card bg-success text-start" style="width: 36.8rem; height: 21.8rem;">
+                <div class="card-body pt-4">
+                  <div class="row">
+                    <div class="hstack gap-3">
+                      <figure class="figure">
+                        <i class="fas fa-trophy text-light fa-3x"></i>
+                        <figcaption class="figure-caption text-light">Win New Clients <br>& Business</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-magnet text-light fa-4x fa-flip-vertical"></i>
+                        <figcaption class="figure-caption text-light">Increased Customer<br> Retention</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-heart text-light fa-4x"></i>
+                        <figcaption class="figure-caption text-light">Develop & Enhance<br> Relationships</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-smile text-light fa-4x"></i>
+                        <figcaption class="figure-caption text-light">Attack & Maintain<br> Happy Staff</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-pound-sign text-light fa-3x"></i>
+                        <figcaption class="figure-caption text-light">Save Money on<br> Energy & Costs</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="hstack gap-3">
+                      <figure class="figure">
+                        <i class="fas fa-star text-light fa-3x"></i>
+                        <figcaption class="figure-caption text-light">Be Different From <br>Your Competitors</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-lightbulb text-light fa-4x"></i>
+                        <figcaption class="figure-caption text-light">Promote Innovation<br> & Learning</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-thumbs-up text-light fa-4x"></i>
+                        <figcaption class="figure-caption text-light">Improve your<br> Business Reputation</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="bi bi-currency-exchange text-light fa-3x"></i>
+                        <figcaption class="figure-caption text-light">Encourage Investment<br> & Funding</figcaption>
+                      </figure>
+                      <figure class="figure">
+                        <i class="fas fa-wifi text-light fa-3x fa-rotate-90"></i>
+                        <figcaption class="figure-caption text-light">Positive Publicity<br> Opportunities</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card rounded" style="width: 36.8rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-success lead"><b>CSR Impact Reporting</b></h5>
+                  <br>
+                  <h6 class="card-subtitle mb-2 text-success lead">Social and environmental purpose with profit.</h6>
+                  <br>
+                  <p class="card-text text-success d-inline-flex">
+                    A CSR Impact Report is similar to an Annual Report and shows all your audiences the impact that your organisation is making through its CSR commitments. 
+                    This includes financial benefits, environmental impact, staff and stakeholder engagement, positive impact on communities and charities.
+                  </p>
+                  <p class="card-text text-success d-inline-flex">
+                    Submitted as part of a CSR Accreditation application or based on your successful CSR Accreditation, the report becomes an essential tool for auditing, benchmarking, measuring and reporting your CSR impact.
+                    This will include advisories for future development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="bg-success">
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 class="display-6 text-light d-inline-block">
+              Demonstrate your commitment now <b>and become a CSR Leader.</b>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+         <div class="col-sm-6 p-3">
+          <p class="text-light d-inline-block">
+            Call <b>01494 444494</b> to find out more abour application or visit <b>www.csr-accreditation.co.uk</b>         
+          </p>
+          <p class="text-light d-inline-block">
+            Take our free CSR Accreditation assesment survey online visit www.csr-accreditation.co.uk/csr-assessmenet-survery/
+          </p>
+          <p class="text-light d-inline-block">
+            CSR-Accreditation, 97 Cock Lane, High Wycombe, Bucks HP13 7DZ
+            <br>Email - info@csr-accreditation.co.uk Call - 01494 444494 or 07831 857332
+          </p>
+         </div>
+         <div class="col-sm-6">
+           <div class="position-relative">
+            <div class="shadow p-3 mb-5 bg-body rounded position-absolute end-0">
+
+            </div>
+           </div>
+         </div>
+        </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
 
