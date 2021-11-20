@@ -11955,4 +11955,16 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+h1, .h1 {
+  font-family: myriad-pro,sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+p, a, th, label {
+  font-family: myriad-pro,sans-serif;
+  font-weight: 20;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
