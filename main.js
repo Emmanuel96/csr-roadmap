@@ -106,6 +106,33 @@ const totalWorkplaceSixthPositiveAction = document.querySelector('#total_workpla
 const workplaceSixthLeadingAction = document.querySelector('#workplace_sixth_question_leading_action');
 const totalWorkplaceSixthLeadingAction = document.querySelector('#total_workplace_question_six_leading_action');
 
+const communityFirstNoAction = document.querySelector('#community_first_question_no_action');
+const totalCommunityFirstNoAction = document.querySelector('#total_community_question_one_no_action');
+const communityFirstLimitedAction = document.querySelector('#community_first_question_limited_action');
+const totalCommunityFirstLimitedAction = document.querySelector('#total_community_question_one_limited_action');
+const communityFirstPositiveAction = document.querySelector('#community_first_question_positive_action');
+const totalCommunityFirstPositiveAction = document.querySelector('#total_community_question_one_positive_action');
+const communityFirstLeadingAction = document.querySelector('#community_first_question_leading_action');
+const totalCommunityFirstLeadingAction = document.querySelector('#total_community_question_one_leading_action');
+
+const communitySecondNoAction = document.querySelector('#community_second_question_no_action');
+const totalCommunitySecondNoAction = document.querySelector('#total_community_question_two_no_action');
+const communitySecondLimitedAction = document.querySelector('#community_second_question_limited_action');
+const totalCommunitySecondLimitedAction = document.querySelector('#total_community_question_two_limited_action');
+const communitySecondPositiveAction = document.querySelector('#community_second_question_positive_action');
+const totalCommunitySecondPositiveAction = document.querySelector('#total_community_question_two_positive_action');
+const communitySecondLeadingAction = document.querySelector('#community_second_question_leading_action');
+const totalCommunitySecondLeadingAction = document.querySelector('#total_community_question_two_leading_action');
+
+const communityThirdNoAction = document.querySelector('#community_third_question_no_action');
+const totalCommunityThirdNoAction = document.querySelector('#total_community_question_three_no_action');
+const communityThirdLimitedAction = document.querySelector('#community_third_question_limited_action');
+const totalCommunityThirdLimitedAction = document.querySelector('#total_community_question_three_limited_action');
+const communityThirdPositiveAction = document.querySelector('#community_third_question_positive_action');
+const totalCommunityThirdPositiveAction = document.querySelector('#total_community_question_three_positive_action');
+const communityThirdLeadingAction = document.querySelector('#community_third_question_leading_action');
+const totalCommunityThirdLeadingAction = document.querySelector('#total_community_question_three_leading_action');
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.disabled = false;
@@ -658,5 +685,143 @@ workplaceSixthLeadingAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.checked = false;
         totalWorkplaceSixthPositiveAction.checked = false;
         totalWorkplaceSixthLeadingAction.checked = false;
+    }
+})
+
+communityFirstNoAction.addEventListener('change', () => {
+    if(communityFirstNoAction.checked) {
+        totalCommunityFirstNoAction.disabled = false;
+        totalCommunityFirstNoAction.style.backgroundColor = 'red';
+    } else {
+        totalCommunityFirstNoAction.disabled = true;
+        totalCommunityFirstNoAction.style.backgroundColor = 'white';
+    }
+})
+
+communityFirstLimitedAction.addEventListener('change', () => {
+    if(communityFirstLimitedAction.checked) {
+        totalCommunityFirstLimitedAction.checked = true;
+    } else {
+        totalCommunityFirstLimitedAction.checked = false;
+    }
+})
+
+communityFirstPositiveAction.addEventListener('change', () => {
+    if(communityFirstPositiveAction.checked) {
+        communityFirstLimitedAction.checked = true;
+        totalCommunityFirstLimitedAction.checked = true;
+        totalCommunityFirstPositiveAction.checked = true;
+    } else {
+        communityFirstLimitedAction.checked = false;
+        totalCommunityFirstLimitedAction.checked = false;
+        totalCommunityFirstPositiveAction.checked = false;
+    }
+})
+
+communityFirstLeadingAction.addEventListener('change', () => {
+    if(communityFirstLeadingAction.checked) {
+        communityFirstLimitedAction.checked = true;
+        communityFirstPositiveAction.checked = true;
+        totalCommunityFirstLimitedAction.checked = true;
+        totalCommunityFirstPositiveAction.checked = true;
+        totalCommunityFirstLeadingAction.checked = true;
+    } else {
+        communityFirstLimitedAction.checked = false;
+        communityFirstPositiveAction.checked = false;
+        totalCommunityFirstLimitedAction.checked = false;
+        totalCommunityFirstPositiveAction.checked = false;
+        totalCommunityFirstLeadingAction.checked = false;
+    }
+})
+
+communitySecondNoAction.addEventListener('change', () => {
+    if(communitySecondNoAction.checked) {
+        totalCommunitySecondNoAction.disabled = false;
+        totalCommunitySecondNoAction.style.backgroundColor = 'red';
+    } else {
+        totalCommunitySecondNoAction.disabled = true;
+        totalCommunitySecondNoAction.style.backgroundColor = 'white';
+    }
+})
+
+communitySecondLimitedAction.addEventListener('change', () => {
+    if(communitySecondLimitedAction.checked) {
+        totalCommunitySecondLimitedAction.checked = true;
+    } else {
+        totalCommunitySecondLimitedAction.checked = false;
+    }
+})
+
+communitySecondPositiveAction.addEventListener('change', () => {
+    if(communitySecondPositiveAction.checked) {
+        communitySecondLimitedAction.checked = true;
+        totalCommunitySecondLimitedAction.checked = true;
+        totalCommunitySecondPositiveAction.checked = true;
+    } else {
+        communitySecondLimitedAction.checked = false;
+        totalCommunitySecondLimitedAction.checked = false;
+        totalCommunitySecondPositiveAction.checked = false;
+    }
+})
+
+communitySecondLeadingAction.addEventListener('change', () => {
+    if(communitySecondLeadingAction.checked) {
+        communitySecondLimitedAction.checked = true;
+        communitySecondPositiveAction.checked = true;
+        totalCommunitySecondLimitedAction.checked = true;
+        totalCommunitySecondPositiveAction.checked = true;
+        totalCommunitySecondLeadingAction.checked = true;
+    } else {
+        communitySecondLimitedAction.checked = false;
+        communitySecondPositiveAction.checked = false;
+        totalCommunitySecondLimitedAction.checked = false;
+        totalCommunitySecondPositiveAction.checked = false;
+        totalCommunitySecondLeadingAction.checked = false;
+    }
+})
+
+communityThirdNoAction.addEventListener('change', () => {
+    if(communityThirdNoAction.checked) {
+        totalCommunityThirdNoAction.disabled = false;
+        totalCommunityThirdNoAction.style.backgroundColor = 'red';
+    } else {
+        totalCommunityThirdNoAction.disabled = true;
+        totalCommunityThirdNoAction.style.backgroundColor = 'white';
+    }
+})
+
+communityThirdLimitedAction.addEventListener('change', () => {
+    if(communityThirdLimitedAction.checked) {
+        totalCommunityThirdLimitedAction.checked = true;
+    } else {
+        totalCommunityThirdLimitedAction.checked = false;
+    }
+})
+
+communityThirdPositiveAction.addEventListener('change', () => {
+    if(communityThirdPositiveAction.checked) {
+        communityThirdLimitedAction.checked = true;
+        totalCommunityThirdLimitedAction.checked = true;
+        totalCommunityThirdPositiveAction.checked = true;
+    } else {
+        communityThirdLimitedAction.checked = false;
+        totalCommunityThirdLimitedAction.checked = false;
+        totalCommunityThirdPositiveAction.checked = false;
+    }
+})
+
+communityThirdLeadingAction.addEventListener('change', () => {
+    if(communityThirdLeadingAction.checked) {
+        communityThirdLimitedAction.checked = true;
+        communityThirdPositiveAction.checked = true;
+        totalCommunityThirdLimitedAction.checked = true;
+        totalCommunityThirdPositiveAction.checked = true;
+        totalCommunityThirdLeadingAction.checked = true;
+    } else {
+        communityThirdLimitedAction.checked = false;
+        communityThirdPositiveAction.checked = false;
+        totalCommunityThirdLimitedAction.checked = false;
+        totalCommunityThirdPositiveAction.checked = false;
+        totalCommunityThirdLeadingAction.checked = false;
     }
 })
