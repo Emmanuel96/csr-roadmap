@@ -160,6 +160,60 @@ const totalCommunitySixthPositiveAction = document.querySelector('#total_communi
 const communitySixthLeadingAction = document.querySelector('#community_sixth_question_leading_action');
 const totalCommunitySixthLeadingAction = document.querySelector('#total_community_question_six_leading_action');
 
+const philanthropicFirstNoAction = document.querySelector('#philanthropic_first_question_no_action');
+const totalPhilanthropicFirstNoAction = document.querySelector('#total_philanthropic_question_one_no_action');
+const philanthropicFirstLimitedAction = document.querySelector('#philanthropic_first_question_limited_action');
+const totalPhilanthropicFirstLimitedAction = document.querySelector('#total_philanthropic_question_one_limited_action');
+const philanthropicFirstPositiveAction = document.querySelector('#philanthropic_first_question_positive_action');
+const totalPhilanthropicFirstPositiveAction = document.querySelector('#total_philanthropic_question_one_positive_action');
+const philanthropicFirstLeadingAction = document.querySelector('#philanthropic_first_question_leading_action');
+const totalPhilanthropicFirstLeadingAction = document.querySelector('#total_philanthropic_question_one_leading_action');
+
+const philanthropicSecondNoAction = document.querySelector('#philanthropic_second_question_no_action');
+const totalPhilanthropicSecondNoAction = document.querySelector('#total_philanthropic_question_two_no_action');
+const philanthropicSecondLimitedAction = document.querySelector('#philanthropic_second_question_limited_action');
+const totalPhilanthropicSecondLimitedAction = document.querySelector('#total_philanthropic_question_two_limited_action');
+const philanthropicSecondPositiveAction = document.querySelector('#philanthropic_second_question_positive_action');
+const totalPhilanthropicSecondPositiveAction = document.querySelector('#total_philanthropic_question_two_positive_action');
+const philanthropicSecondLeadingAction = document.querySelector('#philanthropic_second_question_leading_action');
+const totalPhilanthropicSecondLeadingAction = document.querySelector('#total_philanthropic_question_two_leading_action');
+
+const philanthropicThirdNoAction = document.querySelector('#philanthropic_third_question_no_action');
+const totalPhilanthropicThirdNoAction = document.querySelector('#total_philanthropic_question_three_no_action');
+const philanthropicThirdLimitedAction = document.querySelector('#philanthropic_third_question_limited_action');
+const totalPhilanthropicThirdLimitedAction = document.querySelector('#total_philanthropic_question_three_limited_action');
+const philanthropicThirdPositiveAction = document.querySelector('#philanthropic_third_question_positive_action');
+const totalPhilanthropicThirdPositiveAction = document.querySelector('#total_philanthropic_question_three_positive_action');
+const philanthropicThirdLeadingAction = document.querySelector('#philanthropic_third_question_leading_action');
+const totalPhilanthropicThirdLeadingAction = document.querySelector('#total_philanthropic_question_three_leading_action');
+
+const philanthropicFourthNoAction = document.querySelector('#philanthropic_fourth_question_no_action');
+const totalPhilanthropicFourthNoAction = document.querySelector('#total_philanthropic_question_four_no_action');
+const philanthropicFourthLimitedAction = document.querySelector('#philanthropic_fourth_question_limited_action');
+const totalPhilanthropicFourthLimitedAction = document.querySelector('#total_philanthropic_question_four_limited_action');
+const philanthropicFourthPositiveAction = document.querySelector('#philanthropic_fourth_question_positive_action');
+const totalPhilanthropicFourthPositiveAction = document.querySelector('#total_philanthropic_question_four_positive_action');
+const philanthropicFourthLeadingAction = document.querySelector('#philanthropic_fourth_question_leading_action');
+const totalPhilanthropicFourthLeadingAction = document.querySelector('#total_philanthropic_question_four_leading_action');
+
+const philanthropicFifthNoAction = document.querySelector('#philanthropic_fifth_question_no_action');
+const totalPhilanthropicFifthNoAction = document.querySelector('#total_philanthropic_question_five_no_action');
+const philanthropicFifthLimitedAction = document.querySelector('#philanthropic_fifth_question_limited_action');
+const totalPhilanthropicFifthLimitedAction = document.querySelector('#total_philanthropic_question_five_limited_action');
+const philanthropicFifthPositiveAction = document.querySelector('#philanthropic_fifth_question_positive_action');
+const totalPhilanthropicFifthPositiveAction = document.querySelector('#total_philanthropic_question_five_positive_action');
+const philanthropicFifthLeadingAction = document.querySelector('#philanthropic_fifth_question_leading_action');
+const totalPhilanthropicFifthLeadingAction = document.querySelector('#total_philanthropic_question_five_leading_action');
+
+const philanthropicSixthNoAction = document.querySelector('#philanthropic_sixth_question_no_action');
+const totalPhilanthropicSixthNoAction = document.querySelector('#total_philanthropic_question_six_no_action');
+const philanthropicSixthLimitedAction = document.querySelector('#philanthropic_sixth_question_limited_action');
+const totalPhilanthropicSixthLimitedAction = document.querySelector('#total_philanthropic_question_six_limited_action');
+const philanthropicSixthPositiveAction = document.querySelector('#philanthropic_sixth_question_positive_action');
+const totalPhilanthropicSixthPositiveAction = document.querySelector('#total_philanthropic_question_six_positive_action');
+const philanthropicSixthLeadingAction = document.querySelector('#philanthropic_sixth_question_leading_action');
+const totalPhilanthropicSixthLeadingAction = document.querySelector('#total_philanthropic_question_six_leading_action');
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.style.backgroundColor = 'red';
@@ -1884,5 +1938,593 @@ communitySixthLeadingAction.addEventListener('change', () => {
         totalCommunitySixthLimitedAction.disabled = false;
         totalCommunitySixthPositiveAction.disabled = false;
         totalCommunitySixthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFirstNoAction.addEventListener('change', () => {
+    if(philanthropicFirstNoAction.checked) {
+        totalPhilanthropicFirstNoAction.style.backgroundColor = 'red';
+        philanthropicFirstLimitedAction.disabled = true;
+        philanthropicFirstPositiveAction.disabled = true;
+        philanthropicFirstLeadingAction.disabled = true;
+        totalPhilanthropicFirstLimitedAction.disabled = true;
+        totalPhilanthropicFirstPositiveAction.disabled = true;
+        totalPhilanthropicFirstLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFirstNoAction.style.backgroundColor = 'white';
+        philanthropicFirstLimitedAction.disabled = false;
+        philanthropicFirstPositiveAction.disabled = false;
+        philanthropicFirstLeadingAction.disabled = false;
+        totalPhilanthropicFirstLimitedAction.disabled = false;
+        totalPhilanthropicFirstPositiveAction.disabled = false;
+        totalPhilanthropicFirstLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFirstLimitedAction.addEventListener('change', () => {
+    if(philanthropicFirstLimitedAction.checked) {
+        totalPhilanthropicFirstLimitedAction.checked = true;
+        philanthropicFirstNoAction.disabled = true;
+        philanthropicFirstPositiveAction.disabled = true;
+        philanthropicFirstLeadingAction.disabled = true;
+        totalPhilanthropicFirstNoAction.disabled = true;
+        totalPhilanthropicFirstLimitedAction.disabled = true;
+        totalPhilanthropicFirstPositiveAction.disabled = true;
+        totalPhilanthropicFirstLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFirstLimitedAction.checked = false;
+        philanthropicFirstNoAction.disabled = false;
+        philanthropicFirstPositiveAction.disabled = false;
+        philanthropicFirstLeadingAction.disabled = false;
+        totalPhilanthropicFirstNoAction.disabled = false;
+        totalPhilanthropicFirstLimitedAction.disabled = false;
+        totalPhilanthropicFirstPositiveAction.disabled = false;
+        totalPhilanthropicFirstLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFirstPositiveAction.addEventListener('change', () => {
+    if(philanthropicFirstPositiveAction.checked) {
+        philanthropicFirstLimitedAction.checked = true;
+        totalPhilanthropicFirstLimitedAction.checked = true;
+        totalPhilanthropicFirstPositiveAction.checked = true;
+        philanthropicFirstNoAction.disabled = true;
+        philanthropicFirstLimitedAction.disabled = true;
+        philanthropicFirstLeadingAction.disabled = true;
+        totalPhilanthropicFirstNoAction.disabled = true;
+        totalPhilanthropicFirstLimitedAction.disabled = true;
+        totalPhilanthropicFirstPositiveAction.disabled = true;
+        totalPhilanthropicFirstLeadingAction.disabled = true;
+    } else {
+        philanthropicFirstLimitedAction.checked = false;
+        totalPhilanthropicFirstLimitedAction.checked = false;
+        totalPhilanthropicFirstPositiveAction.checked = false;
+        philanthropicFirstNoAction.disabled = false;
+        philanthropicFirstLimitedAction.disabled = false;
+        philanthropicFirstLeadingAction.disabled = false;
+        totalPhilanthropicFirstNoAction.disabled = false;
+        totalPhilanthropicFirstLimitedAction.disabled = false;
+        totalPhilanthropicFirstPositiveAction.disabled = false;
+        totalPhilanthropicFirstLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFirstLeadingAction.addEventListener('change', () => {
+    if(philanthropicFirstLeadingAction.checked) {
+        philanthropicFirstLimitedAction.checked = true;
+        philanthropicFirstPositiveAction.checked = true;
+        totalPhilanthropicFirstLimitedAction.checked = true;
+        totalPhilanthropicFirstPositiveAction.checked = true;
+        totalPhilanthropicFirstLeadingAction.checked = true;
+        philanthropicFirstNoAction.disabled = true;
+        philanthropicFirstLimitedAction.disabled = true;
+        philanthropicFirstPositiveAction.disabled = true;
+        totalPhilanthropicFirstNoAction.disabled = true;
+        totalPhilanthropicFirstLimitedAction.disabled = true;
+        totalPhilanthropicFirstPositiveAction.disabled = true;
+        totalPhilanthropicFirstLeadingAction.disabled = true;
+    } else {
+        philanthropicFirstLimitedAction.checked = false;
+        philanthropicFirstPositiveAction.checked = false;
+        totalPhilanthropicFirstLimitedAction.checked = false;
+        totalPhilanthropicFirstPositiveAction.checked = false;
+        totalPhilanthropicFirstLeadingAction.checked = false;
+        philanthropicFirstNoAction.disabled = false;
+        philanthropicFirstLimitedAction.disabled = false;
+        philanthropicFirstPositiveAction.disabled = false;
+        totalPhilanthropicFirstNoAction.disabled = false;
+        totalPhilanthropicFirstLimitedAction.disabled = false;
+        totalPhilanthropicFirstPositiveAction.disabled = false;
+        totalPhilanthropicFirstLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSecondNoAction.addEventListener('change', () => {
+    if(philanthropicSecondNoAction.checked) {
+        totalPhilanthropicSecondNoAction.style.backgroundColor = 'red';
+        philanthropicSecondLimitedAction.disabled = true;
+        philanthropicSecondPositiveAction.disabled = true;
+        philanthropicSecondLeadingAction.disabled = true;
+        totalPhilanthropicSecondLimitedAction.disabled = true;
+        totalPhilanthropicSecondPositiveAction.disabled = true;
+        totalPhilanthropicSecondLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicSecondNoAction.style.backgroundColor = 'white';
+        philanthropicSecondLimitedAction.disabled = false;
+        philanthropicSecondPositiveAction.disabled = false;
+        philanthropicSecondLeadingAction.disabled = false;
+        totalPhilanthropicSecondLimitedAction.disabled = false;
+        totalPhilanthropicSecondPositiveAction.disabled = false;
+        totalPhilanthropicSecondLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSecondLimitedAction.addEventListener('change', () => {
+    if(philanthropicSecondLimitedAction.checked) {
+        totalPhilanthropicSecondLimitedAction.checked = true;
+        philanthropicSecondNoAction.disabled = true;
+        philanthropicSecondPositiveAction.disabled = true;
+        philanthropicSecondLeadingAction.disabled = true;
+        totalPhilanthropicSecondNoAction.disabled = true;
+        totalPhilanthropicSecondLimitedAction.disabled = true;
+        totalPhilanthropicSecondPositiveAction.disabled = true;
+        totalPhilanthropicSecondLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicSecondLimitedAction.checked = false;
+        philanthropicSecondNoAction.disabled = false;
+        philanthropicSecondPositiveAction.disabled = false;
+        philanthropicSecondLeadingAction.disabled = false;
+        totalPhilanthropicSecondNoAction.disabled = false;
+        totalPhilanthropicSecondLimitedAction.disabled = false;
+        totalPhilanthropicSecondPositiveAction.disabled = false;
+        totalPhilanthropicSecondLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSecondPositiveAction.addEventListener('change', () => {
+    if(philanthropicSecondPositiveAction.checked) {
+        philanthropicSecondLimitedAction.checked = true;
+        totalPhilanthropicSecondLimitedAction.checked = true;
+        totalPhilanthropicSecondPositiveAction.checked = true;
+        philanthropicSecondNoAction.disabled = true;
+        philanthropicSecondLimitedAction.disabled = true;
+        philanthropicSecondLeadingAction.disabled = true;
+        totalPhilanthropicSecondNoAction.disabled = true;
+        totalPhilanthropicSecondLimitedAction.disabled = true;
+        totalPhilanthropicSecondPositiveAction.disabled = true;
+        totalPhilanthropicSecondLeadingAction.disabled = true;
+    } else {
+        philanthropicSecondLimitedAction.checked = false;
+        totalPhilanthropicSecondLimitedAction.checked = false;
+        totalPhilanthropicSecondPositiveAction.checked = false;
+        philanthropicSecondNoAction.disabled = false;
+        philanthropicSecondLimitedAction.disabled = false;
+        philanthropicSecondLeadingAction.disabled = false;
+        totalPhilanthropicSecondNoAction.disabled = false;
+        totalPhilanthropicSecondLimitedAction.disabled = false;
+        totalPhilanthropicSecondPositiveAction.disabled = false;
+        totalPhilanthropicSecondLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSecondLeadingAction.addEventListener('change', () => {
+    if(philanthropicSecondLeadingAction.checked) {
+        philanthropicSecondLimitedAction.checked = true;
+        philanthropicSecondPositiveAction.checked = true;
+        totalPhilanthropicSecondLimitedAction.checked = true;
+        totalPhilanthropicSecondPositiveAction.checked = true;
+        totalPhilanthropicSecondLeadingAction.checked = true;
+        philanthropicSecondNoAction.disabled = true;
+        philanthropicSecondLimitedAction.disabled = true;
+        philanthropicSecondPositiveAction.disabled = true;
+        totalPhilanthropicSecondNoAction.disabled = true;
+        totalPhilanthropicSecondLimitedAction.disabled = true;
+        totalPhilanthropicSecondPositiveAction.disabled = true;
+        totalPhilanthropicSecondLeadingAction.disabled = true;
+    } else {
+        philanthropicSecondLimitedAction.checked = false;
+        philanthropicSecondPositiveAction.checked = false;
+        totalPhilanthropicSecondLimitedAction.checked = false;
+        totalPhilanthropicSecondPositiveAction.checked = false;
+        totalPhilanthropicSecondLeadingAction.checked = false;
+        philanthropicSecondNoAction.disabled = false;
+        philanthropicSecondLimitedAction.disabled = false;
+        philanthropicSecondPositiveAction.disabled = false;
+        totalPhilanthropicSecondNoAction.disabled = false;
+        totalPhilanthropicSecondLimitedAction.disabled = false;
+        totalPhilanthropicSecondPositiveAction.disabled = false;
+        totalPhilanthropicSecondLeadingAction.disabled = false;
+    }
+})
+
+philanthropicThirdNoAction.addEventListener('change', () => {
+    if(philanthropicThirdNoAction.checked) {
+        totalPhilanthropicThirdNoAction.style.backgroundColor = 'red';
+        philanthropicThirdLimitedAction.disabled = true;
+        philanthropicThirdPositiveAction.disabled = true;
+        philanthropicThirdLeadingAction.disabled = true;
+        totalPhilanthropicThirdLimitedAction.disabled = true;
+        totalPhilanthropicThirdPositiveAction.disabled = true;
+        totalPhilanthropicThirdLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicThirdNoAction.style.backgroundColor = 'white';
+        philanthropicThirdLimitedAction.disabled = false;
+        philanthropicThirdPositiveAction.disabled = false;
+        philanthropicThirdLeadingAction.disabled = false;
+        totalPhilanthropicThirdLimitedAction.disabled = false;
+        totalPhilanthropicThirdPositiveAction.disabled = false;
+        totalPhilanthropicThirdLeadingAction.disabled = false;
+    }
+})
+
+philanthropicThirdLimitedAction.addEventListener('change', () => {
+    if(philanthropicThirdLimitedAction.checked) {
+        totalPhilanthropicThirdLimitedAction.checked = true;
+        philanthropicThirdNoAction.disabled = true;
+        philanthropicThirdPositiveAction.disabled = true;
+        philanthropicThirdLeadingAction.disabled = true;
+        totalPhilanthropicThirdNoAction.disabled = true;
+        totalPhilanthropicThirdLimitedAction.disabled = true;
+        totalPhilanthropicThirdPositiveAction.disabled = true;
+        totalPhilanthropicThirdLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicThirdLimitedAction.checked = false;
+        philanthropicThirdNoAction.disabled = false;
+        philanthropicThirdPositiveAction.disabled = false;
+        philanthropicThirdLeadingAction.disabled = false;
+        totalPhilanthropicThirdNoAction.disabled = false;
+        totalPhilanthropicThirdLimitedAction.disabled = false;
+        totalPhilanthropicThirdPositiveAction.disabled = false;
+        totalPhilanthropicThirdLeadingAction.disabled = false;
+    }
+})
+
+philanthropicThirdPositiveAction.addEventListener('change', () => {
+    if(philanthropicThirdPositiveAction.checked) {
+        philanthropicThirdLimitedAction.checked = true;
+        totalPhilanthropicThirdLimitedAction.checked = true;
+        totalPhilanthropicThirdPositiveAction.checked = true;
+        philanthropicThirdNoAction.disabled = true;
+        philanthropicThirdLimitedAction.disabled = true;
+        philanthropicThirdLeadingAction.disabled = true;
+        totalPhilanthropicThirdNoAction.disabled = true;
+        totalPhilanthropicThirdLimitedAction.disabled = true;
+        totalPhilanthropicThirdPositiveAction.disabled = true;
+        totalPhilanthropicThirdLeadingAction.disabled = true;
+    } else {
+        philanthropicThirdLimitedAction.checked = false;
+        totalPhilanthropicThirdLimitedAction.checked = false;
+        totalPhilanthropicThirdPositiveAction.checked = false;
+        philanthropicThirdNoAction.disabled = false;
+        philanthropicThirdLimitedAction.disabled = false;
+        philanthropicThirdLeadingAction.disabled = false;
+        totalPhilanthropicThirdNoAction.disabled = false;
+        totalPhilanthropicThirdLimitedAction.disabled = false;
+        totalPhilanthropicThirdPositiveAction.disabled = false;
+        totalPhilanthropicThirdLeadingAction.disabled = false;
+    }
+})
+
+philanthropicThirdLeadingAction.addEventListener('change', () => {
+    if(philanthropicThirdLeadingAction.checked) {
+        philanthropicThirdLimitedAction.checked = true;
+        philanthropicThirdPositiveAction.checked = true;
+        totalPhilanthropicThirdLimitedAction.checked = true;
+        totalPhilanthropicThirdPositiveAction.checked = true;
+        totalPhilanthropicThirdLeadingAction.checked = true;
+        philanthropicThirdNoAction.disabled = true;
+        philanthropicThirdLimitedAction.disabled = true;
+        philanthropicThirdPositiveAction.disabled = true;
+        totalPhilanthropicThirdNoAction.disabled = true;
+        totalPhilanthropicThirdLimitedAction.disabled = true;
+        totalPhilanthropicThirdPositiveAction.disabled = true;
+        totalPhilanthropicThirdLeadingAction.disabled = true;
+    } else {
+        philanthropicThirdLimitedAction.checked = false;
+        philanthropicThirdPositiveAction.checked = false;
+        totalPhilanthropicThirdLimitedAction.checked = false;
+        totalPhilanthropicThirdPositiveAction.checked = false;
+        totalPhilanthropicThirdLeadingAction.checked = false;
+        philanthropicThirdNoAction.disabled = false;
+        philanthropicThirdLimitedAction.disabled = false;
+        philanthropicThirdPositiveAction.disabled = false;
+        totalPhilanthropicThirdNoAction.disabled = false;
+        totalPhilanthropicThirdLimitedAction.disabled = false;
+        totalPhilanthropicThirdPositiveAction.disabled = false;
+        totalPhilanthropicThirdLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFourthNoAction.addEventListener('change', () => {
+    if(philanthropicFourthNoAction.checked) {
+        totalPhilanthropicFourthNoAction.style.backgroundColor = 'red';
+        philanthropicFourthLimitedAction.disabled = true;
+        philanthropicFourthPositiveAction.disabled = true;
+        philanthropicFourthLeadingAction.disabled = true;
+        totalPhilanthropicFourthLimitedAction.disabled = true;
+        totalPhilanthropicFourthPositiveAction.disabled = true;
+        totalPhilanthropicFourthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFourthNoAction.style.backgroundColor = 'white';
+        philanthropicFourthLimitedAction.disabled = false;
+        philanthropicFourthPositiveAction.disabled = false;
+        philanthropicFourthLeadingAction.disabled = false;
+        totalPhilanthropicFourthLimitedAction.disabled = false;
+        totalPhilanthropicFourthPositiveAction.disabled = false;
+        totalPhilanthropicFourthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFourthLimitedAction.addEventListener('change', () => {
+    if(philanthropicFourthLimitedAction.checked) {
+        totalPhilanthropicFourthLimitedAction.checked = true;
+        philanthropicFourthNoAction.disabled = true;
+        philanthropicFourthPositiveAction.disabled = true;
+        philanthropicFourthLeadingAction.disabled = true;
+        totalPhilanthropicFourthNoAction.disabled = true;
+        totalPhilanthropicFourthLimitedAction.disabled = true;
+        totalPhilanthropicFourthPositiveAction.disabled = true;
+        totalPhilanthropicFourthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFourthLimitedAction.checked = false;
+        philanthropicFourthNoAction.disabled = false;
+        philanthropicFourthPositiveAction.disabled = false;
+        philanthropicFourthLeadingAction.disabled = false;
+        totalPhilanthropicFourthNoAction.disabled = false;
+        totalPhilanthropicFourthLimitedAction.disabled = false;
+        totalPhilanthropicFourthPositiveAction.disabled = false;
+        totalPhilanthropicFourthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFourthPositiveAction.addEventListener('change', () => {
+    if(philanthropicFourthPositiveAction.checked) {
+        philanthropicFourthLimitedAction.checked = true;
+        totalPhilanthropicFourthLimitedAction.checked = true;
+        totalPhilanthropicFourthPositiveAction.checked = true;
+        philanthropicFourthNoAction.disabled = true;
+        philanthropicFourthLimitedAction.disabled = true;
+        philanthropicFourthLeadingAction.disabled = true;
+        totalPhilanthropicFourthNoAction.disabled = true;
+        totalPhilanthropicFourthLimitedAction.disabled = true;
+        totalPhilanthropicFourthPositiveAction.disabled = true;
+        totalPhilanthropicFourthLeadingAction.disabled = true;
+    } else {
+        philanthropicFourthLimitedAction.checked = false;
+        totalPhilanthropicFourthLimitedAction.checked = false;
+        totalPhilanthropicFourthPositiveAction.checked = false;
+        philanthropicFourthNoAction.disabled = false;
+        philanthropicFourthLimitedAction.disabled = false;
+        philanthropicFourthLeadingAction.disabled = false;
+        totalPhilanthropicFourthNoAction.disabled = false;
+        totalPhilanthropicFourthLimitedAction.disabled = false;
+        totalPhilanthropicFourthPositiveAction.disabled = false;
+        totalPhilanthropicFourthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFourthLeadingAction.addEventListener('change', () => {
+    if(philanthropicFourthLeadingAction.checked) {
+        philanthropicFourthLimitedAction.checked = true;
+        philanthropicFourthPositiveAction.checked = true;
+        totalPhilanthropicFourthLimitedAction.checked = true;
+        totalPhilanthropicFourthPositiveAction.checked = true;
+        totalPhilanthropicFourthLeadingAction.checked = true;
+        philanthropicFourthNoAction.disabled = true;
+        philanthropicFourthLimitedAction.disabled = true;
+        philanthropicFourthPositiveAction.disabled = true;
+        totalPhilanthropicFourthNoAction.disabled = true;
+        totalPhilanthropicFourthLimitedAction.disabled = true;
+        totalPhilanthropicFourthPositiveAction.disabled = true;
+        totalPhilanthropicFourthLeadingAction.disabled = true;
+    } else {
+        philanthropicFourthLimitedAction.checked = false;
+        philanthropicFourthPositiveAction.checked = false;
+        totalPhilanthropicFourthLimitedAction.checked = false;
+        totalPhilanthropicFourthPositiveAction.checked = false;
+        totalPhilanthropicFourthLeadingAction.checked = false;
+        philanthropicFourthNoAction.disabled = false;
+        philanthropicFourthLimitedAction.disabled = false;
+        philanthropicFourthPositiveAction.disabled = false;
+        totalPhilanthropicFourthNoAction.disabled = false;
+        totalPhilanthropicFourthLimitedAction.disabled = false;
+        totalPhilanthropicFourthPositiveAction.disabled = false;
+        totalPhilanthropicFourthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFifthNoAction.addEventListener('change', () => {
+    if(philanthropicFifthNoAction.checked) {
+        totalPhilanthropicFifthNoAction.style.backgroundColor = 'red';
+        philanthropicFifthLimitedAction.disabled = true;
+        philanthropicFifthPositiveAction.disabled = true;
+        philanthropicFifthLeadingAction.disabled = true;
+        totalPhilanthropicFifthLimitedAction.disabled = true;
+        totalPhilanthropicFifthPositiveAction.disabled = true;
+        totalPhilanthropicFifthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFifthNoAction.style.backgroundColor = 'white';
+        philanthropicFifthLimitedAction.disabled = false;
+        philanthropicFifthPositiveAction.disabled = false;
+        philanthropicFifthLeadingAction.disabled = false;
+        totalPhilanthropicFifthLimitedAction.disabled = false;
+        totalPhilanthropicFifthPositiveAction.disabled = false;
+        totalPhilanthropicFifthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFifthLimitedAction.addEventListener('change', () => {
+    if(philanthropicFifthLimitedAction.checked) {
+        totalPhilanthropicFifthLimitedAction.checked = true;
+        philanthropicFifthNoAction.disabled = true;
+        philanthropicFifthPositiveAction.disabled = true;
+        philanthropicFifthLeadingAction.disabled = true;
+        totalPhilanthropicFifthNoAction.disabled = true;
+        totalPhilanthropicFifthLimitedAction.disabled = true;
+        totalPhilanthropicFifthPositiveAction.disabled = true;
+        totalPhilanthropicFifthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicFifthLimitedAction.checked = false;
+        philanthropicFifthNoAction.disabled = false;
+        philanthropicFifthPositiveAction.disabled = false;
+        philanthropicFifthLeadingAction.disabled = false;
+        totalPhilanthropicFifthNoAction.disabled = false;
+        totalPhilanthropicFifthLimitedAction.disabled = false;
+        totalPhilanthropicFifthPositiveAction.disabled = false;
+        totalPhilanthropicFifthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFifthPositiveAction.addEventListener('change', () => {
+    if(philanthropicFifthPositiveAction.checked) {
+        philanthropicFifthLimitedAction.checked = true;
+        totalPhilanthropicFifthLimitedAction.checked = true;
+        totalPhilanthropicFifthPositiveAction.checked = true;
+        philanthropicFifthNoAction.disabled = true;
+        philanthropicFifthLimitedAction.disabled = true;
+        philanthropicFifthLeadingAction.disabled = true;
+        totalPhilanthropicFifthNoAction.disabled = true;
+        totalPhilanthropicFifthLimitedAction.disabled = true;
+        totalPhilanthropicFifthPositiveAction.disabled = true;
+        totalPhilanthropicFifthLeadingAction.disabled = true;
+    } else {
+        philanthropicFifthLimitedAction.checked = false;
+        totalPhilanthropicFifthLimitedAction.checked = false;
+        totalPhilanthropicFifthPositiveAction.checked = false;
+        philanthropicFifthNoAction.disabled = false;
+        philanthropicFifthLimitedAction.disabled = false;
+        philanthropicFifthLeadingAction.disabled = false;
+        totalPhilanthropicFifthNoAction.disabled = false;
+        totalPhilanthropicFifthLimitedAction.disabled = false;
+        totalPhilanthropicFifthPositiveAction.disabled = false;
+        totalPhilanthropicFifthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicFifthLeadingAction.addEventListener('change', () => {
+    if(philanthropicFifthLeadingAction.checked) {
+        philanthropicFifthLimitedAction.checked = true;
+        philanthropicFifthPositiveAction.checked = true;
+        totalPhilanthropicFifthLimitedAction.checked = true;
+        totalPhilanthropicFifthPositiveAction.checked = true;
+        totalPhilanthropicFifthLeadingAction.checked = true;
+        philanthropicFifthNoAction.disabled = true;
+        philanthropicFifthLimitedAction.disabled = true;
+        philanthropicFifthPositiveAction.disabled = true;
+        totalPhilanthropicFifthNoAction.disabled = true;
+        totalPhilanthropicFifthLimitedAction.disabled = true;
+        totalPhilanthropicFifthPositiveAction.disabled = true;
+        totalPhilanthropicFifthLeadingAction.disabled = true;
+    } else {
+        philanthropicFifthLimitedAction.checked = false;
+        philanthropicFifthPositiveAction.checked = false;
+        totalPhilanthropicFifthLimitedAction.checked = false;
+        totalPhilanthropicFifthPositiveAction.checked = false;
+        totalPhilanthropicFifthLeadingAction.checked = false;
+        philanthropicFifthNoAction.disabled = false;
+        philanthropicFifthLimitedAction.disabled = false;
+        philanthropicFifthPositiveAction.disabled = false;
+        totalPhilanthropicFifthNoAction.disabled = false;
+        totalPhilanthropicFifthLimitedAction.disabled = false;
+        totalPhilanthropicFifthPositiveAction.disabled = false;
+        totalPhilanthropicFifthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSixthNoAction.addEventListener('change', () => {
+    if(philanthropicSixthNoAction.checked) {
+        totalPhilanthropicSixthNoAction.style.backgroundColor = 'red';
+        philanthropicSixthLimitedAction.disabled = true;
+        philanthropicSixthPositiveAction.disabled = true;
+        philanthropicSixthLeadingAction.disabled = true;
+        totalPhilanthropicSixthLimitedAction.disabled = true;
+        totalPhilanthropicSixthPositiveAction.disabled = true;
+        totalPhilanthropicSixthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicSixthNoAction.style.backgroundColor = 'white';
+        philanthropicSixthLimitedAction.disabled = false;
+        philanthropicSixthPositiveAction.disabled = false;
+        philanthropicSixthLeadingAction.disabled = false;
+        totalPhilanthropicSixthLimitedAction.disabled = false;
+        totalPhilanthropicSixthPositiveAction.disabled = false;
+        totalPhilanthropicSixthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSixthLimitedAction.addEventListener('change', () => {
+    if(philanthropicSixthLimitedAction.checked) {
+        totalPhilanthropicSixthLimitedAction.checked = true;
+        philanthropicSixthNoAction.disabled = true;
+        philanthropicSixthPositiveAction.disabled = true;
+        philanthropicSixthLeadingAction.disabled = true;
+        totalPhilanthropicSixthNoAction.disabled = true;
+        totalPhilanthropicSixthLimitedAction.disabled = true;
+        totalPhilanthropicSixthPositiveAction.disabled = true;
+        totalPhilanthropicSixthLeadingAction.disabled = true;
+    } else {
+        totalPhilanthropicSixthLimitedAction.checked = false;
+        philanthropicSixthNoAction.disabled = false;
+        philanthropicSixthPositiveAction.disabled = false;
+        philanthropicSixthLeadingAction.disabled = false;
+        totalPhilanthropicSixthNoAction.disabled = false;
+        totalPhilanthropicSixthLimitedAction.disabled = false;
+        totalPhilanthropicSixthPositiveAction.disabled = false;
+        totalPhilanthropicSixthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSixthPositiveAction.addEventListener('change', () => {
+    if(philanthropicSixthPositiveAction.checked) {
+        philanthropicSixthLimitedAction.checked = true;
+        totalPhilanthropicSixthLimitedAction.checked = true;
+        totalPhilanthropicSixthPositiveAction.checked = true;
+        philanthropicSixthNoAction.disabled = true;
+        philanthropicSixthLimitedAction.disabled = true;
+        philanthropicSixthLeadingAction.disabled = true;
+        totalPhilanthropicSixthNoAction.disabled = true;
+        totalPhilanthropicSixthLimitedAction.disabled = true;
+        totalPhilanthropicSixthPositiveAction.disabled = true;
+        totalPhilanthropicSixthLeadingAction.disabled = true;
+    } else {
+        philanthropicSixthLimitedAction.checked = false;
+        totalPhilanthropicSixthLimitedAction.checked = false;
+        totalPhilanthropicSixthPositiveAction.checked = false;
+        philanthropicSixthNoAction.disabled = false;
+        philanthropicSixthLimitedAction.disabled = false;
+        philanthropicSixthLeadingAction.disabled = false;
+        totalPhilanthropicSixthNoAction.disabled = false;
+        totalPhilanthropicSixthLimitedAction.disabled = false;
+        totalPhilanthropicSixthPositiveAction.disabled = false;
+        totalPhilanthropicSixthLeadingAction.disabled = false;
+    }
+})
+
+philanthropicSixthLeadingAction.addEventListener('change', () => {
+    if(philanthropicSixthLeadingAction.checked) {
+        philanthropicSixthLimitedAction.checked = true;
+        philanthropicSixthPositiveAction.checked = true;
+        totalPhilanthropicSixthLimitedAction.checked = true;
+        totalPhilanthropicSixthPositiveAction.checked = true;
+        totalPhilanthropicSixthLeadingAction.checked = true;
+        philanthropicSixthNoAction.disabled = true;
+        philanthropicSixthLimitedAction.disabled = true;
+        philanthropicSixthPositiveAction.disabled = true;
+        totalPhilanthropicSixthNoAction.disabled = true;
+        totalPhilanthropicSixthLimitedAction.disabled = true;
+        totalPhilanthropicSixthPositiveAction.disabled = true;
+        totalPhilanthropicSixthLeadingAction.disabled = true;
+    } else {
+        philanthropicSixthLimitedAction.checked = false;
+        philanthropicSixthPositiveAction.checked = false;
+        totalPhilanthropicSixthLimitedAction.checked = false;
+        totalPhilanthropicSixthPositiveAction.checked = false;
+        totalPhilanthropicSixthLeadingAction.checked = false;
+        philanthropicSixthNoAction.disabled = false;
+        philanthropicSixthLimitedAction.disabled = false;
+        philanthropicSixthPositiveAction.disabled = false;
+        totalPhilanthropicSixthNoAction.disabled = false;
+        totalPhilanthropicSixthLimitedAction.disabled = false;
+        totalPhilanthropicSixthPositiveAction.disabled = false;
+        totalPhilanthropicSixthLeadingAction.disabled = false;
     }
 })
