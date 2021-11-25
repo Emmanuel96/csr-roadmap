@@ -235,6 +235,34 @@ const TotalEnvironmentalPositiveActionFour = document.querySelector('#total_envi
 const TotalEnvironmentalPositiveActionFive = document.querySelector('#total_environmental_positive_action_five');
 const TotalEnvironmentalPositiveActionSix = document.querySelector('#total_environmental_positive_action_six');
 
+const TotalEnvironmentalLeadingActionOne = document.querySelector('#total_environmental_leading_action_one');
+const TotalEnvironmentalLeadingActionTwo = document.querySelector('#total_environmental_leading_action_two');
+const TotalEnvironmentalLeadingActionThree = document.querySelector('#total_environmental_leading_action_three');
+const TotalEnvironmentalLeadingActionFour = document.querySelector('#total_environmental_leading_action_four');
+const TotalEnvironmentalLeadingActionFive = document.querySelector('#total_environmental_leading_action_five');
+const TotalEnvironmentalLeadingActionSix = document.querySelector('#total_environmental_leading_action_six');
+
+const TotalWorkplaceNoActionOne = document.querySelector('#total_workplace_no_action_one');
+const TotalWorkplaceNoActionTwo = document.querySelector('#total_workplace_no_action_two');
+const TotalWorkplaceNoActionThree = document.querySelector('#total_workplace_no_action_three');
+const TotalWorkplaceNoActionFour = document.querySelector('#total_workplace_no_action_four');
+const TotalWorkplaceNoActionFive = document.querySelector('#total_workplace_no_action_five');
+const TotalWorkplaceNoActionSix = document.querySelector('#total_workplace_no_action_six');
+
+const TotalWorkplaceLimitedActionOne = document.querySelector('#total_workplace_limited_action_one');
+const TotalWorkplaceLimitedActionTwo = document.querySelector('#total_workplace_limited_action_two');
+const TotalWorkplaceLimitedActionThree = document.querySelector('#total_workplace_limited_action_three');
+const TotalWorkplaceLimitedActionFour = document.querySelector('#total_workplace_limited_action_four');
+const TotalWorkplaceLimitedActionFive = document.querySelector('#total_workplace_limited_action_five');
+const TotalWorkplaceLimitedActionSix = document.querySelector('#total_workplace_limited_action_six');
+
+const TotalWorkplacePositiveActionOne = document.querySelector('#total_workplace_positive_action_one');
+const TotalWorkplacePositiveActionTwo = document.querySelector('#total_workplace_positive_action_two');
+const TotalWorkplacePositiveActionThree = document.querySelector('#total_workplace_positive_action_three');
+const TotalWorkplacePositiveActionFour = document.querySelector('#total_workplace_positive_action_four');
+const TotalWorkplacePositiveActionFive = document.querySelector('#total_workplace_positive_action_five');
+const TotalWorkplacePositiveActionSix = document.querySelector('#total_workplace_positive_action_six');
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.style.backgroundColor = 'red';
@@ -321,6 +349,7 @@ firstLeadingAction.addEventListener('change', () => {
         firstLimitedAction.disabled = true;
         envTotalPositiveAction.disabled = true;
         envTotalLimitedAction.disabled = true;
+        TotalEnvironmentalLeadingActionOne.checked = true;
     } else {
         envTotalLimitedAction.checked = false;
         envTotalPositiveAction.checked = false;
@@ -333,6 +362,7 @@ firstLeadingAction.addEventListener('change', () => {
         firstLimitedAction.disabled = false;
         envTotalPositiveAction.disabled = false;
         envTotalLimitedAction.disabled = false;
+        TotalEnvironmentalLeadingActionOne.checked = false;
     }
 })
 
@@ -425,6 +455,7 @@ secondLeadingAction.addEventListener('change', () => {
         envTotalSecondLimitedAction.disabled = true;
         envTotalSecondPositiveAction.disabled = true;
         envTotalSecondLeadingAction.disabled = true;
+        TotalEnvironmentalLeadingActionTwo.checked = true;
     } else {
         envTotalSecondLimitedAction.checked = false;
         secondLimitedAction.checked = false;
@@ -438,6 +469,7 @@ secondLeadingAction.addEventListener('change', () => {
         envTotalSecondLimitedAction.disabled = false;
         envTotalSecondPositiveAction.disabled = false;
         envTotalSecondLeadingAction.disabled = false;
+        TotalEnvironmentalLeadingActionTwo.checked = false;
     }
 })
 
@@ -525,6 +557,7 @@ thirdLeadingAction.addEventListener('change', () => {
         envTotalThirdLimitedAction.disabled = true;
         envTotalThirdPositiveAction.disabled = true;
         envTotalThirdLeadingAction.disabled = true;
+        TotalEnvironmentalLeadingActionThree.checked = true;
     } else {
         thirdLimitedAction.checked = false;
         thirdPositiveAction.checked = false;
@@ -538,6 +571,7 @@ thirdLeadingAction.addEventListener('change', () => {
         envTotalThirdLimitedAction.disabled = false;
         envTotalThirdPositiveAction.disabled = false;
         envTotalThirdLeadingAction.disabled = false;
+        TotalEnvironmentalLeadingActionThree.checked = false;
     }
 })
 
@@ -625,6 +659,7 @@ fourthLeadingAction.addEventListener('change', () => {
         envTotalFourthLimitedAction.disabled = true;
         envTotalFourthPositiveAction.disabled = true;
         envTotalFourthLeadingAction.disabled = true;
+        TotalEnvironmentalLeadingActionFour.checked = true;
     } else {
         fourthLimitedAction.checked = false;
         fourthPositiveAction.checked = false;
@@ -638,6 +673,7 @@ fourthLeadingAction.addEventListener('change', () => {
         envTotalFourthLimitedAction.disabled = false;
         envTotalFourthPositiveAction.disabled = false;
         envTotalFourthLeadingAction.disabled = false;
+        TotalEnvironmentalLeadingActionFour.checked = false;
     }
 })
 
@@ -724,6 +760,7 @@ fifthLeadingAction.addEventListener('change', () => {
         envTotalFifthLimitedAction.disabled = true;
         envTotalFifthPositiveAction.disabled = true;
         envTotalFifthLeadingAction.disabled = true;
+        TotalEnvironmentalLeadingActionFive.checked = true;
     } else {
         fifthLimitedAction.checked = false;
         fifthPositiveAction.checked = false;
@@ -737,6 +774,7 @@ fifthLeadingAction.addEventListener('change', () => {
         envTotalFifthLimitedAction.disabled = false;
         envTotalFifthPositiveAction.disabled = false;
         envTotalFifthLeadingAction.disabled = false;
+        TotalEnvironmentalLeadingActionFive.checked = false;
     }
 })
 
@@ -823,6 +861,7 @@ sixthLeadingAction.addEventListener('change', () => {
         envTotalSixthLimitedAction.disabled = true;
         envTotalSixthPositiveAction.disabled = true;
         envTotalSixthLeadingAction.disabled = true;
+        TotalEnvironmentalLeadingActionSix.checked = true;
     } else {
         sixthLimitedAction.checked = false;
         sixthPositiveAction.checked = false;
@@ -835,6 +874,7 @@ sixthLeadingAction.addEventListener('change', () => {
         envTotalSixthLimitedAction.disabled = false;
         envTotalSixthPositiveAction.disabled = false;
         envTotalSixthLeadingAction.disabled = false;
+        TotalEnvironmentalLeadingActionSix.checked = false;
     }
 })
 
@@ -847,6 +887,7 @@ workplaceFirstNoAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = true;
         totalWorkplaceFirstPositiveAction.disabled = true;
         totalWorkplaceFirstLeadingAction.disabled = true;
+        TotalWorkplaceNoActionOne.style.backgroundColor = 'red';
     } else {
         totalWorkplaceFirstNoAction.style.backgroundColor = 'white';
         workplaceFirstLimitedAction.disabled = false;
@@ -855,6 +896,7 @@ workplaceFirstNoAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = false;
         totalWorkplaceFirstPositiveAction.disabled = false;
         totalWorkplaceFirstLeadingAction.disabled = false;
+        TotalWorkplaceNoActionOne.style.backgroundColor = 'white';
     }
 })
 
@@ -867,6 +909,7 @@ workplaceFirstLimitedAction.addEventListener('change', () => {
         totalWorkplaceFirstNoAction.disabled = true;
         totalWorkplaceFirstPositiveAction.disabled = true;
         totalWorkplaceFirstLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionOne.checked = true;
     } else {
         totalWorkplaceFirstLimitedAction.checked = false;
         workplaceFirstNoAction.disabled = false;
@@ -875,6 +918,7 @@ workplaceFirstLimitedAction.addEventListener('change', () => {
         totalWorkplaceFirstNoAction.disabled = false;
         totalWorkplaceFirstPositiveAction.disabled = false;
         totalWorkplaceFirstLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionOne.checked = false;
     }
 })
 
@@ -890,6 +934,7 @@ workplaceFirstPositiveAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = true;
         totalWorkplaceFirstLeadingAction.disabled = true;
         totalWorkplaceFirstPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionOne.checked = true;
     } else {
         workplaceFirstLimitedAction.checked = false;
         totalWorkplaceFirstLimitedAction.checked = false;
@@ -901,6 +946,7 @@ workplaceFirstPositiveAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = false;
         totalWorkplaceFirstLeadingAction.disabled = false;
         totalWorkplaceFirstPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionOne.checked = false;
     }
 })
 
@@ -943,6 +989,7 @@ workplaceSecondNoAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = true;
         totalWorkplaceSecondPositiveAction.disabled = true;
         totalWorkplaceSecondLeadingAction.disabled = true;
+        TotalWorkplaceNoActionTwo.style.backgroundColor = 'red';
     } else {
         totalWorkplaceSecondNoAction.disabled = true;
         totalWorkplaceSecondNoAction.style.backgroundColor = 'white';
@@ -952,6 +999,7 @@ workplaceSecondNoAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = false;
         totalWorkplaceSecondPositiveAction.disabled = false;
         totalWorkplaceSecondLeadingAction.disabled = false;
+        TotalWorkplaceNoActionTwo.style.backgroundColor = 'white';
     }
 })
 
@@ -964,6 +1012,7 @@ workplaceSecondLimitedAction.addEventListener('change', () => {
         totalWorkplaceSecondNoAction.disabled = true;
         totalWorkplaceSecondPositiveAction.disabled = true;
         totalWorkplaceSecondLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionTwo.checked = true;
     } else {
         totalWorkplaceSecondLimitedAction.checked = false;
         workplaceSecondNoAction.disabled = false;
@@ -972,6 +1021,7 @@ workplaceSecondLimitedAction.addEventListener('change', () => {
         totalWorkplaceSecondNoAction.disabled = false;
         totalWorkplaceSecondPositiveAction.disabled = false;
         totalWorkplaceSecondLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionTwo.checked = false;
     }
 })
 
@@ -987,6 +1037,7 @@ workplaceSecondPositiveAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = true;
         totalWorkplaceSecondLeadingAction.disabled = true;
         totalWorkplaceSecondPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionTwo.checked = true;
     } else {
         workplaceSecondLimitedAction.checked = false;
         totalWorkplaceSecondLimitedAction.checked = false;
@@ -998,6 +1049,7 @@ workplaceSecondPositiveAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = false;
         totalWorkplaceSecondLeadingAction.disabled = false;
         totalWorkplaceSecondPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionTwo.checked = false;
     }
 })
 
@@ -1040,6 +1092,7 @@ workplaceThirdNoAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = true;
         totalWorkplaceThirdPositiveAction.disabled = true;
         totalWorkplaceThirdLeadingAction.disabled = true;
+        TotalWorkplaceNoActionThree.style.backgroundColor = 'red';
     } else {
         totalWorkplaceThirdNoAction.style.backgroundColor = 'white';
         workplaceThirdLimitedAction.disabled = false;
@@ -1048,6 +1101,7 @@ workplaceThirdNoAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = false;
         totalWorkplaceThirdPositiveAction.disabled = false;
         totalWorkplaceThirdLeadingAction.disabled = false;
+        TotalWorkplaceNoActionThree.style.backgroundColor = 'white';
     }
 })
 
@@ -1060,6 +1114,7 @@ workplaceThirdLimitedAction.addEventListener('change', () => {
         totalWorkplaceThirdNoAction.disabled = true;
         totalWorkplaceThirdPositiveAction.disabled = true;
         totalWorkplaceThirdLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionThree.checked = true;
     } else {
         totalWorkplaceThirdLimitedAction.checked = false;
         workplaceThirdNoAction.disabled = false;
@@ -1068,6 +1123,7 @@ workplaceThirdLimitedAction.addEventListener('change', () => {
         totalWorkplaceThirdNoAction.disabled = false;
         totalWorkplaceThirdPositiveAction.disabled = false;
         totalWorkplaceThirdLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionThree.checked = false;
     }
 })
 
@@ -1083,6 +1139,7 @@ workplaceThirdPositiveAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = true;
         totalWorkplaceThirdLeadingAction.disabled = true;
         totalWorkplaceThirdPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionThree.checked = true;
     } else {
         workplaceThirdLimitedAction.checked = false;
         totalWorkplaceThirdLimitedAction.checked = false;
@@ -1094,6 +1151,7 @@ workplaceThirdPositiveAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = false;
         totalWorkplaceThirdLeadingAction.disabled = false;
         totalWorkplaceThirdPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionThree.checked = false;
     }
 })
 
@@ -1136,6 +1194,7 @@ workplaceFourthNoAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = true;
         totalWorkplaceFourthPositiveAction.disabled = true;
         totalWorkplaceFourthLeadingAction.disabled = true;
+        TotalWorkplaceNoActionFour.style.backgroundColor = 'red';
     } else {
         totalWorkplaceFourthNoAction.style.backgroundColor = 'white';
         workplaceFourthLimitedAction.disabled = false;
@@ -1144,6 +1203,7 @@ workplaceFourthNoAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = false;
         totalWorkplaceFourthPositiveAction.disabled = false;
         totalWorkplaceFourthLeadingAction.disabled = false;
+        TotalWorkplaceNoActionFour.style.backgroundColor = 'white';
     }
 })
 
@@ -1156,6 +1216,7 @@ workplaceFourthLimitedAction.addEventListener('change', () => {
         totalWorkplaceFourthNoAction.disabled = true;
         totalWorkplaceFourthPositiveAction.disabled = true;
         totalWorkplaceFourthLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionFour.checked = true;
     } else {
         totalWorkplaceFourthLimitedAction.checked = false;
         workplaceFourthNoAction.disabled = false;
@@ -1164,6 +1225,7 @@ workplaceFourthLimitedAction.addEventListener('change', () => {
         totalWorkplaceFourthNoAction.disabled = false;
         totalWorkplaceFourthPositiveAction.disabled = false;
         totalWorkplaceFourthLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionFour.checked = false;
     }
 })
 
@@ -1179,6 +1241,7 @@ workplaceFourthPositiveAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = true;
         totalWorkplaceFourthLeadingAction.disabled = true;
         totalWorkplaceFourthPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionFour.checked = true;
     } else {
         workplaceFourthLimitedAction.checked = false;
         totalWorkplaceFourthLimitedAction.checked = false;
@@ -1190,6 +1253,7 @@ workplaceFourthPositiveAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = false;
         totalWorkplaceFourthLeadingAction.disabled = false;
         totalWorkplaceFourthPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionFour.checked = false;
     }
 })
 
@@ -1232,6 +1296,7 @@ workplaceFifthNoAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = true;
         totalWorkplaceFifthPositiveAction.disabled = true;
         totalWorkplaceFifthLeadingAction.disabled = true;
+        TotalWorkplaceNoActionFive.style.backgroundColor = 'red';
     } else {
         totalWorkplaceFifthNoAction.style.backgroundColor = 'white';
         workplaceFifthLimitedAction.disabled = false;
@@ -1240,6 +1305,7 @@ workplaceFifthNoAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = false;
         totalWorkplaceFifthPositiveAction.disabled = false;
         totalWorkplaceFifthLeadingAction.disabled = false;
+        TotalWorkplaceNoActionFive.style.backgroundColor = 'white';
     }
 })
 
@@ -1252,6 +1318,7 @@ workplaceFifthLimitedAction.addEventListener('change', () => {
         totalWorkplaceFifthNoAction.disabled = true;
         totalWorkplaceFifthPositiveAction.disabled = true;
         totalWorkplaceFifthLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionFive.checked = true;
     } else {
         totalWorkplaceFifthLimitedAction.checked = false;
         workplaceFifthNoAction.disabled = false;
@@ -1260,6 +1327,7 @@ workplaceFifthLimitedAction.addEventListener('change', () => {
         totalWorkplaceFifthNoAction.disabled = false;
         totalWorkplaceFifthPositiveAction.disabled = false;
         totalWorkplaceFifthLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionFive.checked = false;
     }
 })
 
@@ -1274,6 +1342,7 @@ workplaceFifthPositiveAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = true;
         totalWorkplaceFifthLeadingAction.disabled = true;
         totalWorkplaceFifthPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionFive.checked = true;
     } else {
         workplaceFifthLimitedAction.checked = false;
         totalWorkplaceFifthLimitedAction.checked = false;
@@ -1284,6 +1353,7 @@ workplaceFifthPositiveAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = false;
         totalWorkplaceFifthLeadingAction.disabled = false;
         totalWorkplaceFifthPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionFive.checked = false;
     }
 })
 
@@ -1326,6 +1396,7 @@ workplaceSixthNoAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = true;
         totalWorkplaceSixthPositiveAction.disabled = true;
         totalWorkplaceSixthLeadingAction.disabled = true;
+        TotalWorkplaceNoActionSix.style.backgroundColor = 'red';
     } else {
         totalWorkplaceSixthNoAction.style.backgroundColor = 'white';
         workplaceSixthLimitedAction.disabled = false;
@@ -1334,6 +1405,7 @@ workplaceSixthNoAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = false;
         totalWorkplaceSixthPositiveAction.disabled = false;
         totalWorkplaceSixthLeadingAction.disabled = false;
+        TotalWorkplaceNoActionSix.style.backgroundColor = 'white';
     }
 })
 
@@ -1346,6 +1418,7 @@ workplaceSixthLimitedAction.addEventListener('change', () => {
         totalWorkplaceSixthNoAction.disabled = true;
         totalWorkplaceSixthPositiveAction.disabled = true;
         totalWorkplaceSixthLeadingAction.disabled = true;
+        TotalWorkplaceLimitedActionSix.checked = true;
     } else {
         totalWorkplaceSixthLimitedAction.checked = false;
         workplaceSixthNoAction.disabled = false;
@@ -1354,6 +1427,7 @@ workplaceSixthLimitedAction.addEventListener('change', () => {
         totalWorkplaceSixthNoAction.disabled = false;
         totalWorkplaceSixthPositiveAction.disabled = false;
         totalWorkplaceSixthLeadingAction.disabled = false;
+        TotalWorkplaceLimitedActionSix.checked = false;
     }
 })
 
@@ -1368,6 +1442,7 @@ workplaceSixthPositiveAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = true;
         totalWorkplaceSixthLeadingAction.disabled = true;
         totalWorkplaceSixthPositiveAction.disabled = true;
+        TotalWorkplacePositiveActionSix.checked = true;
     } else {
         workplaceSixthLimitedAction.checked = false;
         totalWorkplaceSixthLimitedAction.checked = false;
@@ -1378,6 +1453,7 @@ workplaceSixthPositiveAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = false;
         totalWorkplaceSixthLeadingAction.disabled = false;
         totalWorkplaceSixthPositiveAction.disabled = false;
+        TotalWorkplacePositiveActionSix.checked = false;
     }
 })
 
