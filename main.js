@@ -298,6 +298,34 @@ const TotalCommunityLeadingActionFour = document.querySelector('#total_community
 const TotalCommunityLeadingActionFive = document.querySelector('#total_community_leading_action_five');
 const TotalCommunityLeadingActionSix = document.querySelector('#total_community_leading_action_six');
 
+const TotalPhilanthropicNoActionOne = document.querySelector('#total_philanthropic_no_action_one');
+const TotalPhilanthropicNoActionTwo = document.querySelector('#total_philanthropic_no_action_two');
+const TotalPhilanthropicNoActionThree = document.querySelector('#total_philanthropic_no_action_three');
+const TotalPhilanthropicNoActionFour = document.querySelector('#total_philanthropic_no_action_four');
+const TotalPhilanthropicNoActionFive = document.querySelector('#total_philanthropic_no_action_five');
+const TotalPhilanthropicNoActionSix = document.querySelector('#total_philanthropic_no_action_six');
+
+const TotalPhilanthropicLimitedActionOne = document.querySelector('#total_philanthropic_limited_action_one');
+const TotalPhilanthropicLimitedActionTwo = document.querySelector('#total_philanthropic_limited_action_two');
+const TotalPhilanthropicLimitedActionThree = document.querySelector('#total_philanthropic_limited_action_three');
+const TotalPhilanthropicLimitedActionFour = document.querySelector('#total_philanthropic_limited_action_four');
+const TotalPhilanthropicLimitedActionFive = document.querySelector('#total_philanthropic_limited_action_five');
+const TotalPhilanthropicLimitedActionSix = document.querySelector('#total_philanthropic_limited_action_six');
+
+const TotalPhilanthropicPositiveActionOne = document.querySelector('#total_philanthropic_positive_action_one');
+const TotalPhilanthropicPositiveActionTwo = document.querySelector('#total_philanthropic_positive_action_two');
+const TotalPhilanthropicPositiveActionThree = document.querySelector('#total_philanthropic_positive_action_three');
+const TotalPhilanthropicPositiveActionFour = document.querySelector('#total_philanthropic_positive_action_four');
+const TotalPhilanthropicPositiveActionFive = document.querySelector('#total_philanthropic_positive_action_five');
+const TotalPhilanthropicPositiveActionSix = document.querySelector('#total_philanthropic_positive_action_six');
+
+const TotalPhilanthropicLeadingActionOne = document.querySelector('#total_philanthropic_leading_action_one');
+const TotalPhilanthropicLeadingActionTwo = document.querySelector('#total_philanthropic_leading_action_two');
+const TotalPhilanthropicLeadingActionThree = document.querySelector('#total_philanthropic_leading_action_three');
+const TotalPhilanthropicLeadingActionFour = document.querySelector('#total_philanthropic_leading_action_four');
+const TotalPhilanthropicLeadingActionFive = document.querySelector('#total_philanthropic_leading_action_five');
+const TotalPhilanthropicLeadingActionSix = document.querySelector('#total_philanthropic_leading_action_six');
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.style.backgroundColor = 'red';
@@ -2180,6 +2208,7 @@ philanthropicFirstNoAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = true;
         totalPhilanthropicFirstPositiveAction.disabled = true;
         totalPhilanthropicFirstLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionOne.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicFirstNoAction.style.backgroundColor = 'white';
         philanthropicFirstLimitedAction.disabled = false;
@@ -2188,6 +2217,7 @@ philanthropicFirstNoAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = false;
         totalPhilanthropicFirstPositiveAction.disabled = false;
         totalPhilanthropicFirstLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionOne.style.backgroundColor = 'white';
     }
 })
 
@@ -2201,6 +2231,7 @@ philanthropicFirstLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = true;
         totalPhilanthropicFirstPositiveAction.disabled = true;
         totalPhilanthropicFirstLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionOne.checked = true;
     } else {
         totalPhilanthropicFirstLimitedAction.checked = false;
         philanthropicFirstNoAction.disabled = false;
@@ -2210,6 +2241,7 @@ philanthropicFirstLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = false;
         totalPhilanthropicFirstPositiveAction.disabled = false;
         totalPhilanthropicFirstLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionOne.checked = false;
     }
 })
 
@@ -2225,6 +2257,7 @@ philanthropicFirstPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = true;
         totalPhilanthropicFirstPositiveAction.disabled = true;
         totalPhilanthropicFirstLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionOne.checked = true;
     } else {
         philanthropicFirstLimitedAction.checked = false;
         totalPhilanthropicFirstLimitedAction.checked = false;
@@ -2236,6 +2269,7 @@ philanthropicFirstPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = false;
         totalPhilanthropicFirstPositiveAction.disabled = false;
         totalPhilanthropicFirstLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionOne.checked = false;
     }
 })
 
@@ -2253,6 +2287,7 @@ philanthropicFirstLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = true;
         totalPhilanthropicFirstPositiveAction.disabled = true;
         totalPhilanthropicFirstLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionOne.checked = true;
     } else {
         philanthropicFirstLimitedAction.checked = false;
         philanthropicFirstPositiveAction.checked = false;
@@ -2266,6 +2301,7 @@ philanthropicFirstLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFirstLimitedAction.disabled = false;
         totalPhilanthropicFirstPositiveAction.disabled = false;
         totalPhilanthropicFirstLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionOne.checked = false;
     }
 })
 
@@ -2278,6 +2314,7 @@ philanthropicSecondNoAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = true;
         totalPhilanthropicSecondPositiveAction.disabled = true;
         totalPhilanthropicSecondLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionTwo.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicSecondNoAction.style.backgroundColor = 'white';
         philanthropicSecondLimitedAction.disabled = false;
@@ -2286,6 +2323,7 @@ philanthropicSecondNoAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = false;
         totalPhilanthropicSecondPositiveAction.disabled = false;
         totalPhilanthropicSecondLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionTwo.style.backgroundColor = 'white';
     }
 })
 
@@ -2299,6 +2337,7 @@ philanthropicSecondLimitedAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = true;
         totalPhilanthropicSecondPositiveAction.disabled = true;
         totalPhilanthropicSecondLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionTwo.checked = true;
     } else {
         totalPhilanthropicSecondLimitedAction.checked = false;
         philanthropicSecondNoAction.disabled = false;
@@ -2308,6 +2347,7 @@ philanthropicSecondLimitedAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = false;
         totalPhilanthropicSecondPositiveAction.disabled = false;
         totalPhilanthropicSecondLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionTwo.checked = false;
     }
 })
 
@@ -2323,6 +2363,7 @@ philanthropicSecondPositiveAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = true;
         totalPhilanthropicSecondPositiveAction.disabled = true;
         totalPhilanthropicSecondLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionTwo.checked = true;
     } else {
         philanthropicSecondLimitedAction.checked = false;
         totalPhilanthropicSecondLimitedAction.checked = false;
@@ -2334,6 +2375,7 @@ philanthropicSecondPositiveAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = false;
         totalPhilanthropicSecondPositiveAction.disabled = false;
         totalPhilanthropicSecondLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionTwo.checked = false;
     }
 })
 
@@ -2351,6 +2393,7 @@ philanthropicSecondLeadingAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = true;
         totalPhilanthropicSecondPositiveAction.disabled = true;
         totalPhilanthropicSecondLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionTwo.checked = true;
     } else {
         philanthropicSecondLimitedAction.checked = false;
         philanthropicSecondPositiveAction.checked = false;
@@ -2364,6 +2407,7 @@ philanthropicSecondLeadingAction.addEventListener('change', () => {
         totalPhilanthropicSecondLimitedAction.disabled = false;
         totalPhilanthropicSecondPositiveAction.disabled = false;
         totalPhilanthropicSecondLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionTwo.checked = false;
     }
 })
 
@@ -2376,6 +2420,7 @@ philanthropicThirdNoAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = true;
         totalPhilanthropicThirdPositiveAction.disabled = true;
         totalPhilanthropicThirdLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionThree.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicThirdNoAction.style.backgroundColor = 'white';
         philanthropicThirdLimitedAction.disabled = false;
@@ -2384,6 +2429,7 @@ philanthropicThirdNoAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = false;
         totalPhilanthropicThirdPositiveAction.disabled = false;
         totalPhilanthropicThirdLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionThree.style.backgroundColor = 'white';
     }
 })
 
@@ -2397,6 +2443,7 @@ philanthropicThirdLimitedAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = true;
         totalPhilanthropicThirdPositiveAction.disabled = true;
         totalPhilanthropicThirdLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionThree.checked = true;
     } else {
         totalPhilanthropicThirdLimitedAction.checked = false;
         philanthropicThirdNoAction.disabled = false;
@@ -2406,6 +2453,7 @@ philanthropicThirdLimitedAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = false;
         totalPhilanthropicThirdPositiveAction.disabled = false;
         totalPhilanthropicThirdLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionThree.checked = false;
     }
 })
 
@@ -2421,6 +2469,7 @@ philanthropicThirdPositiveAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = true;
         totalPhilanthropicThirdPositiveAction.disabled = true;
         totalPhilanthropicThirdLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionThree.checked = true;
     } else {
         philanthropicThirdLimitedAction.checked = false;
         totalPhilanthropicThirdLimitedAction.checked = false;
@@ -2432,6 +2481,7 @@ philanthropicThirdPositiveAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = false;
         totalPhilanthropicThirdPositiveAction.disabled = false;
         totalPhilanthropicThirdLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionThree.checked = false;
     }
 })
 
@@ -2449,6 +2499,7 @@ philanthropicThirdLeadingAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = true;
         totalPhilanthropicThirdPositiveAction.disabled = true;
         totalPhilanthropicThirdLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionThree.checked = true;
     } else {
         philanthropicThirdLimitedAction.checked = false;
         philanthropicThirdPositiveAction.checked = false;
@@ -2462,6 +2513,7 @@ philanthropicThirdLeadingAction.addEventListener('change', () => {
         totalPhilanthropicThirdLimitedAction.disabled = false;
         totalPhilanthropicThirdPositiveAction.disabled = false;
         totalPhilanthropicThirdLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionThree.checked = false;
     }
 })
 
@@ -2474,6 +2526,7 @@ philanthropicFourthNoAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = true;
         totalPhilanthropicFourthPositiveAction.disabled = true;
         totalPhilanthropicFourthLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionFour.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicFourthNoAction.style.backgroundColor = 'white';
         philanthropicFourthLimitedAction.disabled = false;
@@ -2482,6 +2535,7 @@ philanthropicFourthNoAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = false;
         totalPhilanthropicFourthPositiveAction.disabled = false;
         totalPhilanthropicFourthLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionFour.style.backgroundColor = 'white';
     }
 })
 
@@ -2495,6 +2549,7 @@ philanthropicFourthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = true;
         totalPhilanthropicFourthPositiveAction.disabled = true;
         totalPhilanthropicFourthLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionFour.checked = true;
     } else {
         totalPhilanthropicFourthLimitedAction.checked = false;
         philanthropicFourthNoAction.disabled = false;
@@ -2504,6 +2559,7 @@ philanthropicFourthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = false;
         totalPhilanthropicFourthPositiveAction.disabled = false;
         totalPhilanthropicFourthLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionFour.checked = false;
     }
 })
 
@@ -2519,6 +2575,7 @@ philanthropicFourthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = true;
         totalPhilanthropicFourthPositiveAction.disabled = true;
         totalPhilanthropicFourthLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionFour.checked = true;
     } else {
         philanthropicFourthLimitedAction.checked = false;
         totalPhilanthropicFourthLimitedAction.checked = false;
@@ -2530,6 +2587,7 @@ philanthropicFourthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = false;
         totalPhilanthropicFourthPositiveAction.disabled = false;
         totalPhilanthropicFourthLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionFour.checked = false;
     }
 })
 
@@ -2547,6 +2605,7 @@ philanthropicFourthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = true;
         totalPhilanthropicFourthPositiveAction.disabled = true;
         totalPhilanthropicFourthLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionFour.checked = true;
     } else {
         philanthropicFourthLimitedAction.checked = false;
         philanthropicFourthPositiveAction.checked = false;
@@ -2560,6 +2619,7 @@ philanthropicFourthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFourthLimitedAction.disabled = false;
         totalPhilanthropicFourthPositiveAction.disabled = false;
         totalPhilanthropicFourthLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionFour.checked = false;
     }
 })
 
@@ -2572,6 +2632,7 @@ philanthropicFifthNoAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = true;
         totalPhilanthropicFifthPositiveAction.disabled = true;
         totalPhilanthropicFifthLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionFive.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicFifthNoAction.style.backgroundColor = 'white';
         philanthropicFifthLimitedAction.disabled = false;
@@ -2580,6 +2641,7 @@ philanthropicFifthNoAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = false;
         totalPhilanthropicFifthPositiveAction.disabled = false;
         totalPhilanthropicFifthLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionFive.style.backgroundColor = 'white';
     }
 })
 
@@ -2593,6 +2655,7 @@ philanthropicFifthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = true;
         totalPhilanthropicFifthPositiveAction.disabled = true;
         totalPhilanthropicFifthLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionFive.checked = true;
     } else {
         totalPhilanthropicFifthLimitedAction.checked = false;
         philanthropicFifthNoAction.disabled = false;
@@ -2602,6 +2665,7 @@ philanthropicFifthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = false;
         totalPhilanthropicFifthPositiveAction.disabled = false;
         totalPhilanthropicFifthLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionFive.checked = false;
     }
 })
 
@@ -2617,6 +2681,7 @@ philanthropicFifthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = true;
         totalPhilanthropicFifthPositiveAction.disabled = true;
         totalPhilanthropicFifthLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionFive.checked = true;
     } else {
         philanthropicFifthLimitedAction.checked = false;
         totalPhilanthropicFifthLimitedAction.checked = false;
@@ -2628,6 +2693,7 @@ philanthropicFifthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = false;
         totalPhilanthropicFifthPositiveAction.disabled = false;
         totalPhilanthropicFifthLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionFive.checked = false;
     }
 })
 
@@ -2645,6 +2711,7 @@ philanthropicFifthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = true;
         totalPhilanthropicFifthPositiveAction.disabled = true;
         totalPhilanthropicFifthLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionFive.checked = true;
     } else {
         philanthropicFifthLimitedAction.checked = false;
         philanthropicFifthPositiveAction.checked = false;
@@ -2658,6 +2725,7 @@ philanthropicFifthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicFifthLimitedAction.disabled = false;
         totalPhilanthropicFifthPositiveAction.disabled = false;
         totalPhilanthropicFifthLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionFive.checked = false;
     }
 })
 
@@ -2670,6 +2738,7 @@ philanthropicSixthNoAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = true;
         totalPhilanthropicSixthPositiveAction.disabled = true;
         totalPhilanthropicSixthLeadingAction.disabled = true;
+        TotalPhilanthropicNoActionSix.style.backgroundColor = 'red';
     } else {
         totalPhilanthropicSixthNoAction.style.backgroundColor = 'white';
         philanthropicSixthLimitedAction.disabled = false;
@@ -2678,6 +2747,7 @@ philanthropicSixthNoAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = false;
         totalPhilanthropicSixthPositiveAction.disabled = false;
         totalPhilanthropicSixthLeadingAction.disabled = false;
+        TotalPhilanthropicNoActionSix.style.backgroundColor = 'white';
     }
 })
 
@@ -2691,6 +2761,7 @@ philanthropicSixthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = true;
         totalPhilanthropicSixthPositiveAction.disabled = true;
         totalPhilanthropicSixthLeadingAction.disabled = true;
+        TotalPhilanthropicLimitedActionSix.checked = true;
     } else {
         totalPhilanthropicSixthLimitedAction.checked = false;
         philanthropicSixthNoAction.disabled = false;
@@ -2700,6 +2771,7 @@ philanthropicSixthLimitedAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = false;
         totalPhilanthropicSixthPositiveAction.disabled = false;
         totalPhilanthropicSixthLeadingAction.disabled = false;
+        TotalPhilanthropicLimitedActionSix.checked = false;
     }
 })
 
@@ -2715,6 +2787,7 @@ philanthropicSixthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = true;
         totalPhilanthropicSixthPositiveAction.disabled = true;
         totalPhilanthropicSixthLeadingAction.disabled = true;
+        TotalPhilanthropicPositiveActionSix.checked = true;
     } else {
         philanthropicSixthLimitedAction.checked = false;
         totalPhilanthropicSixthLimitedAction.checked = false;
@@ -2726,6 +2799,7 @@ philanthropicSixthPositiveAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = false;
         totalPhilanthropicSixthPositiveAction.disabled = false;
         totalPhilanthropicSixthLeadingAction.disabled = false;
+        TotalPhilanthropicPositiveActionSix.checked = false;
     }
 })
 
@@ -2743,6 +2817,7 @@ philanthropicSixthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = true;
         totalPhilanthropicSixthPositiveAction.disabled = true;
         totalPhilanthropicSixthLeadingAction.disabled = true;
+        TotalPhilanthropicLeadingActionSix.checked = true;
     } else {
         philanthropicSixthLimitedAction.checked = false;
         philanthropicSixthPositiveAction.checked = false;
@@ -2756,5 +2831,6 @@ philanthropicSixthLeadingAction.addEventListener('change', () => {
         totalPhilanthropicSixthLimitedAction.disabled = false;
         totalPhilanthropicSixthPositiveAction.disabled = false;
         totalPhilanthropicSixthLeadingAction.disabled = false;
+        TotalPhilanthropicLeadingActionSix.checked = false;
     }
 })
