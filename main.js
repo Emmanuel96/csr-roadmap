@@ -263,6 +263,13 @@ const TotalWorkplacePositiveActionFour = document.querySelector('#total_workplac
 const TotalWorkplacePositiveActionFive = document.querySelector('#total_workplace_positive_action_five');
 const TotalWorkplacePositiveActionSix = document.querySelector('#total_workplace_positive_action_six');
 
+const TotalWorkplaceLeadingActionOne = document.querySelector('#total_workplace_leading_action_one');
+const TotalWorkplaceLeadingActionTwo = document.querySelector('#total_workplace_leading_action_two');
+const TotalWorkplaceLeadingActionThree = document.querySelector('#total_workplace_leading_action_three');
+const TotalWorkplaceLeadingActionFour = document.querySelector('#total_workplace_leading_action_four');
+const TotalWorkplaceLeadingActionFive = document.querySelector('#total_workplace_leading_action_five');
+const TotalWorkplaceLeadingActionSix = document.querySelector('#total_workplace_leading_action_six');
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.style.backgroundColor = 'red';
@@ -964,6 +971,7 @@ workplaceFirstLeadingAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = true;
         totalWorkplaceFirstPositiveAction.disabled = true;
         totalWorkplaceFirstLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionOne.checked = true;
     } else {
         workplaceFirstLimitedAction.checked = false;
         workplaceFirstPositiveAction.checked = false;
@@ -977,6 +985,7 @@ workplaceFirstLeadingAction.addEventListener('change', () => {
         totalWorkplaceFirstLimitedAction.disabled = false;
         totalWorkplaceFirstPositiveAction.disabled = false;
         totalWorkplaceFirstLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionOne.checked = false;
     }
 })
 
@@ -1067,6 +1076,7 @@ workplaceSecondLeadingAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = true;
         totalWorkplaceSecondPositiveAction.disabled = true;
         totalWorkplaceSecondLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionTwo.checked = true;
     } else {
         workplaceSecondLimitedAction.checked = false;
         workplaceSecondPositiveAction.checked = false;
@@ -1080,6 +1090,7 @@ workplaceSecondLeadingAction.addEventListener('change', () => {
         totalWorkplaceSecondLimitedAction.disabled = false;
         totalWorkplaceSecondPositiveAction.disabled = false;
         totalWorkplaceSecondLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionTwo.checked = false;
     }
 })
 
@@ -1169,6 +1180,7 @@ workplaceThirdLeadingAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = true;
         totalWorkplaceThirdPositiveAction.disabled = true;
         totalWorkplaceThirdLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionThree.checked = true;
     } else {
         workplaceThirdLimitedAction.checked = false;
         workplaceThirdPositiveAction.checked = false;
@@ -1182,6 +1194,7 @@ workplaceThirdLeadingAction.addEventListener('change', () => {
         totalWorkplaceThirdLimitedAction.disabled = false;
         totalWorkplaceThirdPositiveAction.disabled = false;
         totalWorkplaceThirdLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionThree.checked = false;
     }
 })
 
@@ -1271,6 +1284,7 @@ workplaceFourthLeadingAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = true;
         totalWorkplaceFourthPositiveAction.disabled = true;
         totalWorkplaceFourthLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionFour.checked = true;
     } else {
         workplaceFourthLimitedAction.checked = false;
         workplaceFourthPositiveAction.checked = false;
@@ -1284,6 +1298,7 @@ workplaceFourthLeadingAction.addEventListener('change', () => {
         totalWorkplaceFourthLimitedAction.disabled = false;
         totalWorkplaceFourthPositiveAction.disabled = false;
         totalWorkplaceFourthLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionFour.checked = false;
     }
 })
 
@@ -1371,6 +1386,7 @@ workplaceFifthLeadingAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = true;
         totalWorkplaceFifthPositiveAction.disabled = true;
         totalWorkplaceFifthLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionFive.checked = true;
     } else {
         workplaceFifthLimitedAction.checked = false;
         workplaceFifthPositiveAction.checked = false;
@@ -1384,6 +1400,7 @@ workplaceFifthLeadingAction.addEventListener('change', () => {
         totalWorkplaceFifthLimitedAction.disabled = false;
         totalWorkplaceFifthPositiveAction.disabled = false;
         totalWorkplaceFifthLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionFive.checked = false;
     }
 })
 
@@ -1471,6 +1488,7 @@ workplaceSixthLeadingAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = true;
         totalWorkplaceSixthPositiveAction.disabled = true;
         totalWorkplaceSixthLeadingAction.disabled = true;
+        TotalWorkplaceLeadingActionSix.checked = true;
     } else {
         workplaceSixthLimitedAction.checked = false;
         workplaceSixthPositiveAction.checked = false;
@@ -1484,6 +1502,7 @@ workplaceSixthLeadingAction.addEventListener('change', () => {
         totalWorkplaceSixthLimitedAction.disabled = false;
         totalWorkplaceSixthPositiveAction.disabled = false;
         totalWorkplaceSixthLeadingAction.disabled = false;
+        TotalWorkplaceLeadingActionSix.checked = false;
     }
 })
 
