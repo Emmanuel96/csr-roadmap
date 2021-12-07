@@ -919,77 +919,50 @@
             <input type="text" class="form-control" id="inputPassword">
         </div>
       </div>
-      <div class="pt-3 table-responsive">
-        <table class="table table-borderless text-light">
-          <thead>
-            <tr>
-              <th scope="col" >NO ACTION</th>
-              <th scope="col">CSR AWARE</th>
-              <th scope="col">CSR ACTIVE</th>
-              <th scope="col" class="col-lg-3">CSR PROFICIENT</th>
-              <th scope="col" class="col-lg-3">CSR LEADER</th>
-            </tr>
-          </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="fw-light">
-                  You currently take no action in this area or are not aware of any taken.
-                </th>
-                <th class="fw-light">
-                  There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
-                </th>
-                <th class="fw-light">
-                  You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations.
-                </th>
-                <th class="fw-light">
-                  You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
-                  <li>Protects the environment</li>
-                  <li>Looks after staff</li>
-                  <li>Actively engages with community</li>
-                  <li>Gives to charity</li>
-                  Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
-                </th>
-                <th class="fw-light">
-                  You are a socially responsible organisation that records and constantly improves.
-                  <li>Protects and enhances the environment (including supply chain partners).</li>
-                  <li>First class staff engagement and HR policies.</li>
-                  <li>Is a leader in the community.</li>
-                  <li>Promotes, supports and engages with charity long-term</li>
-                  You are a productive, profitable and resilent organisation.
-                </th>
-              </tr>
-            </tbody>
-        </table>
 
-        <!-- <div class="d-flex justify-content-between flex-row">
+        <div class="d-flex justify-content-around flex-row py-2">
           <div class="flex-column flex-fill">
-            <b>NO ACTION</b>
+            <p class="me-2">NO ACTION</p>
+            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You currently take no action in this area or are not aware of any taken.">
+              <i class="bi bi-info-circle-fill text-light"></i>
+            </span> -->
           </div>
           <div class="flex-column flex-fill">
-            <b>CSR AWARE</b>
+            <p class="me-2">CSR AWARE</p>
+            <!-- <span class="tips d-md-none" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.">
+              <i class="bi bi-info-circle-fill text-light"></i>
+            </span> -->
           </div>
           <div class="flex-column flex-fill">
-            <b>CSR ACTIVE</b>
+            <p class="me-2">CSR ACTIVE</p>
+            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
+            Protects the environment
+            Looks after staff
+            Actively engages with community
+            Gives to charity
+            Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.">
+              <i class="bi bi-info-circle-fill text-light"></i> -->
+            <!-- </span> -->
           </div>
           <div class="flex-column flex-fill">
-            <b>CSR PROFICIENT</b>
+            <p class="me-2">CSR PROFICIENT</p>
           </div>
           <div class="flex-column flex-fill">
-            <b>CSR LEADER</b>
+            <p class="me-2">CSR LEADER</p>
           </div>
         </div>
 
         <div class="d-flex flex-row justify-content-between">
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill col-2 py-2 d-none d-md-block">
             You currently take no action in this area or are not aware of any taken.
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
             There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
             You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations.
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
             You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
               <li>Protects the environment</li>
               <li>Looks after staff</li>
@@ -997,7 +970,7 @@
               <li>Gives to charity</li>
             Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
             You are a socially responsible organisation that records and constantly improves.
               <li>Protects and enhances the environment (including supply chain partners).</li>
               <li>First class staff engagement and HR policies.</li>
@@ -1005,13 +978,13 @@
               <li>Promotes, supports and engages with charity long-term</li>
             You are a productive, profitable and resilent organisation.
           </div>
-        </div> -->
+        </div>
 
         <div class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/ENV-ICON.png" alt="ENV-ICON" style="width: 17px; height: 17px;"> Environment</span>
+            <span><img src="./assets/images/ENV-ICON.png" alt="ENV-ICON" style="width: 17px; height: 17px;" class="me-2"> Environment</span>
           </div>
-          <div class="flex-fill flex-wrap ms-2">
+          <div class="flex-fill flex-wrap ms-1">
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_one"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_two"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_three"> 
@@ -1045,9 +1018,9 @@
         </div>
         <div class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/WORK-ICON.png" alt="WORK-ICON" style="height: 18px; width: 18px;"> Workplace</span>
+            <span><img src="./assets/images/WORK-ICON.png" alt="WORK-ICON" style="height: 18px; width: 18px;" class="me-2"> Workplace</span>
           </div>
-          <div class="flex-fill flex-wrap ms-4">
+          <div class="flex-fill flex-wrap ms-3">
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_one"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_two"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_three"> 
@@ -1082,9 +1055,9 @@
         </div>
         <div class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/COMM-ICON.png" alt="COMM-ICON" style="height: 18px; width: 18px;"> Community</span>
+            <span><img src="./assets/images/COMM-ICON.png" alt="COMM-ICON" style="height: 18px; width: 18px;" class="me-2"> Community</span>
           </div>
-          <div class="flex-fill ms-3">
+          <div class="flex-fill ms-2">
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_one"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_two"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_three"> 
@@ -1119,9 +1092,9 @@
         </div>
         <div class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/PHIL-ICON.png" alt="PHIL-ICON" style="height: 19px; width: 19px;"> Philanthropic</span>
+            <span><img src="./assets/images/PHIL-ICON.png" alt="PHIL-ICON" style="height: 19px; width: 19px;" class="me-2"> Philanthropic</span>
           </div>
-          <div class="flex-fill ms-1">
+          <div class="flex-fill">
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_one"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_two"> 
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_three"> 
@@ -1154,7 +1127,6 @@
             <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_six">  
           </div>
         </div>
-      </div>
       </div>
     </section>
 
