@@ -351,7 +351,8 @@ firstLimitedAction.addEventListener('change', () => {
         environmentalNoAction.checked = false;
         // firstPositiveAction.checked = false;
         firstLeadingAction.checked = false;
-        envTotalNoAction.style.backgroundColor = 'white';
+        // envTotalNoAction.style.backgroundColor = 'white';
+        envTotalNoAction.hidden = true;
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionOne.checked = true;
         TotalEnvironmentalPositiveActionOne.checked = false;
@@ -359,6 +360,7 @@ firstLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
     } else {
         envTotalLimitedAction.checked = false;
+        envTotalNoAction.hidden = false;
         TotalEnvironmentalLimitedActionOne.checked = false;
     }
 })
@@ -370,13 +372,15 @@ firstPositiveAction.addEventListener('change', () => {
         // firstLimitedAction.checked = false;
         environmentalNoAction.checked = false;
         // envTotalLimitedAction.checked = false;
-        envTotalNoAction.style.backgroundColor = 'white';
+        // envTotalNoAction.style.backgroundColor = 'white';
+        envTotalNoAction.hidden = true;
         TotalEnvironmentalPositiveActionOne.checked = true;
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionOne.checked = false; 
         TotalEnvironmentalLimitedActionOne.checked = false;
     } else {
         envTotalPositiveAction.checked = false;
+        envTotalNoAction.hidden = false;
         TotalEnvironmentalPositiveActionOne.checked = false;
     }
 })
@@ -388,7 +392,8 @@ firstLeadingAction.addEventListener('change', () => {
         envTotalLeadingAction.checked = true;
         firstLimitedAction.checked = true;
         firstPositiveAction.checked = true;
-        envTotalNoAction.style.backgroundColor = 'white';
+        // envTotalNoAction.style.backgroundColor = 'white';
+        envTotalNoAction.hidden = true;
         environmentalNoAction.checked = false;
         TotalEnvironmentalLeadingActionOne.checked = true;
         TotalEnvironmentalPositiveActionOne.checked = false;
@@ -400,6 +405,7 @@ firstLeadingAction.addEventListener('change', () => {
         envTotalLeadingAction.checked = false;
         firstLimitedAction.checked = false;
         firstPositiveAction.checked = false;
+        envTotalNoAction.hidden = false;
         TotalEnvironmentalLeadingActionOne.checked = false;
     }
 })
@@ -435,8 +441,10 @@ secondLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionTwo.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
+        envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondLimitedAction.checked = false;
+        envTotalSecondNoAction.hidden = false;
         TotalEnvironmentalLimitedActionTwo.checked = false;
     }
 })
@@ -453,9 +461,11 @@ secondPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionTwo.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
+        envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionTwo.checked = false;
+        envTotalSecondNoAction.hidden = false;
     }
 })
 
@@ -472,6 +482,7 @@ secondLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionTwo.checked = false;
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionTwo.checked = false;
+        envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondLimitedAction.checked = false;
         secondLimitedAction.checked = false;
@@ -479,6 +490,7 @@ secondLeadingAction.addEventListener('change', () => {
         envTotalSecondPositiveAction.checked = false;
         envTotalSecondLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
+        envTotalSecondNoAction.hidden = false;
     }
 })
 
@@ -507,16 +519,18 @@ thirdLimitedAction.addEventListener('change', () => {
         thirdNoAction.checked = false;
         // thirdPositiveAction.checked = false;
         thirdLeadingAction.checked = false;
-        envTotalThirdNoAction.style.backgroundColor = 'white';
+        // envTotalThirdNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
         // envTotalThirdPositiveAction.checked = false;
         TotalEnvironmentalLimitedActionThree.checked = true;
         TotalEnvironmentalPositiveActionThree.checked = false;
         TotalEnvironmentalLeadingActionThree.checked = false;
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
+        envTotalThirdNoAction.hidden = true;
     } else {
         envTotalThirdLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionThree.checked = false;
+        envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -527,14 +541,16 @@ thirdPositiveAction.addEventListener('change', () => {
         // thirdLimitedAction.checked = false;
         thirdNoAction.checked = false;
         // envTotalThirdLimitedAction.checked = false;
-        envTotalThirdNoAction.style.backgroundColor = 'white';
+        // envTotalThirdNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalPositiveActionThree.checked = true;
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionThree.checked = false;
         TotalEnvironmentalLimitedActionThree.checked = false;
+        envTotalThirdNoAction.hidden = true;
     } else {
         envTotalThirdPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionThree.checked = false;
+        envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -546,11 +562,12 @@ thirdLeadingAction.addEventListener('change', () => {
         envTotalThirdPositiveAction.checked = true;
         envTotalThirdLeadingAction.checked = true;
         thirdNoAction.checked = false;
-        envTotalThirdNoAction.style.backgroundColor = 'white';
+        // envTotalThirdNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionThree.checked = true;
         TotalEnvironmentalPositiveActionThree.checked = false;
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionThree.checked = false;
+        envTotalThirdNoAction.hidden = true;
     } else {
         thirdLimitedAction.checked = false;
         thirdPositiveAction.checked = false;
@@ -558,6 +575,7 @@ thirdLeadingAction.addEventListener('change', () => {
         envTotalThirdPositiveAction.checked = false;
         envTotalThirdLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionThree.checked = false;
+        envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -586,16 +604,18 @@ fourthLimitedAction.addEventListener('change', () => {
         fourthNoAction.checked = false;
         // fourthPositiveAction.checked = false;
         fourthLeadingAction.checked = false;
-        envTotalFourthNoAction.style.backgroundColor = 'white';
+        // envTotalFourthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
         // envTotalFourthPositiveAction.checked = false;
         TotalEnvironmentalLimitedActionFour.checked = true;
         TotalEnvironmentalPositiveActionFour.checked = false;
         TotalEnvironmentalLeadingActionFour.checked = false;
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
+        envTotalFourthNoAction.hidden = true;
     } else {
         envTotalFourthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionFour.checked = false;
+        envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -606,14 +626,16 @@ fourthPositiveAction.addEventListener('change', () => {
         // fourthLimitedAction.checked = false;
         fourthNoAction.checked = false;
         // envTotalFourthLimitedAction.checked = false;
-        envTotalFourthNoAction.style.backgroundColor = 'white';
+        // envTotalFourthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalPositiveActionFour.checked = true;
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFour.checked = false;
         TotalEnvironmentalLimitedActionFour.checked = false;
+        envTotalFourthNoAction.hidden = true;
     } else {
         envTotalFourthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionFour.checked = false;
+        envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -625,11 +647,12 @@ fourthLeadingAction.addEventListener('change', () => {
         envTotalFourthPositiveAction.checked = true;
         envTotalFourthLeadingAction.checked = true;
         fourthNoAction.checked = false;
-        envTotalFourthNoAction.style.backgroundColor = 'white';
+        // envTotalFourthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFour.checked = true;
         TotalEnvironmentalPositiveActionFour.checked = false;
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionFour.checked = false;
+        envTotalFourthNoAction.hidden = true;
     } else {
         fourthLimitedAction.checked = false;
         fourthPositiveAction.checked = false;
@@ -637,6 +660,7 @@ fourthLeadingAction.addEventListener('change', () => {
         envTotalFourthPositiveAction.checked = false;
         envTotalFourthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionFour.checked = false;
+        envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -665,16 +689,18 @@ fifthLimitedAction.addEventListener('change', () => {
         fifthNoAction.checked = false;
         // fifthPositiveAction.checked = false;
         fifthLeadingAction.checked = false;
-        envTotalFifthNoAction.style.backgroundColor = 'white';
+        // envTotalFifthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
         // envTotalFifthPositiveAction.checked = false;
         TotalEnvironmentalLimitedActionFive.checked = true;
         TotalEnvironmentalPositiveActionFive.checked = false;
         TotalEnvironmentalLeadingActionFive.checked = false;
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
+        envTotalFifthNoAction.hidden = true;
     } else {
         envTotalFifthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionFive.checked = false;
+        envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -685,14 +711,16 @@ fifthPositiveAction.addEventListener('change', () => {
         // fifthLimitedAction.checked = false;
         fifthNoAction.checked = false;
         // envTotalFifthLimitedAction.checked = false;
-        envTotalFifthNoAction.style.backgroundColor = 'white';
+        // envTotalFifthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalPositiveActionFive.checked = true;
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFive.checked = false;
         TotalEnvironmentalLimitedActionFive.checked = false;
+        envTotalFifthNoAction.hidden = true;
     } else {
         envTotalFifthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionFive.checked = false;
+        envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -704,11 +732,12 @@ fifthLeadingAction.addEventListener('change', () => {
         envTotalFifthPositiveAction.checked = true;
         envTotalFifthLeadingAction.checked = true;
         fifthNoAction.checked = false;
-        envTotalFifthNoAction.style.backgroundColor = 'white';
+        // envTotalFifthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFive.checked = true;
         TotalEnvironmentalPositiveActionFive.checked = false;
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionFive.checked = false;
+        envTotalFifthNoAction.hidden = true;
     } else {
         fifthLimitedAction.checked = false;
         fifthPositiveAction.checked = false;
@@ -716,6 +745,7 @@ fifthLeadingAction.addEventListener('change', () => {
         envTotalFifthPositiveAction.checked = false;
         envTotalFifthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionFive.checked = false;
+        envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -744,16 +774,19 @@ sixthLimitedAction.addEventListener('change', () => {
         sixthNoAction.checked = false;
         // sixthPositiveAction.checked = false;
         sixthLeadingAction.checked = false;
-        envTotalSixthNoAction.style.backgroundColor = 'white';
+        // envTotalSixthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
         // envTotalSixthPositiveAction.checked = false;
         TotalEnvironmentalLimitedActionSix.checked = true;
         TotalEnvironmentalPositiveActionSix.checked = false;
         TotalEnvironmentalLeadingActionSix.checked = false;
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
+        envTotalSixthNoAction.hidden = true;
+
     } else {
         envTotalSixthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionSix.checked = false;
+        envTotalSixthNoAction.hidden = false;
     }
 })
 
@@ -764,14 +797,16 @@ sixthPositiveAction.addEventListener('change', () => {
         // sixthLimitedAction.checked = false;
         sixthNoAction.checked = false;
         // envTotalSixthLimitedAction.checked = false;
-        envTotalSixthNoAction.style.backgroundColor = 'white';
+        // envTotalSixthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalPositiveActionSix.checked = true;
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionSix.checked = false;
         TotalEnvironmentalLimitedActionSix.checked = false;
+        envTotalSixthNoAction.hidden = true;
     } else {
         envTotalSixthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionSix.checked = false;
+        envTotalSixthNoAction.hidden = false;
     }
 })
 
@@ -783,11 +818,12 @@ sixthLeadingAction.addEventListener('change', () => {
         envTotalSixthPositiveAction.checked = true;
         envTotalSixthLeadingAction.checked = true;
         sixthNoAction.checked = false;
-        envTotalSixthNoAction.style.backgroundColor = 'white';
+        // envTotalSixthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionSix.checked = true;
         TotalEnvironmentalPositiveActionSix.checked = false;
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionSix.checked = false;
+        envTotalSixthNoAction.hidden = true;
     } else {
         sixthLimitedAction.checked = false;
         sixthPositiveAction.checked = false;
@@ -795,6 +831,7 @@ sixthLeadingAction.addEventListener('change', () => {
         envTotalSixthPositiveAction.checked = false;
         envTotalSixthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionSix.checked = false;
+        envTotalSixthNoAction.hidden = false;
     }
 })
 
