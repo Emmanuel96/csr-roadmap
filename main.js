@@ -328,6 +328,7 @@ const TotalPhilanthropicLeadingActionSix = document.querySelector('#total_philan
 
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
+        envTotalNoAction.hidden = false;
         envTotalNoAction.style.backgroundColor = 'red';
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'red';
         firstLimitedAction.checked = false;
@@ -342,6 +343,7 @@ environmentalNoAction.addEventListener('change', (e) => {
     } else {
         envTotalNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
+        envTotalNoAction.hidden = true;
     }
 })
 
@@ -352,7 +354,7 @@ firstLimitedAction.addEventListener('change', () => {
         // firstPositiveAction.checked = false;
         firstLeadingAction.checked = false;
         // envTotalNoAction.style.backgroundColor = 'white';
-        envTotalNoAction.hidden = true;
+        // envTotalNoAction.hidden = true;
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionOne.checked = true;
         TotalEnvironmentalPositiveActionOne.checked = false;
@@ -360,7 +362,7 @@ firstLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
     } else {
         envTotalLimitedAction.checked = false;
-        envTotalNoAction.hidden = false;
+        // envTotalNoAction.hidden = false;
         TotalEnvironmentalLimitedActionOne.checked = false;
     }
 })
@@ -373,14 +375,14 @@ firstPositiveAction.addEventListener('change', () => {
         environmentalNoAction.checked = false;
         // envTotalLimitedAction.checked = false;
         // envTotalNoAction.style.backgroundColor = 'white';
-        envTotalNoAction.hidden = true;
+        // envTotalNoAction.hidden = true;
         TotalEnvironmentalPositiveActionOne.checked = true;
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionOne.checked = false; 
         TotalEnvironmentalLimitedActionOne.checked = false;
     } else {
         envTotalPositiveAction.checked = false;
-        envTotalNoAction.hidden = false;
+        // envTotalNoAction.hidden = false;
         TotalEnvironmentalPositiveActionOne.checked = false;
     }
 })
@@ -393,7 +395,7 @@ firstLeadingAction.addEventListener('change', () => {
         firstLimitedAction.checked = true;
         firstPositiveAction.checked = true;
         // envTotalNoAction.style.backgroundColor = 'white';
-        envTotalNoAction.hidden = true;
+        // envTotalNoAction.hidden = true;
         environmentalNoAction.checked = false;
         TotalEnvironmentalLeadingActionOne.checked = true;
         TotalEnvironmentalPositiveActionOne.checked = false;
@@ -405,7 +407,7 @@ firstLeadingAction.addEventListener('change', () => {
         envTotalLeadingAction.checked = false;
         firstLimitedAction.checked = false;
         firstPositiveAction.checked = false;
-        envTotalNoAction.hidden = false;
+        // envTotalNoAction.hidden = false;
         TotalEnvironmentalLeadingActionOne.checked = false;
     }
 })
@@ -423,9 +425,11 @@ secondNoAction.addEventListener('change', (e) => {
         TotalEnvironmentalLimitedActionTwo.checked = false;
         TotalEnvironmentalPositiveActionTwo.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
+        envTotalSecondNoAction.hidden = false;
     } else {
         envTotalSecondNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
+        envTotalSecondNoAction.hidden = true;
     }
 })
 
@@ -441,10 +445,10 @@ secondLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionTwo.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
-        envTotalSecondNoAction.hidden = true;
+        // envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondLimitedAction.checked = false;
-        envTotalSecondNoAction.hidden = false;
+        // envTotalSecondNoAction.hidden = false;
         TotalEnvironmentalLimitedActionTwo.checked = false;
     }
 })
@@ -461,11 +465,11 @@ secondPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionTwo.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
-        envTotalSecondNoAction.hidden = true;
+        // envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionTwo.checked = false;
-        envTotalSecondNoAction.hidden = false;
+        // envTotalSecondNoAction.hidden = false;
     }
 })
 
@@ -482,7 +486,7 @@ secondLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionTwo.checked = false;
         TotalEnvironmentalNoActionTwo.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionTwo.checked = false;
-        envTotalSecondNoAction.hidden = true;
+        // envTotalSecondNoAction.hidden = true;
     } else {
         envTotalSecondLimitedAction.checked = false;
         secondLimitedAction.checked = false;
@@ -490,7 +494,7 @@ secondLeadingAction.addEventListener('change', () => {
         envTotalSecondPositiveAction.checked = false;
         envTotalSecondLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionTwo.checked = false;
-        envTotalSecondNoAction.hidden = false;
+        // envTotalSecondNoAction.hidden = false;
     }
 })
 
@@ -507,9 +511,11 @@ thirdNoAction.addEventListener('change', () => {
         TotalEnvironmentalLimitedActionThree.checked = false;
         TotalEnvironmentalPositiveActionThree.checked = false;
         TotalEnvironmentalLeadingActionThree.checked = false;
+        envTotalThirdNoAction.hidden = false;
     } else {
         envTotalThirdNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
+        envTotalThirdNoAction.hidden = true;
     }
 })
 
@@ -526,11 +532,11 @@ thirdLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionThree.checked = false;
         TotalEnvironmentalLeadingActionThree.checked = false;
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
-        envTotalThirdNoAction.hidden = true;
+        // envTotalThirdNoAction.hidden = true;
     } else {
         envTotalThirdLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionThree.checked = false;
-        envTotalThirdNoAction.hidden = false;
+        // envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -546,11 +552,11 @@ thirdPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionThree.checked = false;
         TotalEnvironmentalLimitedActionThree.checked = false;
-        envTotalThirdNoAction.hidden = true;
+        // envTotalThirdNoAction.hidden = true;
     } else {
         envTotalThirdPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionThree.checked = false;
-        envTotalThirdNoAction.hidden = false;
+        // envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -567,7 +573,7 @@ thirdLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionThree.checked = false;
         TotalEnvironmentalNoActionThree.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionThree.checked = false;
-        envTotalThirdNoAction.hidden = true;
+        // envTotalThirdNoAction.hidden = true;
     } else {
         thirdLimitedAction.checked = false;
         thirdPositiveAction.checked = false;
@@ -575,7 +581,7 @@ thirdLeadingAction.addEventListener('change', () => {
         envTotalThirdPositiveAction.checked = false;
         envTotalThirdLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionThree.checked = false;
-        envTotalThirdNoAction.hidden = false;
+        // envTotalThirdNoAction.hidden = false;
     }
 })
 
@@ -592,9 +598,11 @@ fourthNoAction.addEventListener('change', () => {
         TotalEnvironmentalLimitedActionFour.checked = false;
         TotalEnvironmentalPositiveActionFour.checked = false;
         TotalEnvironmentalLeadingActionFour.checked = false;
+        envTotalFourthNoAction.hidden = false;
     } else {
         envTotalFourthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
+        envTotalFourthNoAction.hidden = true;
     }
 })
 
@@ -611,11 +619,11 @@ fourthLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionFour.checked = false;
         TotalEnvironmentalLeadingActionFour.checked = false;
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
-        envTotalFourthNoAction.hidden = true;
+        // envTotalFourthNoAction.hidden = true;
     } else {
         envTotalFourthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionFour.checked = false;
-        envTotalFourthNoAction.hidden = false;
+        // envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -631,11 +639,11 @@ fourthPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFour.checked = false;
         TotalEnvironmentalLimitedActionFour.checked = false;
-        envTotalFourthNoAction.hidden = true;
+        // envTotalFourthNoAction.hidden = true;
     } else {
         envTotalFourthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionFour.checked = false;
-        envTotalFourthNoAction.hidden = false;
+        // envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -652,7 +660,7 @@ fourthLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionFour.checked = false;
         TotalEnvironmentalNoActionFour.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionFour.checked = false;
-        envTotalFourthNoAction.hidden = true;
+        // envTotalFourthNoAction.hidden = true;
     } else {
         fourthLimitedAction.checked = false;
         fourthPositiveAction.checked = false;
@@ -660,7 +668,7 @@ fourthLeadingAction.addEventListener('change', () => {
         envTotalFourthPositiveAction.checked = false;
         envTotalFourthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionFour.checked = false;
-        envTotalFourthNoAction.hidden = false;
+        // envTotalFourthNoAction.hidden = false;
     }
 })
 
@@ -677,9 +685,11 @@ fifthNoAction.addEventListener('change', () => {
         TotalEnvironmentalLimitedActionFive.checked = false;
         TotalEnvironmentalPositiveActionFive.checked = false;
         TotalEnvironmentalLeadingActionFive.checked = false;
+        envTotalFifthNoAction.hidden = false;
     } else {
         envTotalFifthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
+        envTotalFifthNoAction.hidden = true;
     }
 })
 
@@ -696,11 +706,11 @@ fifthLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionFive.checked = false;
         TotalEnvironmentalLeadingActionFive.checked = false;
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
-        envTotalFifthNoAction.hidden = true;
+        // envTotalFifthNoAction.hidden = true;
     } else {
         envTotalFifthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionFive.checked = false;
-        envTotalFifthNoAction.hidden = false;
+        // envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -716,11 +726,11 @@ fifthPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionFive.checked = false;
         TotalEnvironmentalLimitedActionFive.checked = false;
-        envTotalFifthNoAction.hidden = true;
+        // envTotalFifthNoAction.hidden = true;
     } else {
         envTotalFifthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionFive.checked = false;
-        envTotalFifthNoAction.hidden = false;
+        // envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -737,7 +747,7 @@ fifthLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionFive.checked = false;
         TotalEnvironmentalNoActionFive.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionFive.checked = false;
-        envTotalFifthNoAction.hidden = true;
+        // envTotalFifthNoAction.hidden = true;
     } else {
         fifthLimitedAction.checked = false;
         fifthPositiveAction.checked = false;
@@ -745,7 +755,7 @@ fifthLeadingAction.addEventListener('change', () => {
         envTotalFifthPositiveAction.checked = false;
         envTotalFifthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionFive.checked = false;
-        envTotalFifthNoAction.hidden = false;
+        // envTotalFifthNoAction.hidden = false;
     }
 })
 
@@ -762,9 +772,11 @@ sixthNoAction.addEventListener('change', () => {
         TotalEnvironmentalLimitedActionSix.checked = false;
         TotalEnvironmentalPositiveActionSix.checked = false;
         TotalEnvironmentalLeadingActionSix.checked = false;
+        envTotalSixthNoAction.hidden = false;
     } else {
         envTotalSixthNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
+        envTotalSixthNoAction.hidden = true;
     }
 })
 
@@ -781,12 +793,12 @@ sixthLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionSix.checked = false;
         TotalEnvironmentalLeadingActionSix.checked = false;
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
-        envTotalSixthNoAction.hidden = true;
+        // envTotalSixthNoAction.hidden = true;
 
     } else {
         envTotalSixthLimitedAction.checked = false;
         TotalEnvironmentalLimitedActionSix.checked = false;
-        envTotalSixthNoAction.hidden = false;
+        // envTotalSixthNoAction.hidden = false;
     }
 })
 
@@ -802,11 +814,11 @@ sixthPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionSix.checked = false;
         TotalEnvironmentalLimitedActionSix.checked = false;
-        envTotalSixthNoAction.hidden = true;
+        // envTotalSixthNoAction.hidden = true;
     } else {
         envTotalSixthPositiveAction.checked = false;
         TotalEnvironmentalPositiveActionSix.checked = false;
-        envTotalSixthNoAction.hidden = false;
+        // envTotalSixthNoAction.hidden = false;
     }
 })
 
@@ -823,7 +835,7 @@ sixthLeadingAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionSix.checked = false;
         TotalEnvironmentalNoActionSix.style.backgroundColor = 'white';
         TotalEnvironmentalLimitedActionSix.checked = false;
-        envTotalSixthNoAction.hidden = true;
+        // envTotalSixthNoAction.hidden = true;
     } else {
         sixthLimitedAction.checked = false;
         sixthPositiveAction.checked = false;
@@ -831,7 +843,7 @@ sixthLeadingAction.addEventListener('change', () => {
         envTotalSixthPositiveAction.checked = false;
         envTotalSixthLeadingAction.checked = false;
         TotalEnvironmentalLeadingActionSix.checked = false;
-        envTotalSixthNoAction.hidden = false;
+        // envTotalSixthNoAction.hidden = false;
     }
 })
 
@@ -848,9 +860,11 @@ workplaceFirstNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionOne.checked = false;
         TotalWorkplacePositiveActionOne.checked = false;
         TotalWorkplaceLeadingActionOne.checked = false;
+        totalWorkplaceFirstNoAction.hidden = false;
     } else {
         totalWorkplaceFirstNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionOne.style.backgroundColor = 'white';
+        totalWorkplaceFirstNoAction.hidden = true;
     }
 })
 
@@ -929,9 +943,11 @@ workplaceSecondNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionTwo.checked = false;
         TotalWorkplacePositiveActionTwo.checked = false;
         TotalWorkplaceLeadingActionTwo.checked = false;
+        totalWorkplaceSecondNoAction.hidden = false;
     } else {
         totalWorkplaceSecondNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionTwo.style.backgroundColor = 'white';
+        totalWorkplaceSecondNoAction.hidden = true;
     }
 })
 
@@ -1010,9 +1026,11 @@ workplaceThirdNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionThree.checked = false;
         TotalWorkplacePositiveActionThree.checked = false;
         TotalWorkplaceLeadingActionThree.checked = false;
+        totalWorkplaceThirdNoAction.hidden = false;
     } else {
         totalWorkplaceThirdNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionThree.style.backgroundColor = 'white';
+        totalWorkplaceThirdNoAction.hidden = true;
     }
 })
 
@@ -1091,9 +1109,11 @@ workplaceFourthNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionFour.checked = false;
         TotalWorkplacePositiveActionFour.checked = false;
         TotalWorkplaceLeadingActionFour.checked = false;
+        totalWorkplaceFourthNoAction.hidden = false;
     } else {
         totalWorkplaceFourthNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionFour.style.backgroundColor = 'white';
+        totalWorkplaceFourthNoAction.hidden = true;
     }
 })
 
@@ -1172,9 +1192,11 @@ workplaceFifthNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionFive.checked = false;
         TotalWorkplacePositiveActionFive.checked = false;
         TotalWorkplaceLeadingActionFive.checked = false;
+        totalWorkplaceFifthNoAction.hidden = false;
     } else {
         totalWorkplaceFifthNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionFive.style.backgroundColor = 'white';
+        totalWorkplaceFifthNoAction.hidden = true;
     }
 })
 
@@ -1253,9 +1275,11 @@ workplaceSixthNoAction.addEventListener('change', () => {
         TotalWorkplaceLimitedActionSix.checked = false;
         TotalWorkplacePositiveActionSix.checked = false;
         TotalWorkplaceLeadingActionSix.checked = false;
+        totalWorkplaceSixthNoAction.hidden = false;
     } else {
         totalWorkplaceSixthNoAction.style.backgroundColor = 'white';
         TotalWorkplaceNoActionSix.style.backgroundColor = 'white';
+        totalWorkplaceSixthNoAction.hidden = true;
     }
 })
 
@@ -1334,9 +1358,11 @@ communityFirstNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionOne.checked = false;
         TotalCommunityPositiveActionOne.checked = false;
         TotalCommunityLeadingActionOne.checked = false;
+        totalCommunityFirstNoAction.hidden = false;
     } else {
         totalCommunityFirstNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionOne.style.backgroundColor = 'white';
+        totalCommunityFirstNoAction.hidden = true;
     }
 })
 
@@ -1415,9 +1441,11 @@ communitySecondNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionTwo.checked = false;
         TotalCommunityPositiveActionTwo.checked = false;
         TotalCommunityLeadingActionTwo.checked = false;
+        totalCommunitySecondNoAction.hidden = false;
     } else {
         totalCommunitySecondNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionTwo.style.backgroundColor = 'white';
+        totalCommunitySecondNoAction.hidden = true;
     }
 })
 
@@ -1496,9 +1524,11 @@ communityThirdNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionThree.checked = false;
         TotalCommunityPositiveActionThree.checked = false;
         TotalCommunityLeadingActionThree.checked = false;
+        totalCommunityThirdNoAction.hidden = false;
     } else {
         totalCommunityThirdNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionThree.style.backgroundColor = 'white';
+        totalCommunityThirdNoAction.hidden = true;
     }
 })
 
@@ -1577,9 +1607,11 @@ communityFourthNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionFour.checked = false;
         TotalCommunityPositiveActionFour.checked = false;
         TotalCommunityLeadingActionFour.checked = false;
+        totalCommunityFourthNoAction.hidden = false;
     } else {
         totalCommunityFourthNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionFour.style.backgroundColor = 'white';
+        totalCommunityFourthNoAction.hidden = true;
     }
 })
 
@@ -1658,9 +1690,11 @@ communityFifthNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionFive.checked = false;
         TotalCommunityPositiveActionFive.checked = false;
         TotalCommunityLeadingActionFive.checked = false;
+        totalCommunityFifthNoAction.hidden = false;
     } else {
         totalCommunityFifthNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionFive.style.backgroundColor = 'white';
+        totalCommunityFifthNoAction.hidden = true;
     }
 })
 
@@ -1739,9 +1773,11 @@ communitySixthNoAction.addEventListener('change', () => {
         TotalCommunityLimitedActionSix.checked = false;
         TotalCommunityPositiveActionSix.checked = false;
         TotalCommunityLeadingActionSix.checked = false;
+        totalCommunitySixthNoAction.hidden = false;
     } else {
         totalCommunitySixthNoAction.style.backgroundColor = 'white';
         TotalCommunityNoActionSix.style.backgroundColor = 'white';
+        totalCommunitySixthNoAction.hidden = true;
     }
 })
 
@@ -1820,9 +1856,11 @@ philanthropicFirstNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionOne.checked = false;
         TotalPhilanthropicPositiveActionOne.checked = false;
         TotalPhilanthropicLeadingActionOne.checked = false;
+        totalPhilanthropicFirstNoAction.hidden = false;
     } else {
         totalPhilanthropicFirstNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionOne.style.backgroundColor = 'white';
+        totalPhilanthropicFirstNoAction.hidden = true;
     }
 })
 
@@ -1901,9 +1939,11 @@ philanthropicSecondNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionTwo.checked = false;
         TotalPhilanthropicPositiveActionTwo.checked = false;
         TotalPhilanthropicLeadingActionTwo.checked = false;
+        totalPhilanthropicSecondNoAction.hidden = false;
     } else {
         totalPhilanthropicSecondNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionTwo.style.backgroundColor = 'white';
+        totalPhilanthropicSecondNoAction.hidden = true;
     }
 })
 
@@ -1982,9 +2022,11 @@ philanthropicThirdNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionThree.checked = false;
         TotalPhilanthropicPositiveActionThree.checked = false;
         TotalPhilanthropicLeadingActionThree.checked = false;
+        totalPhilanthropicThirdNoAction.hidden = false;
     } else {
         totalPhilanthropicThirdNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionThree.style.backgroundColor = 'white';
+        totalPhilanthropicThirdNoAction.hidden = true;
     }
 })
 
@@ -2063,9 +2105,11 @@ philanthropicFourthNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionFour.checked = false;
         TotalPhilanthropicPositiveActionFour.checked = false;
         TotalPhilanthropicLeadingActionFour.checked = false;
+        totalPhilanthropicFourthNoAction.hidden = false;
     } else {
         totalPhilanthropicFourthNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionFour.style.backgroundColor = 'white';
+        totalPhilanthropicFourthNoAction.hidden = true;
     }
 })
 
@@ -2144,9 +2188,11 @@ philanthropicFifthNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionFive.checked = false;
         TotalPhilanthropicPositiveActionFive.checked = false;
         TotalPhilanthropicLeadingActionFive.checked = false;
+        totalPhilanthropicFifthNoAction.hidden = false;
     } else {
         totalPhilanthropicFifthNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionFive.style.backgroundColor = 'white';
+        totalPhilanthropicFifthNoAction.hidden = true;
     }
 })
 
@@ -2225,9 +2271,11 @@ philanthropicSixthNoAction.addEventListener('change', () => {
         TotalPhilanthropicLimitedActionSix.checked = false;
         TotalPhilanthropicPositiveActionSix.checked = false;
         TotalPhilanthropicLeadingActionSix.checked = false;
+        totalPhilanthropicSixthNoAction.hidden = false;
     } else {
         totalPhilanthropicSixthNoAction.style.backgroundColor = 'white';
         TotalPhilanthropicNoActionSix.style.backgroundColor = 'white';
+        totalPhilanthropicSixthNoAction.hidden = true;
     }
 })
 
