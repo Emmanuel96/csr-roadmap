@@ -326,6 +326,30 @@ const TotalPhilanthropicLeadingActionFour = document.querySelector('#total_phila
 const TotalPhilanthropicLeadingActionFive = document.querySelector('#total_philanthropic_leading_action_five');
 const TotalPhilanthropicLeadingActionSix = document.querySelector('#total_philanthropic_leading_action_six');
 
+// function checkAll() {  
+//     var inputs = document.querySelectorAll('.env_total_checkbox');   
+//     for (var i = 0; i < inputs.length; i++) {   
+//         inputs[i].checked = true;   
+//     }   
+// }  
+
+function number_of_checked_checkboxes() {
+    var inputElems = document.getElementsByTagName("input");
+    var inputs = document.querySelectorAll('.env_total_checkbox');   
+
+        count = 0;
+          
+        for (var i = 0; i < inputElems.length; i++) {       
+            if (inputElems[i].type == "checkbox" && inputElems[i].checked == true) 
+            {
+                count++;
+            }
+
+            inputs[count].checked = true;
+                
+        }
+}
+
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
         envTotalNoAction.hidden = false;
@@ -339,7 +363,7 @@ environmentalNoAction.addEventListener('change', (e) => {
         envTotalLeadingAction.checked = false;
         TotalEnvironmentalLimitedActionOne.checked = false;
         TotalEnvironmentalPositiveActionOne.checked = false;
-        TotalEnvironmentalLeadingActionOne.checked = false;      
+        TotalEnvironmentalLeadingActionOne.checked = false;  
     } else {
         envTotalNoAction.style.backgroundColor = 'white';
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
@@ -349,7 +373,7 @@ environmentalNoAction.addEventListener('change', (e) => {
 
 firstLimitedAction.addEventListener('change', () => {
     if(firstLimitedAction.checked) {
-        envTotalLimitedAction.checked = true;
+        // envTotalLimitedAction.checked = true;
         environmentalNoAction.checked = false;
         // firstPositiveAction.checked = false;
         firstLeadingAction.checked = false;
@@ -360,6 +384,7 @@ firstLimitedAction.addEventListener('change', () => {
         TotalEnvironmentalPositiveActionOne.checked = false;
         TotalEnvironmentalLeadingActionOne.checked = false; 
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
+        number_of_checked_checkboxes()    
     } else {
         envTotalLimitedAction.checked = false;
         // envTotalNoAction.hidden = false;
@@ -380,12 +405,12 @@ firstPositiveAction.addEventListener('change', () => {
         TotalEnvironmentalNoActionOne.style.backgroundColor = 'white';
         TotalEnvironmentalLeadingActionOne.checked = false; 
         TotalEnvironmentalLimitedActionOne.checked = false;
-        envTotalLimitedAction.hidden = true;
+        // envTotalLimitedAction.hidden = true;
     } else {
         envTotalPositiveAction.checked = false;
         // envTotalNoAction.hidden = false;
         TotalEnvironmentalPositiveActionOne.checked = false;
-        envTotalLimitedAction.hidden = false;
+        // envTotalLimitedAction.hidden = false;
     }
 })
 
