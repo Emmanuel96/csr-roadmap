@@ -44,6 +44,10 @@ const handle_pillars  = function(){
         $(this).attr('style','background-color: white; width: 25px; height: 25px;')
      });
 
+     //store counters in temp value 
+     let temp_no_action_count = no_action_count; 
+     let temp_action_count = action_count;
+
     // represent answer in result 
     $('.'+pillar+'-result').each(function(){
        if(no_action_count > 0){
@@ -62,6 +66,10 @@ const handle_pillars  = function(){
        }
     });
 
+    //set back counts
+    no_action_count = temp_no_action_count; 
+    action_count = temp_action_count;
+    
     // represent answer in final result 
     $('.'+pillar+'-final-result').each(function(){
         if(no_action_count > 0){
