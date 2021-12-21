@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -161,16 +163,16 @@
               <b>Does your organisation implement and monitor energy saving initiatives such as LED and low energy lighting and heating systems?</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+              <input type="checkbox" data-pillar = 'env' data-row = '1' class="env-no-action env-no-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+              <input type="checkbox" data-pillar = 'env' data-row = '1' class="env-action env-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
             </div>
           </div>
 
@@ -179,16 +181,16 @@
                 <b>Does your organisation provide for sustainable resource use such as recycled paper, refillable printer catridges and fair trade suppliers?</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_no_action"> 
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-no-action env-no-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_limited_action"> 
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_positive_action"> 
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_leading_action"> 
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="second_option_leading_action"> 
             </div>
           </div>
 
@@ -197,16 +199,16 @@
                 <b>Does your organisation have a travel policy in place such as low carbon driving incentives - hybrid and electric vehicles?</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_no_action"> 
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-no-action env-no-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_limited_action"> 
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_positive_action"> 
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_leading_action"> 
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="third_option_leading_action"> 
             </div>
           </div>
 
@@ -215,16 +217,16 @@
                 <b>Does your organisation operate sustainale supply chan policy to montor supplier actvity such as product miles and localise suppliers?</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_no_action"> 
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-no-action env-no-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_limited_action"> 
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_positive_action"> 
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_leading_action"> 
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="fourth_option_leading_action"> 
             </div>
           </div>
 
@@ -233,16 +235,16 @@
               <b>Does your organisation have a waste management policy such as recycling used paper and card, furniture, computers and other equipment?</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_no_action"> 
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-no-action env-no-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_limited_action"> 
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_positive_action"> 
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_leading_action"> 
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="fifth_option_leading_action"> 
             </div>
           </div>
 
@@ -251,16 +253,16 @@
               <b>Please use this row for any other activity not previously mentioned. (OPTIONAL)</b>
             </div>
             <div class="flex-fill ms-2">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_no_action"> 
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-no-action env-no-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_no_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_limited_action"> 
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_limited_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_positive_action"> 
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_positive_action"> 
             </div>
             <div class="flex-fill ms-1">
-              <input type="checkbox" class="form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_leading_action"> 
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action  env-action-row-6 env-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="sixth_option_leading_action"> 
             </div>
           </div>
 
@@ -269,36 +271,36 @@
             <b>TOTAL CURRENT ENVIRONMENTAL ACTIVITY</b> 
           </div>
           <div class="flex-fill flex-wrap ms-5">
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_no_action" disabled hidden> 
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_no_action" disabled hidden> 
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_no_action" disabled hidden> 
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_no_action" disabled hidden> 
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_no_action" disabled hidden> 
-            <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_no_action" disabled hidden> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_no_action"> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_no_action"> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_no_action"> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_no_action"> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_no_action"> 
+            <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_no_action"> 
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_leading_action" disabled> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_leading_action"> 
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_leading_action" disabled>     
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_leading_action">     
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_leading_action" disabled>   
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_leading_action">   
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_leading_action" disabled>  
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fourth_option_total_environmental_leading_action">  
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_leading_action" disabled> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="fifth_option_total_environmental_leading_action"> 
 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_limited_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_positive_action" disabled> 
-            <input type="checkbox" class="form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_leading_action" disabled> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_limited_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_positive_action"> 
+            <input type="checkbox" class="env-result form-check-input env_total_checkbox" value="" style="width: 25px; height: 25px;" id="sixth_option_total_environmental_leading_action"> 
           </div>
         </div>
         </div>
@@ -1166,9 +1168,9 @@
         </div>
         </div>
     </footer>
-
     <!-- Custom JS -->
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
+    <script src = "./es-main.js"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -1184,6 +1186,7 @@
         new bootstrap.Tooltip(t)
       })
     </script>
+
   </body>
 </html>
 
