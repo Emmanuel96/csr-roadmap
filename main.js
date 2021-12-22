@@ -324,31 +324,27 @@ const TotalPhilanthropicLeadingActionTwo = document.querySelector('#total_philan
 const TotalPhilanthropicLeadingActionThree = document.querySelector('#total_philanthropic_leading_action_three');
 const TotalPhilanthropicLeadingActionFour = document.querySelector('#total_philanthropic_leading_action_four');
 const TotalPhilanthropicLeadingActionFive = document.querySelector('#total_philanthropic_leading_action_five');
-const TotalPhilanthropicLeadingActionSix = document.querySelector('#total_philanthropic_leading_action_six');
+const TotalPhilanthropicLeadingActionSix = document.querySelector('#total_philanthropic_leading_action_six'); 
+
+function number_of_checked_checkboxes() {
+    var inputElems = document.querySelectorAll('.env'); 
+
+    let count = 0;
+          
+    for (var i = 0; i < inputElems.length; i++) {       
+        if (inputElems[i].type == "checkbox" && inputElems[i].checked == true) {
+                count++;
+            }
+        }
+        return count;
+}
 
 // function checkAll() {  
 //     var inputs = document.querySelectorAll('.env_total_checkbox');   
 //     for (var i = 0; i < inputs.length; i++) {   
 //         inputs[i].checked = true;   
 //     }   
-// }  
-
-function number_of_checked_checkboxes() {
-    var inputElems = document.getElementsByTagName("input");
-    var inputs = document.querySelectorAll('.env_total_checkbox');   
-
-        count = 0;
-          
-        for (var i = 0; i < inputElems.length; i++) {       
-            if (inputElems[i].type == "checkbox" && inputElems[i].checked == true) 
-            {
-                count++;
-            }
-
-            inputs[count].checked = true;
-                
-        }
-}
+// } 
 
 environmentalNoAction.addEventListener('change', (e) => {
     if(environmentalNoAction.checked) {
