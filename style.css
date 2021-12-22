@@ -29,7 +29,11 @@
   --bs-gray-900: #212529;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
+<<<<<<< HEAD
   --bs-success: #198754;
+=======
+  --bs-success: RGB(0,161,154) !important;
+>>>>>>> origin/emmanuels-fix
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
@@ -8770,7 +8774,7 @@ fieldset:disabled .btn {
 
 .text-success {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+  color: RGB(0,161,154) !important;
 }
 
 .text-info {
@@ -8861,7 +8865,7 @@ fieldset:disabled .btn {
 
 .bg-success {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  background-color: RGB(0,161,154)!important;
 }
 
 .bg-info {
