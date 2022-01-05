@@ -93,132 +93,18 @@ const handle_pillars  = function(){
 $('.action').on('change', handle_pillars)
 
 $('#download-pdf').on('click', function() {
-    // var element = document.getElementById('element-to-print');
-    html2pdf(
-        `
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    var element = document.getElementById('element-to-print');
+    // html2pdf(element);
 
-    <title>HTML2PDF</title>
-</head>
-<body>
-    <div id="element-to-print">
-        <div class="container-fluid">
-            <div style="background-color: RGB(0,161,154) !important; height: 40px;" class="mt-4">
+    var doc = new jsPDF();   
 
-            </div>
-            <div class="container">
-                <div class="mt-3 d-flex">
-                    <h1 class="text-start display-5" style="color: RGB(0,161,154);">
-                        Thank you for completing 
-                        <br>
-                        <strong>The CSR Interactive Roadmap!</strong>
-                    </h1>
-                    <img src="./assets/images/CSR-A_Logo-RGB.jpg" alt="" class="img-fluid rounded float-end ms-auto" style="height: 100px;">
-                </div>
-                <section class="bg-secondary mt-3">
-                    <div class="d-flex container">
-                        <label for="client-name" class="col-sm-2 col-form-label ms-4 p-2 fs-4" style="color: RGB(0,161,154);">Results for</label>
-                        <div class="col-sm-8 ms-2 p-2">
-                            <input type="text" class="form-control" id="client-name" placeholder="CLIENT NAME HERE">
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-secondary mt-3">
-                    <div class="container">
-                        <div class="d-flex">
-                            <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
-                                ENVIRONMENT
-                            </h5>
-                            <img src="./assets/images/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
-                        </div>
-                        <div>
-                            <p class="ms-4 fs-4 pb-2 ps-2">
-                                You scored 00 from a possible 00
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-secondary mt-3">
-                    <div class="container">
-                        <div class="d-flex">
-                            <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
-                                WORKPLACE
-                            </h5>
-                            <img src="./assets/images/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
-                        </div>
-                        <div>
-                            <p class="ms-4 fs-4 pb-2 ps-2">
-                                You scored 00 from a possible 00
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-secondary mt-3">
-                    <div class="container">
-                        <div class="d-flex">
-                            <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
-                                COMMUNITY
-                            </h5>
-                            <img src="./assets/images/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
-                        </div>
-                        <div>
-                            <p class="ms-4 fs-4 pb-2 ps-2">
-                                You scored 00 from a possible 00
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-secondary mt-3">
-                    <div class="container">
-                        <div class="d-flex">
-                            <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
-                                PHILANTHROPY
-                            </h5>
-                            <img src="./assets/images/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
-                        </div>
-                        <div>
-                            <p class="ms-4 fs-4 pb-2 ps-2">
-                                You scored 00 from a possible 00
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="bg-light mt-3 p-2">
-                    <div class="container">
-                        <h6 class="display-6" style="color: RGB(0,161,154);">
-                            <strong>Become CSR Accredited Click Here to Register for FREE</strong>
-                        </h6>
-                        <p class="lead">
-                            CSR Accreditation provides independent recognition of an organisation's
-                            socially responsible activities. We encourage you to build on these results
-                            and register for CSR Accreditation. Registration is FREE and we will supply 
-                            you with guidance, tools and the confidence to develop an effective CSR policy
-                            to build into your organisation strategy.
-                        </p>
-                    </div>
-                </section>
-                <section class="mt-4">
-                    <div class="container" style="background-color: RGB(0,161,154) !important; height: 70px;"></div>
-                </section>
-            </div>
-        </div>
-    </div>
-    
-</body>
-</html>
-        `
-    );
+    doc.setFontSize(4);
+    doc.html(element, {
+    callback: function (doc) {
+        doc.save('roadmap-result.pdf');
+    }
+    });
+
+    console.log(doc.getFontSize());
+
 });
