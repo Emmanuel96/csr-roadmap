@@ -1129,7 +1129,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-center mt-4">
-          <button class="btn btn-success" type="button" id="download-pdf">Download CSR Roadmap Certificate</button>
+          <button class="btn btn-success" type="button" onclick="sendEmail()">Download CSR Roadmap Certificate</button>
         </div>
       </div>
     </section>
@@ -1280,6 +1280,10 @@
     <!-- <script src="./main.js"></script> -->
     <script src = "./es-main.js"></script>
 
+    <script src="./smtp.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script src="html2pdf.js-master\dist\html2pdf.bundle.min.js"></script>
 
     <!-- <script src="html2pdf.js-master\node_modules\es6-promise\dist\es6-promise.auto.min.js"></script>
@@ -1304,7 +1308,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js" integrity="sha512-PZrlUFhlOigX38TOCMdaYkhiqa/fET/Lztzjn+kdGxefUZanNUfmHv+9M/wSiOHzlcLX/vcCnmvOZSHi5Dqrsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Tooltips script -->
-    <script>
+    <script type="text/javascript">
       var tooltips = document.querySelectorAll('.tips')
       tooltips.forEach(t => {
         new bootstrap.Tooltip(t)
