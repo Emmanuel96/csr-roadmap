@@ -37,7 +37,7 @@ function sendEmail() {
                         <br>
                         <strong>The CSR Interactive Roadmap!</strong>
                     </h1>
-                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="height: 90px; margin-left: auto;">
+                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="height: 80px; width: 110px; margin-left: auto;">
                 </div>
                 <section style="background-color: RGB(234,234,234); margin-top: 30px;">
                     <div class="container" style="display: flex;">
