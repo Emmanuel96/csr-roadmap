@@ -13,6 +13,9 @@
             font-size: large;
         }
         
+        input {
+            border-style: none;
+        }
     </style>
 </head>
 <body>
@@ -22,19 +25,19 @@
 
             </div>
             <div class="container" style="padding: 5%;">
-                <div style="display: inline-flex;">
+                <div style="display: flex; justify-items: stretch; columns: 2;">
                     <h3 style="color: RGB(0,161,154);">
                         Thank you for completing 
                         <br>
                         <strong>The CSR Interactive Roadmap!</strong>
                     </h3>
-                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display:inline; height: 80px; width: 80px; margin-left: auto;">
+                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                 </div>
                 <section style="background-color: RGB(234,234,234); margin-top: 30px;">
                     <div class="container" style="display: flex;">
                         <label for="client-name" class="col-sm-2" style="color: RGB(0,161,154); padding: 10px; margin-inline-start: 20px;">Results for</label>
                         <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
-                            <input type="text" class="form-control" id="client-name" placeholder="CLIENT NAME HERE">
+                            <input type="text" class="form-control result" id="client-name" placeholder="CLIENT NAME HERE">
                         </div>
                     </div>
                 </section>
@@ -48,7 +51,7 @@
                         </div>
                         <div>
                             <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored 00 from a possible 00
+                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
                             </p>
@@ -65,7 +68,7 @@
                         </div>
                         <div>
                             <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored 00 from a possible 00
+                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
                             </p>
@@ -82,7 +85,7 @@
                         </div>
                         <div>
                             <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored 00 from a possible 00
+                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
                             </p>
@@ -99,7 +102,7 @@
                         </div>
                         <div>
                             <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored 00 from a possible 00
+                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
                             </p>
