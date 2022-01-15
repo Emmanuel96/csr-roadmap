@@ -34,7 +34,7 @@ function sendEmail() {
 
             </div>
             <div class="container" style="padding: 5%;">
-                <div style="display: flex; justify-items: stretch; columns: 2;">
+                <div style="display: flex; align-items: center; width: 100%;">
                     <h3 style="color: RGB(0,161,154);">
                         Thank you for completing 
                         <br>
