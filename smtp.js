@@ -3,13 +3,14 @@ function sendEmail() {
         Host : "smtp.gmail.com",
         Username : "odamie3@gmail.com",
         Password : "btfghjdpdrutrxuu",
-        To : 'opeoluborode@yahoo.com',
+        To : 'kole.audu@gmail.com',
         From : "odamie3@gmail.com",
         Subject : "Test email",
         Body : `
         <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,41 +26,47 @@ function sendEmail() {
         input {
             border-style: none;
         }
+
+        #empty-container {
+            background-color:  RGB(0,161,154) !important;
+            height: 40px; 
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
     <div id="element-to-print">
         <div class="container-fluid">
-            <div style="background-color: RGB(0,161,154) !important; height: 40px; margin-top: 30px;">
+            <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 30px;">
 
             </div>
             <div class="container" style="padding: 5%;">
                 <div style="display: flex; align-items: center; width: 100%;">
-                    <h3 style="color: RGB(0,161,154);">
+                    <h3 style="color: #00a199;">
                         Thank you for completing 
                         <br>
                         <strong>The CSR Interactive Roadmap!</strong>
                     </h3>
                     <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                 </div>
-                <section style="background-color: RGB(234,234,234); margin-top: 30px;">
+                <section style="background-color: #eaeaea; margin-top: 30px;">
                     <div class="container" style="display: flex;">
-                        <label for="client-name" class="col-sm-2" style="color: RGB(0,161,154); padding: 10px; margin-inline-start: 20px;">Results for</label>
+                        <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for</label>
                         <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
                             <input type="text" class="form-control result" id="client-name" placeholder="CLIENT NAME HERE">
                         </div>
                     </div>
                 </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
+                <section style="background-color: #eaeaea;  margin-top: 20px;">
                     <div class="container">
                         <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
+                            <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                 ENVIRONMENT
                             </h3>
                             <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
                                 You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
@@ -67,16 +74,16 @@ function sendEmail() {
                         </div>
                     </div>
                 </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
+                <section style="background-color: #eaeaea;  margin-top: 20px;">
                     <div class="container">
                         <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
+                            <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                 WORKPLACE
                             </h3>
                             <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
                                 You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
@@ -84,16 +91,16 @@ function sendEmail() {
                         </div>
                     </div>
                 </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
+                <section style=" background-color: #eaeaea; margin-top: 20px;">
                     <div class="container">
                         <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;" class="fs-4">
+                            <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;" class="fs-4">
                                 COMMUNITY
                             </h3>
                             <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
                                 You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
@@ -101,16 +108,16 @@ function sendEmail() {
                         </div>
                     </div>
                 </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
+                <section style="background-color: #eaeaea; margin-top: 20px;">
                     <div class="container">
                         <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
+                            <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                 PHILANTHROPY
                             </h3>
                             <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
                                 You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
                                 <br>
                                 This indicates you are <input type="text"> involved in environmental CSR
@@ -120,7 +127,7 @@ function sendEmail() {
                 </section>
                 <section style="margin-top: 30px; background-color: white; padding: 10px;">
                     <div class="container">
-                        <h1 style="color: RGB(0,161,154);">
+                        <h1 style="color: #00a199;">
                             <strong>Become CSR Accredited Click Here to Register for FREE</strong>
                         </h1>
                         <p>
@@ -133,7 +140,7 @@ function sendEmail() {
                     </div>
                 </section>
                 <section style="margin-top: 30px;">
-                    <div class="container" style="background-color: RGB(0,161,154) !important; height: 70px;"></div>
+                    <div class="container" style="background-color: #00a199 !important; height: 70px;"></div>
                 </section>
             </div>
         </div>
