@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://use.typekit.net/srn2jki.css">
+    <script src="https://www.jsdelivr.com/package/npm/sweetalert2"></script>
 
     <title>CSR Roadmap</title>
   </head>
@@ -1128,8 +1129,9 @@
             <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex justify-content-center mt-4">
-          <button class="btn btn-success" type="button" onclick="sendEmail()">Download CSR Roadmap Certificate</button>
+        <div class="d-flex flex-column align-items-center justify-content-center mt-4">
+          <input placeholder="Enter email" name= "userEmail" type = "email" class = "form-control"/><br/>
+          <button class="btn btn-success" type="button" onclick="sendEmail()">Get Result</button>
         </div>
       </div>
     </section>
@@ -1284,7 +1286,7 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script src="html2pdf.js-master\dist\html2pdf.bundle.min.js"></script>
+    <!-- <script src="html2pdf.js-master\dist\html2pdf.bundle.min.js"></script> -->
 
     <!-- <script src="html2pdf.js-master\node_modules\es6-promise\dist\es6-promise.auto.min.js"></script>
     <script src="html2pdf.js-master\node_modules\jspdf\dist\jspdf.es.min.js"></script>
@@ -1298,7 +1300,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
 
     <!-- html2pdf CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -1306,6 +1308,8 @@
     <!-- Popper JS -->
     <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js" integrity="sha512-PZrlUFhlOigX38TOCMdaYkhiqa/fET/Lztzjn+kdGxefUZanNUfmHv+9M/wSiOHzlcLX/vcCnmvOZSHi5Dqrsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.jsdelivr.com/package/npm/sweetalert2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Tooltips script -->
     <script type="text/javascript">

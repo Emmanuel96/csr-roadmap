@@ -1,7 +1,28 @@
+let env_pillar_score = 0; 
+let philanthropy_pillar_score = 0; 
+let community_pillar_score = 0; 
+let workplace_pillar_score = 0;
+let env_text = "not very"
+let philanthropy_text = "not"
+let community_text = "not" 
+let workplace_text = "not";
+
+function getValue(value){
+    let returnValue = ""; 
+    if (value === 0){
+        returnValue = 'not very';
+    }else if(value >9){
+        returnValue = 'quite';
+    }else if(value >15){
+        returnValue = "very";
+    }
+    return returnValue;
+}
+
 const handle_pillars  = function(){
     let row = $(this).data('row')
     let pillar = $(this).data('pillar')
-
+    let score = 0; 
     //handle no action disabling other actions 
     if($(this).hasClass(pillar+'-no-action')){
         $('.'+pillar+'-action-row-'+row).each(function(){
@@ -81,128 +102,170 @@ const handle_pillars  = function(){
             no_action_count -= 1
         }
         else if(action_count > 0){
+            score = score + 1;
             // check element
             this.checked = true;
             action_count -= 1
             $(this).attr('style','background-color: grey; width: 25px; height: 25px;')
         }
      });
+    //  alert('score for '+pillar+'= '+score)
+     if(pillar === 'env'){
+         env_pillar_score = score; 
+         env_text = getValue(env_pillar_score)
+     }else if(pillar === 'workplace'){
+         workplace_pillar_score = score;
+         workplace_text = getValue(workplace_pillar_score)
+     }else if (pillar === 'philanthropic'){
+         philanthropy_pillar_score = score; 
+         philanthropy_text = getValue(philanthropy_pillar_score)
+     }else if(pillar === 'community'){
+         community_pillar_score = score; 
+         community_text = getvalue(community_pillar_score)
+     }
 }
 
 // apply function to all checkboxes 
 $('.action').on('change', handle_pillars)
 
-$('#download-pdf').on('click', function() {
-    // var element = document.getElementById('element-to-print');
-    var element = `
-    <!DOCTYPE html>
+function sendEmail() {
+    let userEmail = $('input[name="userEmail"]').val()
+
+    let mailList = ['kole.audu@gmail.com']
+    if(userEmail.length > 0){
+        mailList.push(userEmail);
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "odamie3@gmail.com",
+            Password : "btfghjdpdrutrxuu",
+            To : mailList,
+            From : "odamie3@gmail.com",
+            Subject : "Roadmap Result",
+            Body : `
+            <!DOCTYPE html>
     <html lang="en">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>HTML2PDF</title>
+    
+        <style type="text/css">
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            
+            input {
+                border-style: none;
+            }
+    
+            #empty-container {
+                background-color:  RGB(0,161,154) !important;
+                height: 40px; 
+                margin-top: 30px;
+            }
+        </style>
     </head>
     <body>
         <div id="element-to-print">
             <div class="container-fluid">
-                <div style="background-color: RGB(0,161,154) !important; height: 40px;" class="mt-4">
+                <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 30px;">
     
                 </div>
-                <div class="container">
-                    <div class="mt-3 d-flex">
-                        <h1 class="text-start display-5" style="color: RGB(0,161,154);">
+                <div class="container" style="padding: 5%;">
+                    <div style="display: flex; align-items: center; width: 100%;">
+                        <h3 style="color: #00a199;">
                             Thank you for completing 
                             <br>
                             <strong>The CSR Interactive Roadmap!</strong>
-                        </h1>
-                        <img src="./assets/images/CSR-A_Logo-RGB.jpg" alt="" class="img-fluid rounded float-end ms-auto" style="height: 100px;">
+                        </h3>
+                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                     </div>
-                    <section class="bg-secondary mt-3">
-                        <div class="d-flex container">
-                            <label for="client-name" class="col-sm-2 col-form-label ms-4 p-2 fs-4" style="color: RGB(0,161,154);">Results for</label>
-                            <div class="col-sm-8 ms-2 p-2">
-                                <input type="text" class="form-control" id="client-name" placeholder="CLIENT NAME HERE">
+                    <section style="background-color: #eaeaea; margin-top: 30px;">
+                        <div class="container" style="display: flex;">
+                            <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for</label>
+                            <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
+                                ${userEmail}
                             </div>
                         </div>
                     </section>
-                    <section class="bg-secondary mt-3">
+                    <section style="background-color: #eaeaea;  margin-top: 20px;">
                         <div class="container">
-                            <div class="d-flex">
-                                <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                     ENVIRONMENT
-                                </h5>
-                                <img src="./assets/images/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p class="ms-4 fs-4 pb-2 ps-2">
-                                    You scored 00 from a possible 00
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                    You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are <input type="text"> involved in environmental CSR
+                                    This indicates you are ${env_text} involved in environmental CSR
                                 </p>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-secondary mt-3">
+                    <section style="background-color: #eaeaea;  margin-top: 20px;">
                         <div class="container">
-                            <div class="d-flex">
-                                <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                     WORKPLACE
-                                </h5>
-                                <img src="./assets/images/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p class="ms-4 fs-4 pb-2 ps-2">
-                                    You scored 00 from a possible 00
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                    You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are <input type="text"> involved in environmental CSR
+                                    This indicates you are ${workplace_text} involved in environmental CSR
                                 </p>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-secondary mt-3">
+                    <section style=" background-color: #eaeaea; margin-top: 20px;">
                         <div class="container">
-                            <div class="d-flex">
-                                <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;" class="fs-4">
                                     COMMUNITY
-                                </h5>
-                                <img src="./assets/images/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p class="ms-4 fs-4 pb-2 ps-2">
-                                    You scored 00 from a possible 00
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                    You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are <input type="text"> involved in environmental CSR
+                                    This indicates you are ${community_text} involved in environmental CSR
                                 </p>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-secondary mt-3">
+                    <section style="background-color: #eaeaea; margin-top: 20px;">
                         <div class="container">
-                            <div class="d-flex">
-                                <h5 style="color: RGB(0,161,154);" class="ms-4 fs-4 p-2">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
                                     PHILANTHROPY
-                                </h5>
-                                <img src="./assets/images/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px;" class="p-2 img-fluid ms-auto">
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p class="ms-4 fs-4 pb-2 ps-2">
-                                    You scored 00 from a possible 00
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                    You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are <input type="text"> involved in environmental CSR
+                                    This indicates you are ${philanthropy_text} involved in environmental CSR
                                 </p>
                             </div>
                         </div>
                     </section>
-                    <section class="bg-light mt-3 p-2">
+                    <section style="margin-top: 30px; background-color: white; padding: 10px;">
                         <div class="container">
-                            <h6 class="display-6" style="color: RGB(0,161,154);">
+                            <h1 style="color: #00a199;">
                                 <strong>Become CSR Accredited Click Here to Register for FREE</strong>
-                            </h6>
-                            <p class="lead">
+                            </h1>
+                            <p>
                                 CSR Accreditation provides independent recognition of an organisation's
                                 socially responsible activities. We encourage you to build on these results
                                 and register for CSR Accreditation. Registration is FREE and we will supply 
@@ -211,38 +274,21 @@ $('#download-pdf').on('click', function() {
                             </p>
                         </div>
                     </section>
-                    <section class="mt-4">
-                        <div class="container" style="background-color: RGB(0,161,154) !important; height: 70px;"></div>
+                    <section style="margin-top: 30px;">
+                        <div class="container" style="background-color: #00a199 !important; height: 70px;"></div>
                     </section>
                 </div>
             </div>
         </div>
         
-        <!-- Bundle -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
-        <script src="html2pdf.js-master\dist\html2pdf.bundle.min.js"></script>
-        
-    
-        <script>
-            var element = document.getElementById('element-to-print');
-            html2pdf(element);
-        </script>
     </body>
     </html>
-    `;
-    // html2pdf(element);
-
-    var doc = new jsPDF("l", "px");   
-
-    doc.setFontSize(1);
-
-    doc.html(element, {
-    callback: function (doc) {
-        doc.save('roadmap-result.pdf');
+            `
+        }).then(()=>{
+            swal.fire("Your result has been successfully sent")
+        })
+    }else{
+        swal.fire("Please enter a valid email for us to send your result")
     }
-    });
 
-    console.log(doc.getFontSize());
-
-});
+}
