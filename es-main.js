@@ -136,10 +136,10 @@ function sendEmail() {
         mailList.push(userEmail);
         Email.send({
             Host : "smtp.gmail.com",
-            Username : "odamie3@gmail.com",
-            Password : "btfghjdpdrutrxuu",
+            Username : "csraccreditation@gmail.com",
+            Password : "bulgpxbnklszzcsn",
             To : mailList,
-            From : "odamie3@gmail.com",
+            From :     "csraccreditation@gmail.com",
             Subject : "Roadmap Result",
             Body : `
             <!DOCTYPE html>
