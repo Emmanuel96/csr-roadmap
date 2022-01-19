@@ -181,21 +181,20 @@ function sendEmail() {
     <body>
         <div id="element-to-print">
             <div class="container-fluid">
-                <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 30px;">
+                <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 20px;">
     
                 </div>
-                <div class="container" style="padding: 5%;">
+                <div class="container" style="padding: 5%; font-size: 135%">
                     <div style="display: flex; align-items: center; width: 100%;">
-                        <h3 style="color: #00a199;">
+                        <h3 style="color: #00a199; font-size: 25px">
                             Thank you for completing 
-                            <br>
                             <strong>The CSR Interactive Roadmap!</strong>
                         </h3>
                         <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                     </div>
                     <section style="background-color: #eaeaea; margin-top: 30px;">
                         <div class="container" style="display: flex;">
-                            <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for</label>
+                            <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for:</label>
                             <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
                                 ${userEmail}
                             </div>
@@ -204,16 +203,16 @@ function sendEmail() {
                     <section style="background-color: #eaeaea;  margin-top: 20px;">
                         <div class="container">
                             <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                     ENVIRONMENT
                                 </h3>
                                 <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
                                     You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are ${env_text} involved in environmental CSR
+                                    <span style="color: #00A199"><b>This indicates you are ${env_text} involved in environmental CSR</b></span
                                 </p>
                             </div>
                         </div>
@@ -221,16 +220,16 @@ function sendEmail() {
                     <section style="background-color: #eaeaea;  margin-top: 20px;">
                         <div class="container">
                             <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                     WORKPLACE
                                 </h3>
                                 <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
                                     You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are ${workplace_text} involved in environmental CSR
+                                    <span style="color: #00A199"><b>This indicates you are ${workplace_text} involved in environmental CSR</b></span>
                                 </p>
                             </div>
                         </div>
@@ -238,16 +237,16 @@ function sendEmail() {
                     <section style=" background-color: #eaeaea; margin-top: 20px;">
                         <div class="container">
                             <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;" class="fs-4">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px" class="fs-4">
                                     COMMUNITY
                                 </h3>
                                 <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
                                     You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are ${community_text} involved in environmental CSR
+                                    <span style="color: #00A199"><b>This indicates you are ${community_text} involved in environmental CSR</b></span>
                                 </p>
                             </div>
                         </div>
@@ -255,16 +254,16 @@ function sendEmail() {
                     <section style="background-color: #eaeaea; margin-top: 20px;">
                         <div class="container">
                             <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                     PHILANTHROPY
                                 </h3>
                                 <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                             </div>
                             <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
                                     You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    This indicates you are ${philanthropy_text} involved in environmental CSR
+                                    <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span>
                                 </p>
                             </div>
                         </div>
