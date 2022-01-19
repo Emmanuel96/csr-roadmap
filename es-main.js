@@ -132,7 +132,16 @@ function sendEmail() {
     let userEmail = $('input[name="userEmail"]').val()
 
     let mailList = ['kole.audu@gmail.com']
-    if(userEmail.length > 0){
+
+    if(!userEmail){
+        swal.fire("Email input cannot be empty")
+    }
+
+    else if(!/\S+@\S+\.\S+/.test(userEmail)){
+        swal.fire("Email address is invalid")
+    }
+
+    else{
         mailList.push(userEmail);
         Email.send({
             Host : "smtp.gmail.com",
@@ -286,9 +295,7 @@ function sendEmail() {
             `
         }).then(()=>{
             swal.fire("Your result has been successfully sent")
-        })
-    }else{
-        swal.fire("Please enter a valid email for us to send your result")
+        }).catch(() => console.log("Failed to send email"))
     }
 
 }
