@@ -2,19 +2,21 @@ let env_pillar_score = 0;
 let philanthropy_pillar_score = 0; 
 let community_pillar_score = 0; 
 let workplace_pillar_score = 0;
-let env_text = "not very"
-let philanthropy_text = "not"
-let community_text = "not" 
-let workplace_text = "not";
+let env_text = "CSR Aware"
+let philanthropy_text = "CSR Aware"
+let community_text = "CSR Aware" 
+let workplace_text = "CSR Aware";
 
 function getValue(value){
     let returnValue = ""; 
     if (value === 0){
-        returnValue = 'not very';
-    }else if(value >9){
-        returnValue = 'quite';
-    }else if(value >15){
-        returnValue = "very";
+        returnValue = 'CSR Aware';
+    }else if(value >=0 && value <10){
+        returnValue = 'CSR Active';
+    }else if(value >=10 && value < 18){
+        returnValue = "CSR Proficient";
+    }else if(value >=18){
+        returnValue = "CSR Leader"
     }
     return returnValue;
 }
@@ -58,12 +60,12 @@ const handle_pillars  = function(){
     action_count = 0
     // get all the clicked no actions first 
 
-    // $('.'+pillar+'-no-action').each(function(){
-    //     // console.log($(obj)[index].is(':checked'))
-    //     if(this.checked === true){
-    //         no_action_count += 1
-    //     }
-    // });
+    $('.'+pillar+'-no-action').each(function(){
+        // console.log($(obj)[index].is(':checked'))
+        if(this.checked === true){
+            no_action_count += 1
+        }
+    });
     
     // get all the clicked actiions 
     $('.'+pillar+'-action').each(function(){
@@ -105,15 +107,15 @@ const handle_pillars  = function(){
     
     // represent answer in final result 
     $('.'+pillar+'-final-result').each(function(){
-        if(no_action_count > 0){
-            // check element
-            this.checked = true;
-            // afterwards turn check to red
-            $(this).attr('style','background-color: red; width: 25px; height: 25px;')
-            // then decrement the count
-            no_action_count -= 1
-        }
-        else if(action_count > 0){
+        // if(no_action_count > 0){
+        //     // check element
+        //     this.checked = true;
+        //     // afterwards turn check to red
+        //     $(this).attr('style','background-color: red; width: 25px; height: 25px;')
+        //     // then decrement the count
+        //     no_action_count -= 1
+        // }
+        if(action_count > 0){
             score = score + 1;
             // check element
             this.checked = true;
@@ -140,8 +142,14 @@ const handle_pillars  = function(){
 // apply function to all checkboxes 
 $('.action').on('change', handle_pillars)
 
+$('#submission-form').on('submit', (e)=>{
+    e.preventDefault(); 
+    sendEmail();
+})
 function sendEmail() {
     let userEmail = $('input[name="userEmail"]').val()
+    let userName =  $('input[name="userName"]').val()
+    let companyName =  $('input[name="companyName"]').val()
 
     let mailList = ['kole.audu@gmail.com']
 
@@ -208,7 +216,7 @@ function sendEmail() {
                         <div class="container" style="display: flex;">
                             <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for:</label>
                             <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
-                                ${userEmail}
+                                ${userName}, ${companyName}, <span style = "color: ;">${userEmail} </span>
                             </div>
                         </div>
                     </section>
@@ -305,8 +313,13 @@ function sendEmail() {
     </html>
             `
         }).then(()=>{
-            swal.fire("Your result has been successfully sent")
-        }).catch(() => console.log("Failed to send email"))
+            Swal.fire({
+                title: "Your result has been successfully sent",
+                confirmButtonText: 'Okay',
+              }).then((result) => {
+                window.location.href = "https://csr-accreditation.co.uk/apply-for-csr-accreditation/";
+              })
+        }).catch(() => swal.fire('Your email was not sent.'))
     }
 
 }

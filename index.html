@@ -17,6 +17,12 @@
     <script src="https://www.jsdelivr.com/package/npm/sweetalert2"></script>
 
     <title>CSR Roadmap</title>
+    <style>
+      .score-div{
+        width: 1%;
+        margin-right: 65px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -61,7 +67,7 @@
               <img src="./assets/images/Interactive Roadmap-Banner.jpg" class="d-block w-100 m-0 img-fluid" alt="...">
               <div class="carousel-caption d-none d-md-block d-sm-block start-0 end-0 bottom-0">
                 <div>
-                  <div clht p-3">
+                  <div class="lead text-light p-3">
                     <h1><b> CSR Road Map - Where are you?</b></h1>
                   <p>This exercise is designed to give participants 'snapshot' of where their organization is located on the CSR road map
                   of zero to full engagement. The questions included are generic with some flexibility for individual
@@ -86,13 +92,17 @@
               <h1 class="display-3 text-success">How to use the<strong> CSR road map...</strong> </h1>
             </div>
             <div class="pt-4">
-              <p style="font-family: Arial, Helvetica, sans-serif;" class="te          This road map is intended to give you a quick visual representation of where your organisation sits in regard to socially responsible activity currently undertaken.
+              <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
+                This road map is intended to give you a quick visual representation of where your organisation sits in regard to socially responsible activity currently undertaken.
               </p>
-              <p style="font-family: Arial, Helvetica, sans-serif;" class="te          The road map is separated into 4 sections that correspond to our Four Pillars system - <b>Environment, Workplace, Community</b> and <b>Philanthropy</b>. Each Pillar has 5 questions, with 4 possible responses and an optional 6th input that allows you to score for activity outside the scope of the questions.
+              <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
+                The road map is separated into 4 sections that correspond to our Four Pillars system - <b>Environment, Workplace, Community</b> and <b>Philanthropy</b>. Each Pillar has 5 questions, with 4 possible responses and an optional 6th input that allows you to score for activity outside the scope of the questions.
               </p>
-              <p style="font-family: Arial, Helvetica, sans-serif;" class="te          Simply respond to the questions by checking the boxes that describes your level of activity. Because the roap map works by counting your positive responses you must click the boxes to the left of your answer too, so if you are involved in leading action also check the limited and positive boxes to score 3.
+              <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
+                Simply respond to the questions by checking the boxes that describes your level of activity. Because the roap map works by counting your positive responses you must click the boxes to the left of your answer too, so if you are involved in leading action also check the limited and positive boxes to score 3.
               </p>
-              <p style="font-family: Arial, Helvetica, sans-serif;" class="tex           When you have answered the questions count up all the positive 'green' squares and enter them into the total bar at the bottom of the page and more on to the next Pillar.
+              <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead"> 
+                When you have answered the questions count up all the positive 'green' squares and enter them into the total bar at the bottom of the page and more on to the next Pillar.
               </p>
             </div>
             <h1 class="text-success pt-2 display-6">
@@ -887,65 +897,56 @@
           </div> -->
         </div>
 
-        <div class="d-flex justify-content-around flex-row py-2">
-          <div class="flex-column flex-fill">
-            <p class=""></p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You currently take no action in this area or are not aware of any taken.">
-              <i class="bi bi-info-circle-fill text-light"></i>
-            </span> -->
-          </div>
-          <div class="flex-column flex-fill text-start">
+        <div class="d-flex justify-content-around flex-row py-2 mb-3">
+          
+          <div class="flex-column flex-fill score-div">
             <p class="">CSR AWARE</p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.">
-              <i class="bi bi-info-circle-fill text-light"></i>
-            </span> -->
+            <p> 
+              There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
+            </p>
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill score-div">
             <p class="">CSR ACTIVE</p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
-            Protects the environment
-            Looks after staff
-            Actively engages with community
-            Gives to charity
-            Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.">
-              <i class="bi bi-info-circle-fill text-light"></i> -->
+            <p>
+              You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
+              Protects the environment
+              Looks after staff
+              Actively engages with community
+              Gives to charity
+              Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
+            </p>
             <!-- </span> -->
           </div>
-          <div class="flex-column flex-fill">
+          <div class="flex-column flex-fill score-div">
             <p class="">CSR PROFICIENT</p>
-          </div>
-          <div class="flex-column flex-fill">
-            <p class="">CSR LEADER</p>
-          </div>
-        </div>
-
-        <div class="d-flex flex-row justify-content-between">
-          <div class="flex-column flex-fill col-2 py-2 d-none d-md-block">
-            
-
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations.
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
+            <p>
+              You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
               <li>Protects the environment</li>
               <li>Looks after staff</li>
               <li>Actively engages with community</li>
               <li>Gives to charity</li>
             Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
+            </p>
           </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You are a socially responsible organisation that records and constantly improves.
+          <div class="flex-column flex-fill score-div">
+            <p class="">CSR LEADER</p>
+            <p>
+              You are a socially responsible organisation that records and constantly improves.
               <li>Protects and enhances the environment (including supply chain partners).</li>
               <li>First class staff engagement and HR policies.</li>
               <li>Is a leader in the community.</li>
               <li>Promotes, supports and engages with charity long-term</li>
-            You are a productive, profitable and resilent organisation.
+              You are a productive, profitable and resilent organisation.
+            </p>
           </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <!-- <div class="flex-column flex-fill col-2 py-2 d-none d-md-block">
+            
+
+          </div> -->
+          
         </div>
 
         <div class="d-flex flex-row justify-content-between">
@@ -1095,19 +1096,34 @@
             <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center text-center justify-content-center mt-5">
+        <div class="d-flex flex-column align-items-center justify-content-center mt-5">
           <h3 class="font"><b>Please enter your details to get your results.</b></h3>
-          <div class="w-50 mt-3 mb-3">
+          <div class="mt-3 mb-3" style = "width: 35%;">
+            <form id = "submission-form">
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" name = "userEmail" class="form-control"  aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" name = "userName" class="form-control"  required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Company Name</label>
+                <input type="text" name = "companyName" class="form-control"  required>
+              </div>
 
-            <input placeholder="Enter full name" name= "userName" type = "text" class = "form-control mx-auto w-50"/>
+              <!-- <input placeholder="Enter full name" name= "userName" type = "text" class = "form-control mx-auto w-50"/>
+              <input placeholder="Enter email" name= "userEmail" type = "email" class = "form-control my-2 mx-auto w-50"/>
+              <input placeholder="Enter company name" name= "userNumber" type = "text" class = "form-control mx-auto w-50"/> -->
+              <div class = "text-center">
+                <button class="btn btn-success w-50" type="submit">Get Result</button>
+              </div>
 
-            <input placeholder="Enter email" name= "userEmail" type = "email" class = "form-control my-2 mx-auto w-50"/>
-
-            <input placeholder="Enter company name" name= "userNumber" type = "text" class = "form-control mx-auto w-50"/>
-
+            </form>
+            
           </div>
           <br/>
-          <button class="btn btn-success" type="button" onclick="sendEmail()">Get Result</button>
         </div>
       </div>
     </section>
