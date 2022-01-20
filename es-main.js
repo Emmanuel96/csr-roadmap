@@ -28,6 +28,16 @@ const handle_pillars  = function(){
         $('.'+pillar+'-action-row-'+row).each(function(){
             this.checked = false
         });
+    }else if($(this).hasClass(pillar+'-positive-action')){
+        if(this.checked === true){
+            $('.'+pillar+'-limit-action-'+row).each(function(){
+                this.checked = true
+            });
+            
+            $('.'+pillar+'-no-action-row-'+row).each(function(){
+                this.checked = false;
+            })
+        }
     }else if($(this).hasClass(pillar+'-leading-action')){
         if(this.checked === true){
             $('.'+pillar+'-action-row-'+row).each(function(){
@@ -263,7 +273,7 @@ function sendEmail() {
                                 <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
                                     You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                     <br>
-                                    <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span>
+                                    <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span
                                 </p>
                             </div>
                         </div>
