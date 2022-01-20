@@ -57,12 +57,14 @@ const handle_pillars  = function(){
     no_action_count = 0
     action_count = 0
     // get all the clicked no actions first 
-    $('.'+pillar+'-no-action').each(function(){
-        // console.log($(obj)[index].is(':checked'))
-        if(this.checked === true){
-            no_action_count += 1
-        }
-    });
+
+    // $('.'+pillar+'-no-action').each(function(){
+    //     // console.log($(obj)[index].is(':checked'))
+    //     if(this.checked === true){
+    //         no_action_count += 1
+    //     }
+    // });
+    
     // get all the clicked actiions 
     $('.'+pillar+'-action').each(function(){
         if(this.checked === true){
@@ -281,7 +283,7 @@ function sendEmail() {
                     <section style="margin-top: 30px; background-color: white; padding: 10px;">
                         <div class="container">
                             <h1 style="color: #00a199;">
-                                <strong>Become CSR Accredited Click Here to Register for FREE</strong>
+                                <strong>Become CSR Accredited click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE</strong>
                             </h1>
                             <p>
                                 CSR Accreditation provides independent recognition of an organisation's
