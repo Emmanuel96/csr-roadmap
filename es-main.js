@@ -21,6 +21,604 @@ function getValue(value){
     return returnValue;
 }
 
+////Environment - each question total section
+
+//variables
+
+var env_q_1 = 0
+var env_q_2 = 0
+var env_q_3 = 0
+var env_q_4 = 0
+var env_q_5 = 0
+var env_q_6 = 0
+
+//Environment - question 1 function
+
+function env_q1(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_1 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-1-check-3'){
+        env_q_1 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-1-check-4'){
+        env_q_1 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_1 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_1 -= num
+    }
+    console.log("Env-Q1 =", env_q_1)
+}
+
+//Environment - question 2 function
+
+function env_q2(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_2 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-2-check-3'){
+        env_q_2 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-2-check-4'){
+        env_q_2 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_2 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_2 -= num
+    }
+    console.log("Env-Q2 =", env_q_2)
+}
+
+//Environment - question 3 function
+
+function env_q3(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_3 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-3-check-3'){
+        env_q_3 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-3-check-4'){
+        env_q_3 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_3 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_3 -= num
+    }
+    console.log("Env-Q3 =", env_q_3)
+}
+
+//Environment - question 4 function
+
+function env_q4(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_4 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-4-check-3'){
+        env_q_4 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-4-check-4'){
+        env_q_4 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_4 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_4 -= num
+    }
+    console.log("Env-Q4 =", env_q_4)
+}
+
+//Environment - question 5 function
+
+function env_q5(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_5 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-5-check-3'){
+        env_q_5 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-5-check-4'){
+        env_q_5 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_5 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_5 -= num
+    }
+    console.log("Env-Q5 =", env_q_5)
+}
+
+//Environment - question 6 function
+
+function env_q6(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        env_q_6 = 0
+    }
+    else if (checkBox.checked == true && id == 'env-q-6-check-3'){
+        env_q_6 = 2
+    }
+    else if(checkBox.checked == true && id == 'env-q-6-check-4'){
+        env_q_6 = 3
+    }
+    else if(checkBox.checked == true){
+        env_q_6 += num
+    }
+    else if(checkBox.checked == false){
+        env_q_6 -= num
+    }
+    console.log("Env-Q6 =", env_q_6)
+}
+
+////Workplace - each question total section
+
+//variables
+
+var wrk_q_1 = 0
+var wrk_q_2 = 0
+var wrk_q_3 = 0
+var wrk_q_4 = 0
+var wrk_q_5 = 0
+var wrk_q_6 = 0
+
+//Workplace - question 1 function
+
+function wrk_q1(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_1 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-1-check-3'){
+        wrk_q_1 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-1-check-4'){
+        wrk_q_1 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_1 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_1 -= num
+    }
+    console.log("Wrk-Q1 =", wrk_q_1)
+}
+
+//Workplace - question 2 function
+
+function wrk_q2(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_2 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-2-check-3'){
+        wrk_q_2 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-2-check-4'){
+        wrk_q_2 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_2 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_2 -= num
+    }
+    console.log("Wrk-Q2 =", wrk_q_2)
+}
+
+//Workplace - question 3 function
+
+function wrk_q3(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_3 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-3-check-3'){
+        wrk_q_3 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-3-check-4'){
+        wrk_q_3 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_3 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_3 -= num
+    }
+    console.log("Wrk-Q3 =", wrk_q_3)
+}
+
+//Workplace - question 4 function
+
+function wrk_q4(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_4 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-4-check-3'){
+        wrk_q_4 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-4-check-4'){
+        wrk_q_4 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_4 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_4 -= num
+    }
+    console.log("Wrk-Q4 =", wrk_q_4)
+}
+
+//Workplace - question 5 function
+
+function wrk_q5(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_5 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-5-check-3'){
+        wrk_q_5 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-5-check-4'){
+        wrk_q_5 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_5 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_5 -= num
+    }
+    console.log("Wrk-Q5 =", wrk_q_5)
+}
+
+//Workplace - question 6 function
+
+function wrk_q6(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        wrk_q_6 = 0
+    }
+    else if (checkBox.checked == true && id == 'wrk-q-6-check-3'){
+        wrk_q_6 = 2
+    }
+    else if(checkBox.checked == true && id == 'wrk-q-6-check-4'){
+        wrk_q_6 = 3
+    }
+    else if(checkBox.checked == true){
+        wrk_q_6 += num
+    }
+    else if(checkBox.checked == false){
+        wrk_q_6 -= num
+    }
+    console.log("Wrk-Q6 =", wrk_q_6)
+}
+
+////Community - each question total section
+
+//variables
+
+var com_q_1 = 0
+var com_q_2 = 0
+var com_q_3 = 0
+var com_q_4 = 0
+var com_q_5 = 0
+var com_q_6 = 0
+
+//Community - question 1 function
+
+function com_q1(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_1 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-1-check-3'){
+        com_q_1 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-1-check-4'){
+        com_q_1 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_1 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_1 -= num
+    }
+    console.log("Com-Q1 =", com_q_1)
+}
+
+//Community - question 2 function
+
+function com_q2(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_2 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-2-check-3'){
+        com_q_2 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-2-check-4'){
+        com_q_2 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_2 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_2 -= num
+    }
+    console.log("Com-Q2 =", com_q_2)
+}
+
+//Community - question 3 function
+
+function com_q3(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_3 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-3-check-3'){
+        com_q_3 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-3-check-4'){
+        com_q_3 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_3 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_3 -= num
+    }
+    console.log("Com-Q3 =", com_q_3)
+}
+
+//Community - question 4 function
+
+function com_q4(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_4 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-4-check-3'){
+        com_q_4 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-4-check-4'){
+        com_q_4 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_4 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_4 -= num
+    }
+    console.log("Com-Q4 =", com_q_4)
+}
+
+//Community - question 5 function
+
+function com_q5(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_5 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-5-check-3'){
+        com_q_5 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-5-check-4'){
+        com_q_5 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_5 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_5 -= num
+    }
+    console.log("Com-Q5 =", com_q_5)
+}
+
+//Community - question 6 function
+
+function com_q6(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        com_q_6 = 0
+    }
+    else if (checkBox.checked == true && id == 'com-q-6-check-3'){
+        com_q_6 = 2
+    }
+    else if(checkBox.checked == true && id == 'com-q-6-check-4'){
+        com_q_6 = 3
+    }
+    else if(checkBox.checked == true){
+        com_q_6 += num
+    }
+    else if(checkBox.checked == false){
+        com_q_6 -= num
+    }
+    console.log("Com-Q6 =", com_q_6)
+}
+
+////Philanthropic - each question total section
+
+//variables
+
+var phl_q_1 = 0
+var phl_q_2 = 0
+var phl_q_3 = 0
+var phl_q_4 = 0
+var phl_q_5 = 0
+var phl_q_6 = 0
+
+//Philanthropic - question 1 function
+
+function phl_q1(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_1 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-1-check-3'){
+        phl_q_1 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-1-check-4'){
+        phl_q_1 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_1 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_1 -= num
+    }
+    console.log("Phl-Q1 =", phl_q_1)
+}
+
+//Philanthropic - question 2 function
+
+function phl_q2(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_2 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-2-check-3'){
+        phl_q_2 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-2-check-4'){
+        phl_q_2 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_2 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_2 -= num
+    }
+    console.log("Phl-Q2 =", phl_q_2)
+}
+
+//Philanthropic - question 3 function
+
+function phl_q3(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_3 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-3-check-3'){
+        phl_q_3 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-3-check-4'){
+        phl_q_3 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_3 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_3 -= num
+    }
+    console.log("Phl-Q3 =", phl_q_3)
+}
+
+//Philanthropic - question 4 function
+
+function phl_q4(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_4 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-4-check-3'){
+        phl_q_4 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-4-check-4'){
+        phl_q_4 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_4 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_4 -= num
+    }
+    console.log("Phl-Q4 =", phl_q_4)
+}
+
+//Philanthropic - question 5 function
+
+function phl_q5(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_5 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-5-check-3'){
+        phl_q_5 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-5-check-4'){
+        phl_q_5 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_5 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_5 -= num
+    }
+    console.log("Phl-Q5 =", phl_q_5)
+}
+
+//Philanthropic - question 6 function
+
+function phl_q6(num, id){
+    var checkBox = document.getElementById(id);
+
+    if(checkBox.checked == true && num == 0){
+        phl_q_6 = 0
+    }
+    else if (checkBox.checked == true && id == 'phl-q-6-check-3'){
+        phl_q_6 = 2
+    }
+    else if(checkBox.checked == true && id == 'phl-q-6-check-4'){
+        phl_q_6 = 3
+    }
+    else if(checkBox.checked == true){
+        phl_q_6 += num
+    }
+    else if(checkBox.checked == false){
+        phl_q_6 -= num
+    }
+    console.log("Phl-Q6 =", phl_q_6)
+}
+
+///////////////////////////////////////
+
 const handle_pillars  = function(){
     let row = $(this).data('row')
     let pillar = $(this).data('pillar')
@@ -135,7 +733,7 @@ const handle_pillars  = function(){
          philanthropy_text = getValue(philanthropy_pillar_score)
      }else if(pillar === 'community'){
          community_pillar_score = score; 
-         community_text = getvalue(community_pillar_score)
+         community_text = getValue(community_pillar_score)
      }
 }
 
@@ -172,145 +770,205 @@ function sendEmail() {
             Subject : "Roadmap Result",
             Body : `
             <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>HTML2PDF</title>
-    
-        <style type="text/css">
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-            }
+            <html lang="en">
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
-            input {
-                border-style: none;
-            }
-    
-            #empty-container {
-                background-color:  RGB(0,161,154) !important;
-                height: 40px; 
-                margin-top: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="element-to-print">
-            <div class="container-fluid">
-                <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 20px;">
-    
-                </div>
-                <div class="container" style="padding: 5%; font-size: 135%">
-                    <div style="display: flex; align-items: center; width: 100%;">
-                        <h3 style="color: #00a199; font-size: 25px">
-                            Thank you for completing 
-                            <strong>The CSR Interactive Roadmap!</strong>
-                        </h3>
-                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
-                    </div>
-                    <section style="background-color: #eaeaea; margin-top: 30px;">
-                        <div class="container" style="display: flex;">
-                            <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for:</label>
-                            <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
-                                ${userName}, ${companyName}, <span style = "color: ;">${userEmail} </span>
-                            </div>
+                <title>HTML2PDF</title>
+            
+                <style type="text/css">
+                    body {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: large;
+                    }
+                    
+                    input {
+                        border-style: none;
+                    }
+            
+                    #empty-container {
+                        background-color:  RGB(0,161,154) !important;
+                        height: 40px; 
+                        margin-top: 30px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div id="element-to-print">
+                    <div class="container-fluid">
+                        <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 20px;">
+            
                         </div>
-                    </section>
-                    <section style="background-color: #eaeaea;  margin-top: 20px;">
-                        <div class="container">
-                            <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
-                                    ENVIRONMENT
+                        <div class="container" style="padding: 5%; font-size: 135%">
+                            <div style="display: flex; align-items: center; width: 100%;">
+                                <h3 style="color: #00a199; font-size: 25px">
+                                    Thank you for completing 
+                                    <strong>The CSR Interactive Roadmap!</strong>
                                 </h3>
-                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                             </div>
-                            <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
-                                    You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
-                                    <br>
-                                    <span style="color: #00A199"><b>This indicates you are ${env_text} involved in environmental CSR</b></span
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section style="background-color: #eaeaea;  margin-top: 20px;">
-                        <div class="container">
-                            <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
-                                    WORKPLACE
-                                </h3>
-                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                            </div>
-                            <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
-                                    You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
-                                    <br>
-                                    <span style="color: #00A199"><b>This indicates you are ${workplace_text} involved in environmental CSR</b></span>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section style=" background-color: #eaeaea; margin-top: 20px;">
-                        <div class="container">
-                            <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px" class="fs-4">
-                                    COMMUNITY
-                                </h3>
-                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                            </div>
-                            <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
-                                    You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
-                                    <br>
-                                    <span style="color: #00A199"><b>This indicates you are ${community_text} involved in environmental CSR</b></span>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section style="background-color: #eaeaea; margin-top: 20px;">
-                        <div class="container">
-                            <div style="display: flex;">
-                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
-                                    PHILANTHROPY
-                                </h3>
-                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                            </div>
-                            <div>
-                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
-                                    You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
-                                    <br>
-                                    <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <section style="margin-top: 30px; background-color: white; padding: 10px;">
-                        <div class="container">
-                            <h1 style="color: #00a199;">
-                                <strong>Become CSR Accredited click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE</strong>
-                            </h1>
-                            <p>
-                                CSR Accreditation provides independent recognition of an organisation's
-                                socially responsible activities. We encourage you to build on these results
-                                and register for CSR Accreditation. Registration is FREE and we will supply 
-                                you with guidance, tools and the confidence to develop an effective CSR policy
-                                to build into your organisation strategy.
-                            </p>
-                        </div>
-                    </section>
-                    <section style="margin-top: 30px;">
-                        <div class="container" style="background-color: #00a199 !important; height: 70px;"></div>
-                    </section>
-                </div>
-            </div>
-        </div>
+                            <section style="background-color: #eaeaea; margin-top: 30px;">
+                                <div class="container" style="display: flex;">
+                                    <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for:</label>
+                                    <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
+                                        ${userName}, ${companyName}, <span style = "color: ;">${userEmail} </span>
+                                    </div>
+                                </div>
+                            </section>
+                            <section style="background-color: #eaeaea;  margin-top: 20px;">
+                                <div class="container">
+                                    <div style="display: flex;">
+                                        <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                            ENVIRONMENT
+                                        </h3>
+                                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                                    </div>
+                                    <div>
+                                      <div>
+                                        <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation implement and monitor energy saving initiatives? <span style="background-color: white; padding: 2px;">${env_q_1}</span></p>
+                                        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide for sustainable resource use? <span style="background-color: white; padding: 2px;">${env_q_2}</span></p>
         
-    </body>
-    </html>
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a travel policy in place? <span style="background-color: white; padding: 2px;">${env_q_3}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation operate sustainale supply chan policy to montor supplier actvity?<span style="background-color: white; padding: 2px;">${env_q_4}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a waste management policy? <span style="background-color: white; padding: 2px;">${env_q_5}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Any other activity not previously mentioned? <span style="background-color: white; padding: 2px;">${env_q_6}</span></p>
+                                      </div>
+        
+                                        <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                            You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                            <br>
+                                            <span style="color: #00A199"><b>This indicates you are ${env_text} involved in environmental CSR</b></span
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section style="background-color: #eaeaea;  margin-top: 20px;">
+                                <div class="container">
+                                    <div style="display: flex;">
+                                        <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                            WORKPLACE
+                                        </h3>
+                                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                                    </div>
+                                    <div>
+                                      <div>
+                                        <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a CSR policy that includes an apprenticeship scheme? <span style="background-color: white; padding: 2px;">${wrk_q_1}</span></p>
+                                        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes a diversity & inclusion process? <span style="background-color: white; padding: 2px;">${wrk_q_2}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes training schemes, employee advancement, skills training? <span style="background-color: white; padding: 2px;">${wrk_q_3}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes health & well-being programmes and education? <span style="background-color: white; padding: 2px;">${wrk_q_4}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes family commitment, childcare subsidies, parental leave, carer facilities? <span style="background-color: white; padding: 2px;">${wrk_q_5}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Any policy not previously mentioned? <span style="background-color: white; padding: 2px;">${wrk_q_6}</span></p>
+                                      </div>
+        
+                                        <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                            You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                            <br>
+                                            <span style="color: #00A199"><b>This indicates you are ${workplace_text} involved in environmental CSR</b></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section style=" background-color: #eaeaea; margin-top: 20px;">
+                                <div class="container">
+                                    <div style="display: flex;">
+                                        <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px" class="fs-4">
+                                            COMMUNITY
+                                        </h3>
+                                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                                    </div>
+                                    <div>
+        
+                                      <div>
+                                        <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation support a community project such as community hub? <span style="background-color: white; padding: 2px;">${com_q_1}</span></p>
+                                        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to your community in terms of local people employed and use of local business & services? <span style="background-color: white; padding: 2px;">${com_q_2}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to school & colleges?
+                                          <span style="background-color: white; padding: 2px;">${com_q_3}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to an enterprise scheme? <span style="background-color: white; padding: 2px;">${com_q_4}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report on outcomes from community involvement? <span style="background-color: white; padding: 2px;">${com_q_5}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Any other community activity in which your organisation is involved? <span style="background-color: white; padding: 2px;">${com_q_6}</span></p>
+                                      </div>
+        
+                                        <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                            You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                            <br>
+                                            <span style="color: #00A199"><b>This indicates you are ${community_text} involved in environmental CSR</b></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section style="background-color: #eaeaea; margin-top: 20px;">
+                                <div class="container">
+                                    <div style="display: flex;">
+                                        <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                            PHILANTHROPY
+                                        </h3>
+                                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                                    </div>
+                                    <div>
+        
+                                      <div>
+                                        <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a policy in place for supporting charities? <span style="background-color: white; padding: 2px;">${phl_q_1}</span></p>
+                                        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation give financial donations to charity?
+                                          <span style="background-color: white; padding: 2px;">${phl_q_2}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation give to charity in terms of pro bono time and services? <span style="background-color: white; padding: 2px;">${phl_q_3}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation support staff in any independent philanthropic activity? <span style="background-color: white; padding: 2px;">${phl_q_4}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report on outcomes from philanthropic involvement? <span style="background-color: white; padding: 2px;">${phl_q_5}</span></p>
+        
+                                        <p style="color: #7f7e7d; margin-left: 29px;">Any other activity not previously mentioned? <span style="background-color: white; padding: 2px;">${phl_q_6}</span></p>
+                                      </div>
+        
+                                        <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                            You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                            <br>
+                                            <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section style="margin-top: 30px; background-color: white; padding: 10px;">
+                                <div class="container">
+                                    <h1 style="color: #00a199;">
+                                        <strong>Become CSR Accredited click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE</strong>
+                                    </h1>
+                                    <p>
+                                        CSR Accreditation provides independent recognition of an organisation's
+                                        socially responsible activities. We encourage you to build on these results
+                                        and register for CSR Accreditation. Registration is FREE and we will supply 
+                                        you with guidance, tools and the confidence to develop an effective CSR policy
+                                        to build into your organisation strategy.
+                                    </p>
+                                </div>
+                            </section>
+                            <section style="margin-top: 30px;">
+                                <div class="container" style="background-color: #00a199 !important; height: 70px;"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                
+            </body>
+            </html>
             `
         }).then(()=>{
             Swal.fire({

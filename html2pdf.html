@@ -1,134 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>HTML2PDF</title>
-
-    <style type="text/css">
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: large;
-        }
-        
-        input {
-            border-style: none;
-        }
-    </style>
-</head>
-<body>
-    <div id="element-to-print">
-        <div class="container-fluid">
-            <div style="background-color: RGB(0,161,154) !important; height: 40px; margin-top: 30px;">
-
-            </div>
-            <div class="container" style="padding: 5%;">
-                <div style="display: flex; align-items: center; width: 100%;">
-                    <h3 style="color: RGB(0,161,154);">
-                        Thank you for completing 
-                        <br>
-                        <strong>The CSR Interactive Roadmap!</strong>
-                    </h3>
-                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
+    <html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>HTML2PDF</title>
+    
+        <style type="text/css">
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            
+            input {
+                border-style: none;
+            }
+    
+            #empty-container {
+                background-color:  RGB(0,161,154) !important;
+                height: 40px; 
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="element-to-print">
+            <div class="container-fluid">
+                <div id = "empty-container" style="background-color: #00a199; height: 40px; margin-top: 20px;">
+    
                 </div>
-                <section style="background-color: RGB(234,234,234); margin-top: 30px;">
-                    <div class="container" style="display: flex;">
-                        <label for="client-name" class="col-sm-2" style="color: RGB(0,161,154); padding: 10px; margin-inline-start: 20px;">Results for</label>
-                        <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
-                            <input type="text" class="form-control result" id="client-name" placeholder="CLIENT NAME HERE">
-                        </div>
+                <div class="container" style="padding: 5%; font-size: 135%">
+                    <div style="display: flex; align-items: center; width: 100%;">
+                        <h3 style="color: #00a199; font-size: 25px">
+                            Thank you for completing 
+                            <strong>The CSR Interactive Roadmap!</strong>
+                        </h3>
+                        <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                     </div>
-                </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
-                    <div class="container">
-                        <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
-                                ENVIRONMENT
-                            </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                    <section style="background-color: #eaeaea; margin-top: 30px;">
+                        <div class="container" style="display: flex;">
+                            <label for="client-name" class="col-sm-2" style="color: #00a199; padding: 10px; margin-inline-start: 20px;">Results for:</label>
+                            <div class="col-sm-8" style="margin-inline-start: 20px; padding: 10px;">
+                                ${userName}, ${companyName}, <span style = "color: ;">${userEmail} </span>
+                            </div>
                         </div>
-                        <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
+                    </section>
+                    <section style="background-color: #eaeaea;  margin-top: 20px;">
+                        <div class="container">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                    ENVIRONMENT
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            </div>
+                            <div>
+                              <div>
+                                <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation implement and monitor energy saving initiatives? <span style="background-color: white; padding: 2px;">34</span></p>
+                                
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide for sustainable resource use? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a travel policy in place? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation operate sustainale supply chan policy to montor supplier actvity?<span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a waste management policy? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Any other activity not previously mentioned? <span style="background-color: white; padding: 2px;">34</span></p>
+                              </div>
+
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                    You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                    <br>
+                                    <span style="color: #00A199"><b>This indicates you are ${env_text} involved in environmental CSR</b></span
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="background-color: #eaeaea;  margin-top: 20px;">
+                        <div class="container">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                    WORKPLACE
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            </div>
+                            <div>
+                              <div>
+                                <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a CSR policy that includes an apprenticeship scheme? <span style="background-color: white; padding: 2px;">34</span></p>
+                                
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes a diversity & inclusion process? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes training schemes, employee advancement, skills training? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes health & well-being programmes and education? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a CSR policy that includes family commitment, childcare subsidies, parental leave, carer facilities? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Any policy not previously mentioned? <span style="background-color: white; padding: 2px;">34</span></p>
+                              </div>
+
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                    You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                    <br>
+                                    <span style="color: #00A199"><b>This indicates you are ${workplace_text} involved in environmental CSR</b></span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section style=" background-color: #eaeaea; margin-top: 20px;">
+                        <div class="container">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px" class="fs-4">
+                                    COMMUNITY
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            </div>
+                            <div>
+
+                              <div>
+                                <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation support a community project such as community hub? <span style="background-color: white; padding: 2px;">34</span></p>
+                                
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to your community in terms of local people employed and use of local business & services? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to school & colleges?
+                                  <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to an enterprise scheme? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report on outcomes from community involvement? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Any other community activity in which your organisation is involved? <span style="background-color: white; padding: 2px;">34</span></p>
+                              </div>
+
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                    You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                    <br>
+                                    <span style="color: #00A199"><b>This indicates you are ${community_text} involved in environmental CSR</b></span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="background-color: #eaeaea; margin-top: 20px;">
+                        <div class="container">
+                            <div style="display: flex;">
+                                <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
+                                    PHILANTHROPY
+                                </h3>
+                                <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            </div>
+                            <div>
+
+                              <div>
+                                <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a policy in place for supporting charities? <span style="background-color: white; padding: 2px;">34</span></p>
+                                
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation give financial donations to charity?
+                                  <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation give to charity in terms of pro bono time and services? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation support staff in any independent philanthropic activity? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report on outcomes from philanthropic involvement? <span style="background-color: white; padding: 2px;">34</span></p>
+
+                                <p style="color: #7f7e7d; margin-left: 29px;">Any other activity not previously mentioned? <span style="background-color: white; padding: 2px;">34</span></p>
+                              </div>
+
+                                <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                                    You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
+                                    <br>
+                                    <span style="color: #00A199"><b>This indicates you are ${philanthropy_text} involved in environmental CSR</b></span
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="margin-top: 30px; background-color: white; padding: 10px;">
+                        <div class="container">
+                            <h1 style="color: #00a199;">
+                                <strong>Become CSR Accredited click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE</strong>
+                            </h1>
+                            <p>
+                                CSR Accreditation provides independent recognition of an organisation's
+                                socially responsible activities. We encourage you to build on these results
+                                and register for CSR Accreditation. Registration is FREE and we will supply 
+                                you with guidance, tools and the confidence to develop an effective CSR policy
+                                to build into your organisation strategy.
                             </p>
                         </div>
-                    </div>
-                </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
-                    <div class="container">
-                        <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
-                                WORKPLACE
-                            </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                        </div>
-                        <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
-                    <div class="container">
-                        <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;" class="fs-4">
-                                COMMUNITY
-                            </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                        </div>
-                        <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section style="background-color: RGB(234,234,234); margin-top: 20px;">
-                    <div class="container">
-                        <div style="display: flex;">
-                            <h3 style="color: RGB(0,161,154); margin-inline-start: 20px; padding: 10px;">
-                                PHILANTHROPY
-                            </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
-                        </div>
-                        <div>
-                            <p style="color: RGB(127, 126, 125); padding-inline-start: 10px; padding-bottom: 10px; margin-inline-start: 20px;">
-                                You scored <span style="background-color: white;"> 00</span> from a possible <span style="background-color: white;"> 00</span>
-                                <br>
-                                This indicates you are <input type="text"> involved in environmental CSR
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section style="margin-top: 30px; background-color: white; padding: 10px;">
-                    <div class="container">
-                        <h1 style="color: RGB(0,161,154);">
-                            <strong>Become CSR Accredited Click Here to Register for FREE</strong>
-                        </h1>
-                        <p>
-                            CSR Accreditation provides independent recognition of an organisation's
-                            socially responsible activities. We encourage you to build on these results
-                            and register for CSR Accreditation. Registration is FREE and we will supply 
-                            you with guidance, tools and the confidence to develop an effective CSR policy
-                            to build into your organisation strategy.
-                        </p>
-                    </div>
-                </section>
-                <section style="margin-top: 30px;">
-                    <div class="container" style="background-color: RGB(0,161,154) !important; height: 70px;"></div>
-                </section>
+                    </section>
+                    <section style="margin-top: 30px;">
+                        <div class="container" style="background-color: #00a199 !important; height: 70px;"></div>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
-    
-</body>
-</html>
+        
+    </body>
+    </html>
