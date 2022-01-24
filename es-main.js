@@ -52,7 +52,6 @@ function env_q1(num, id){
     else if(checkBox.checked == false){
         env_q_1 -= num
     }
-    console.log("Env-Q1 =", env_q_1)
 }
 
 //Environment - question 2 function
@@ -75,7 +74,6 @@ function env_q2(num, id){
     else if(checkBox.checked == false){
         env_q_2 -= num
     }
-    console.log("Env-Q2 =", env_q_2)
 }
 
 //Environment - question 3 function
@@ -98,7 +96,6 @@ function env_q3(num, id){
     else if(checkBox.checked == false){
         env_q_3 -= num
     }
-    console.log("Env-Q3 =", env_q_3)
 }
 
 //Environment - question 4 function
@@ -121,7 +118,6 @@ function env_q4(num, id){
     else if(checkBox.checked == false){
         env_q_4 -= num
     }
-    console.log("Env-Q4 =", env_q_4)
 }
 
 //Environment - question 5 function
@@ -144,7 +140,6 @@ function env_q5(num, id){
     else if(checkBox.checked == false){
         env_q_5 -= num
     }
-    console.log("Env-Q5 =", env_q_5)
 }
 
 //Environment - question 6 function
@@ -167,7 +162,6 @@ function env_q6(num, id){
     else if(checkBox.checked == false){
         env_q_6 -= num
     }
-    console.log("Env-Q6 =", env_q_6)
 }
 
 ////Workplace - each question total section
@@ -201,7 +195,6 @@ function wrk_q1(num, id){
     else if(checkBox.checked == false){
         wrk_q_1 -= num
     }
-    console.log("Wrk-Q1 =", wrk_q_1)
 }
 
 //Workplace - question 2 function
@@ -224,7 +217,6 @@ function wrk_q2(num, id){
     else if(checkBox.checked == false){
         wrk_q_2 -= num
     }
-    console.log("Wrk-Q2 =", wrk_q_2)
 }
 
 //Workplace - question 3 function
@@ -247,7 +239,6 @@ function wrk_q3(num, id){
     else if(checkBox.checked == false){
         wrk_q_3 -= num
     }
-    console.log("Wrk-Q3 =", wrk_q_3)
 }
 
 //Workplace - question 4 function
@@ -270,7 +261,6 @@ function wrk_q4(num, id){
     else if(checkBox.checked == false){
         wrk_q_4 -= num
     }
-    console.log("Wrk-Q4 =", wrk_q_4)
 }
 
 //Workplace - question 5 function
@@ -293,7 +283,6 @@ function wrk_q5(num, id){
     else if(checkBox.checked == false){
         wrk_q_5 -= num
     }
-    console.log("Wrk-Q5 =", wrk_q_5)
 }
 
 //Workplace - question 6 function
@@ -316,7 +305,6 @@ function wrk_q6(num, id){
     else if(checkBox.checked == false){
         wrk_q_6 -= num
     }
-    console.log("Wrk-Q6 =", wrk_q_6)
 }
 
 ////Community - each question total section
@@ -350,7 +338,6 @@ function com_q1(num, id){
     else if(checkBox.checked == false){
         com_q_1 -= num
     }
-    console.log("Com-Q1 =", com_q_1)
 }
 
 //Community - question 2 function
@@ -373,7 +360,6 @@ function com_q2(num, id){
     else if(checkBox.checked == false){
         com_q_2 -= num
     }
-    console.log("Com-Q2 =", com_q_2)
 }
 
 //Community - question 3 function
@@ -396,7 +382,6 @@ function com_q3(num, id){
     else if(checkBox.checked == false){
         com_q_3 -= num
     }
-    console.log("Com-Q3 =", com_q_3)
 }
 
 //Community - question 4 function
@@ -419,7 +404,6 @@ function com_q4(num, id){
     else if(checkBox.checked == false){
         com_q_4 -= num
     }
-    console.log("Com-Q4 =", com_q_4)
 }
 
 //Community - question 5 function
@@ -442,7 +426,6 @@ function com_q5(num, id){
     else if(checkBox.checked == false){
         com_q_5 -= num
     }
-    console.log("Com-Q5 =", com_q_5)
 }
 
 //Community - question 6 function
@@ -465,7 +448,6 @@ function com_q6(num, id){
     else if(checkBox.checked == false){
         com_q_6 -= num
     }
-    console.log("Com-Q6 =", com_q_6)
 }
 
 ////Philanthropic - each question total section
@@ -499,7 +481,6 @@ function phl_q1(num, id){
     else if(checkBox.checked == false){
         phl_q_1 -= num
     }
-    console.log("Phl-Q1 =", phl_q_1)
 }
 
 //Philanthropic - question 2 function
@@ -522,7 +503,6 @@ function phl_q2(num, id){
     else if(checkBox.checked == false){
         phl_q_2 -= num
     }
-    console.log("Phl-Q2 =", phl_q_2)
 }
 
 //Philanthropic - question 3 function
@@ -545,7 +525,6 @@ function phl_q3(num, id){
     else if(checkBox.checked == false){
         phl_q_3 -= num
     }
-    console.log("Phl-Q3 =", phl_q_3)
 }
 
 //Philanthropic - question 4 function
@@ -568,7 +547,6 @@ function phl_q4(num, id){
     else if(checkBox.checked == false){
         phl_q_4 -= num
     }
-    console.log("Phl-Q4 =", phl_q_4)
 }
 
 //Philanthropic - question 5 function
@@ -591,7 +569,6 @@ function phl_q5(num, id){
     else if(checkBox.checked == false){
         phl_q_5 -= num
     }
-    console.log("Phl-Q5 =", phl_q_5)
 }
 
 //Philanthropic - question 6 function
@@ -614,10 +591,9 @@ function phl_q6(num, id){
     else if(checkBox.checked == false){
         phl_q_6 -= num
     }
-    console.log("Phl-Q6 =", phl_q_6)
 }
 
-///////////////////////////////////////
+/////
 
 const handle_pillars  = function(){
     let row = $(this).data('row')
