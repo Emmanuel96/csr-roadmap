@@ -5,7 +5,7 @@ let workplace_pillar_score = 0;
 let env_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let philanthropy_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let community_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area." 
-let workplace_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area.";
+let workplace_text = "You currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area.";
 
 function getValue(value){
     let returnValue = ""; 
