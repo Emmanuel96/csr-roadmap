@@ -2,28 +2,30 @@ let env_pillar_score = 0;
 let philanthropy_pillar_score = 0; 
 let community_pillar_score = 0; 
 let workplace_pillar_score = 0;
+
 let env_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let philanthropy_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let community_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area." 
-let workplace_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area.";
+let workplace_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
+
+let csr_active = 'you do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.'
+let csr_proficient = "you have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity."
+let csr_leader = "you are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation."
 
 function getValue(value){
     let returnValue = ""; 
-    if (value === 0){
-        returnValue = 'there has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place. CSR-A Offers a variety of services including consultation and advice to improve your activity in this area.';
-    }else if(value >=0 && value <10){
-        returnValue = 'you do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.';
+        
+    if(value >=0 && value <10){
+        returnValue = csr_active
     }else if(value >=10 && value < 18){
-        returnValue = "you have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.";
+        returnValue = csr_proficient
     }else if(value >=18){
-        returnValue = "you are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation."
+        returnValue = csr_leader
     }
     return returnValue;
 }
 
-////Environment - each question total section
-
-//variables
+//Environment activity map section
 
 var env_q_1 = 0
 var env_q_2 = 0
@@ -32,7 +34,7 @@ var env_q_4 = 0
 var env_q_5 = 0
 var env_q_6 = 0
 
-//Environment - question 1 function
+//Environment activity map - question 1 function
 
 function env_q1(num, id){
     var checkBox = document.getElementById(id);
@@ -55,7 +57,7 @@ function env_q1(num, id){
     console.log("Env Q1", env_q_1)
 }
 
-//Environment - question 2 function
+//Environment activity map - question 2 function
 
 function env_q2(num, id){
     var checkBox = document.getElementById(id);
@@ -77,7 +79,7 @@ function env_q2(num, id){
     }
 }
 
-//Environment - question 3 function
+//Environment activity map - question 3 function
 
 function env_q3(num, id){
     var checkBox = document.getElementById(id);
@@ -99,7 +101,7 @@ function env_q3(num, id){
     }
 }
 
-//Environment - question 4 function
+//Environment activity map - question 4 function
 
 function env_q4(num, id){
     var checkBox = document.getElementById(id);
@@ -121,7 +123,7 @@ function env_q4(num, id){
     }
 }
 
-//Environment - question 5 function
+//Environment activity map - question 5 function
 
 function env_q5(num, id){
     var checkBox = document.getElementById(id);
@@ -143,7 +145,7 @@ function env_q5(num, id){
     }
 }
 
-//Environment - question 6 function
+//Environment activity map - question 6 function
 
 function env_q6(num, id){
     var checkBox = document.getElementById(id);
@@ -165,9 +167,7 @@ function env_q6(num, id){
     }
 }
 
-////Workplace - each question total section
-
-//variables
+////Workplace activity map section
 
 var wrk_q_1 = 0
 var wrk_q_2 = 0
@@ -176,7 +176,7 @@ var wrk_q_4 = 0
 var wrk_q_5 = 0
 var wrk_q_6 = 0
 
-//Workplace - question 1 function
+//Workplace activity map - question 1 function
 
 function wrk_q1(num, id){
     var checkBox = document.getElementById(id);
@@ -198,7 +198,7 @@ function wrk_q1(num, id){
     }
 }
 
-//Workplace - question 2 function
+//Workplace activity map - question 2 function
 
 function wrk_q2(num, id){
     var checkBox = document.getElementById(id);
@@ -220,7 +220,7 @@ function wrk_q2(num, id){
     }
 }
 
-//Workplace - question 3 function
+//Workplace activity map - question 3 function
 
 function wrk_q3(num, id){
     var checkBox = document.getElementById(id);
@@ -242,7 +242,7 @@ function wrk_q3(num, id){
     }
 }
 
-//Workplace - question 4 function
+//Workplace activity map - question 4 function
 
 function wrk_q4(num, id){
     var checkBox = document.getElementById(id);
@@ -264,7 +264,7 @@ function wrk_q4(num, id){
     }
 }
 
-//Workplace - question 5 function
+//Workplace activity map - question 5 function
 
 function wrk_q5(num, id){
     var checkBox = document.getElementById(id);
@@ -286,7 +286,7 @@ function wrk_q5(num, id){
     }
 }
 
-//Workplace - question 6 function
+//Workplace activity map - question 6 function
 
 function wrk_q6(num, id){
     var checkBox = document.getElementById(id);
@@ -308,9 +308,7 @@ function wrk_q6(num, id){
     }
 }
 
-////Community - each question total section
-
-//variables
+//Community activity map section
 
 var com_q_1 = 0
 var com_q_2 = 0
@@ -319,7 +317,7 @@ var com_q_4 = 0
 var com_q_5 = 0
 var com_q_6 = 0
 
-//Community - question 1 function
+//Community activity map - question 1 function
 
 function com_q1(num, id){
     var checkBox = document.getElementById(id);
@@ -341,7 +339,7 @@ function com_q1(num, id){
     }
 }
 
-//Community - question 2 function
+//Community activity map - question 2 function
 
 function com_q2(num, id){
     var checkBox = document.getElementById(id);
@@ -363,7 +361,7 @@ function com_q2(num, id){
     }
 }
 
-//Community - question 3 function
+//Community activity map - question 3 function
 
 function com_q3(num, id){
     var checkBox = document.getElementById(id);
@@ -385,7 +383,7 @@ function com_q3(num, id){
     }
 }
 
-//Community - question 4 function
+//Community activity map - question 4 function
 
 function com_q4(num, id){
     var checkBox = document.getElementById(id);
@@ -407,7 +405,7 @@ function com_q4(num, id){
     }
 }
 
-//Community - question 5 function
+//Community activity map - question 5 function
 
 function com_q5(num, id){
     var checkBox = document.getElementById(id);
@@ -429,7 +427,7 @@ function com_q5(num, id){
     }
 }
 
-//Community - question 6 function
+//Community activity map - question 6 function
 
 function com_q6(num, id){
     var checkBox = document.getElementById(id);
@@ -451,9 +449,7 @@ function com_q6(num, id){
     }
 }
 
-////Philanthropic - each question total section
-
-//variables
+//Philanthropic activity map section
 
 var phl_q_1 = 0
 var phl_q_2 = 0
@@ -462,7 +458,7 @@ var phl_q_4 = 0
 var phl_q_5 = 0
 var phl_q_6 = 0
 
-//Philanthropic - question 1 function
+//Philanthropic activity map - question 1 function
 
 function phl_q1(num, id){
     var checkBox = document.getElementById(id);
@@ -484,7 +480,7 @@ function phl_q1(num, id){
     }
 }
 
-//Philanthropic - question 2 function
+//Philanthropic activity map - question 2 function
 
 function phl_q2(num, id){
     var checkBox = document.getElementById(id);
@@ -506,7 +502,7 @@ function phl_q2(num, id){
     }
 }
 
-//Philanthropic - question 3 function
+//Philanthropic activity map - question 3 function
 
 function phl_q3(num, id){
     var checkBox = document.getElementById(id);
@@ -528,7 +524,7 @@ function phl_q3(num, id){
     }
 }
 
-//Philanthropic - question 4 function
+//Philanthropic activity map - question 4 function
 
 function phl_q4(num, id){
     var checkBox = document.getElementById(id);
@@ -550,7 +546,7 @@ function phl_q4(num, id){
     }
 }
 
-//Philanthropic - question 5 function
+//Philanthropic activity map - question 5 function
 
 function phl_q5(num, id){
     var checkBox = document.getElementById(id);
@@ -572,7 +568,7 @@ function phl_q5(num, id){
     }
 }
 
-//Philanthropic - question 6 function
+//Philanthropic activity map - question 6 function
 
 function phl_q6(num, id){
     var checkBox = document.getElementById(id);
@@ -594,7 +590,7 @@ function phl_q6(num, id){
     }
 }
  
-////
+//Checkbox functionality section
 
 const handle_pillars  = function(){
     let row = $(this).data('row')
@@ -609,8 +605,7 @@ const handle_pillars  = function(){
         if(this.checked === true){
             $('.'+pillar+'-limit-action-'+row).each(function(){
                 this.checked = true
-            });
-            
+            });   
             $('.'+pillar+'-no-action-row-'+row).each(function(){
                 this.checked = false;
             })
@@ -619,8 +614,7 @@ const handle_pillars  = function(){
         if(this.checked === true){
             $('.'+pillar+'-action-row-'+row).each(function(){
                 this.checked = true
-            });
-            
+            });           
             $('.'+pillar+'-no-action-row-'+row).each(function(){
                 this.checked = false;
             })
@@ -632,7 +626,9 @@ const handle_pillars  = function(){
     }
 
     no_action_count = 0
+
     action_count = 0
+
     // get all the clicked no actions first 
 
     $('.'+pillar+'-no-action').each(function(){
@@ -641,7 +637,6 @@ const handle_pillars  = function(){
             no_action_count += 1
         }
     });
-    
     // get all the clicked actiions 
     $('.'+pillar+'-action').each(function(){
         if(this.checked === true){
@@ -653,11 +648,9 @@ const handle_pillars  = function(){
         this.checked = false; 
         $(this).attr('style','background-color: white; width: 25px; height: 25px;')
      });
-
      //store counters in temp value 
      let temp_no_action_count = no_action_count; 
      let temp_action_count = action_count;
-
     // represent answer in result 
     $('.'+pillar+'-result').each(function(){
        if(no_action_count > 0){
@@ -678,6 +671,7 @@ const handle_pillars  = function(){
 
     //set back counts
     no_action_count = temp_no_action_count; 
+
     action_count = temp_action_count;
     
     // represent answer in final result 
@@ -721,6 +715,7 @@ $('#submission-form').on('submit', (e)=>{
     e.preventDefault(); 
     sendEmail();
 })
+
 function sendEmail() {
     let userEmail = $('input[name="userEmail"]').val()
     let userName =  $('input[name="userName"]').val()
@@ -800,26 +795,26 @@ function sendEmail() {
                         </div>
                         <div>
                           <div>
-                            <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation implement and monitor energy saving initiatives?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px ">Does your organisation implement and monitor energy saving initiatives?
                               <span style="background-color: white; padding: 2px;">${env_q_1}</span></p>
                             
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide for sustainable resource use?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation provide for sustainable resource use?
                               <span style="background-color: white; padding: 2px;">${env_q_2}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a travel policy in place?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a travel policy in place?
                               <span style="background-color: white; padding: 2px;">${env_q_3}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation operate sustainable supply chan policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation operate sustainable supply chan policy?
                               <span style="background-color: white; padding: 2px;">${env_q_4}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a waste management policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a waste management policy?
                               <span style="background-color: white; padding: 2px;">${env_q_5}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Any other activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Any other activity?
                               <span style="background-color: white; padding: 2px;">${env_q_6}</span></p>
                           </div>
 
-                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                            <p style="color: #7f7e7d; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 You scored <span style="background-color: white;"> ${env_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                 <br>
                                 <br>
@@ -838,26 +833,26 @@ function sendEmail() {
                         </div>
                         <div>
                           <div>
-                            <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a apprenticeship scheme policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a apprenticeship scheme policy?
                               <span style="background-color: white; padding: 2px;">${wrk_q_1}</span></p>
                             
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a diversity & inclusion policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a diversity & inclusion policy?
                               <span style="background-color: white; padding: 2px;">${wrk_q_2}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a Training/skills policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a Training/skills policy?
                               <span style="background-color: white; padding: 2px;">${wrk_q_3}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a health & well-being policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a health & well-being policy?
                               <span style="background-color: white; padding: 2px;">${wrk_q_4}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation have a family commitment policy?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a family commitment policy?
                               <span style="background-color: white; padding: 2px;">${wrk_q_5}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Any other activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Any other activity?
                               <span style="background-color: white; padding: 2px;">${wrk_q_6}</span></p>
                           </div>
 
-                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                            <p style="color: #7f7e7d; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; padding: 10px; margin-left: 12px;">
                                 You scored <span style="background-color: white;"> ${workplace_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                 <br>
                                 <br>
@@ -877,27 +872,27 @@ function sendEmail() {
                         <div>
 
                           <div>
-                            <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation support a project such as community hub?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation support a project such as community hub?
                               <span style="background-color: white; padding: 2px;">${com_q_1}</span></p>
                             
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to your local community?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation provide support to your local community?
                               <span style="background-color: white; padding: 2px;">${com_q_2}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to school & colleges?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation provide support to school & colleges?
 
                               <span style="background-color: white; padding: 2px;">${com_q_3}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide support to an enterprise scheme?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation provide support to an enterprise scheme?
                               <span style="background-color: white; padding: 2px;">${com_q_4}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report community activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation record and impact report community activity?
                               <span style="background-color: white; padding: 2px;">${com_q_5}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Any other activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Any other activity?
                               <span style="background-color: white; padding: 2px;">${com_q_6}</span></p>
                           </div>
 
-                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                            <p style="color: #7f7e7d; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 You scored <span style="background-color: white;"> ${community_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                 <br>
                                 <br>
@@ -917,27 +912,27 @@ function sendEmail() {
                         <div>
 
                           <div>
-                            <p style="color: #7f7e7d; margin-left: 29px; ">Does your organisation have a policy for supporting charities?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation have a policy for supporting charities?
                               <span style="background-color: white; padding: 2px;">${phl_q_1}</span></p>
                             
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation give financial donations to charity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation give financial donations to charity?
 
                               <span style="background-color: white; padding: 2px;">${phl_q_2}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation provide pro bono time and services?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation provide pro bono time and services?
                               <span style="background-color: white; padding: 2px;">${phl_q_3}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation support staff in philanthropic activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation support staff in philanthropic activity?
                               <span style="background-color: white; padding: 2px;">${phl_q_4}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Does your organisation record and impact report philanthropic activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Does your organisation record and impact report philanthropic activity?
                               <span style="background-color: white; padding: 2px;">${phl_q_5}</span></p>
 
-                            <p style="color: #7f7e7d; margin-left: 29px;">Any other activity?
+                            <p style="line-height: 1; color: #7f7e7d; margin-inline-start: 20px; padding: 10px; margin-left: 12px">Any other activity?
                               <span style="background-color: white; padding: 2px;">${phl_q_6}</span></p>
                           </div>
 
-                            <p style="color: #7f7e7d; padding-inline-start: 10px; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; margin-left: 19px">
+                            <p style="color: #7f7e7d; padding-top: 20px; padding-bottom: 20px; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 You scored <span style="background-color: white;"> ${philanthropy_pillar_score}</span> from a possible <span style="background-color: white;"> 18</span>
                                 <br>
                                 <br>
@@ -966,7 +961,6 @@ function sendEmail() {
             </div>
         </div>
     </div>
-    
 </body>
 </html>
             `
