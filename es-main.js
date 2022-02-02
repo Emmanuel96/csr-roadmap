@@ -3,26 +3,32 @@ let philanthropy_pillar_score = 0;
 let community_pillar_score = 0; 
 let workplace_pillar_score = 0;
 
+
+let NO_ACTION_TEXT = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
+
+
 let env_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let philanthropy_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 let community_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area." 
 let workplace_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 
-let csr_active = 'you do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.'
-let csr_proficient = "you have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity."
-let csr_leader = "you are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation."
+
+let csr_active = `you are CSR Active. <br> You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.`
+let csr_proficient = `you are CSR Proficient. <br> You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.`
+let csr_leader = `you are CSR Leader. <br> You are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation.`
+
 
 function getValue(value){
     let returnValue = ""; 
-        
-    if(value >=0 && value <10){
+    if(value == 0){
+        returnValue = NO_ACTION_TEXT
+    }else if(value >=1 && value <=6){
         returnValue = csr_active
-    }else if(value >=10 && value < 18){
+    }else if(value >=7 && value <= 12){
         returnValue = csr_proficient
-    }else if(value >=18){
+    }else if(value >=13 && value <=18){
         returnValue = csr_leader
-    }
-    return returnValue;
+    }return returnValue;
 }
 
 //Environment activity map section
@@ -591,7 +597,6 @@ function phl_q6(num, id){
 }
  
 //Checkbox functionality section
-
 const handle_pillars  = function(){
     let row = $(this).data('row')
     let pillar = $(this).data('pillar')
@@ -690,6 +695,8 @@ const handle_pillars  = function(){
             this.checked = true;
             action_count -= 1
             $(this).attr('style','background-color: grey; width: 25px; height: 25px;')
+        }else{
+            $(this).attr('style','background-color: white; width: 25px; height: 25px;')
         }
      });
     //  alert('score for '+pillar+'= '+score)
@@ -944,7 +951,10 @@ function sendEmail() {
                 <section style="margin-top: 30px; background-color: white; padding: 10px;">
                     <div class="container">
                         <h1 style="color: #00a199;">
-                            <strong>Become CSR Accredited click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE</strong>
+                            <strong>Become CSR Accredited! Click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE.</strong>
+                        </h1>
+                            <h1 style="color: #00a199;">
+                            <strong>If you're interested in our CSR training, click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/csr-training-course-online/">here</a>.</strong>
                         </h1>
                         <p>
                             CSR Accreditation provides independent recognition of an organisation's
