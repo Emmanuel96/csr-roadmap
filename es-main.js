@@ -12,7 +12,7 @@ let philanthropy_text = "you currently take no action in this area or are not aw
 let community_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area." 
 let workplace_text = "you currently take no action in this area or are not aware of any taken. CSR-A Offers a variety of services including consultation and advice to begin your journey in this area."
 
-
+let csr_aware = `you are CSR Aware. <br> There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place. CSR-A Offers a variety of services including consultation and advice to improve your activity in this area.`
 let csr_active = `you are CSR Active. <br> You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.`
 let csr_proficient = `you are CSR Proficient. <br> You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.`
 let csr_leader = `you are CSR Leader. <br> You are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation.`
@@ -22,11 +22,13 @@ function getValue(value){
     let returnValue = ""; 
     if(value == 0){
         returnValue = NO_ACTION_TEXT
-    }else if(value >=1 && value <=6){
+    }else if(value >=1 && value <=5){
+        returnValue = csr_aware
+    }else if(value >=6 && value <= 10){
         returnValue = csr_active
-    }else if(value >=7 && value <= 12){
+    }else if(value >=11 && value <=14){
         returnValue = csr_proficient
-    }else if(value >=13 && value <=18){
+    }else if(value >=15 && value <=18){
         returnValue = csr_leader
     }return returnValue;
 }
