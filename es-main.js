@@ -784,7 +784,7 @@ function sendEmail() {
                         Thank you for completing 
                         <strong>The CSR Interactive Roadmap!</strong>
                     </h3>
-                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/CSR-A_Logo-RGB.jpg" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
+                    <img src="https://csr-accreditation.co.uk/wp-content/uploads/2020/08/CSRA_LogoColour.png" alt="" style="display: flex; height: 80px; width: 110px; margin-left: auto;">
                 </div>
                 <section style="background-color: #eaeaea; margin-top: 30px;">
                     <div class="container" style="display: flex;">
@@ -800,7 +800,7 @@ function sendEmail() {
                             <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 ENVIRONMENT
                             </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/02/ENV-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
                           <div>
@@ -838,7 +838,7 @@ function sendEmail() {
                             <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 WORKPLACE
                             </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/02/WORK-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
                           <div>
@@ -876,7 +876,7 @@ function sendEmail() {
                             <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px" class="fs-4">
                                 COMMUNITY
                             </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/02/COMM-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
 
@@ -916,7 +916,7 @@ function sendEmail() {
                             <h3 style="color: #00a199; margin-inline-start: 20px; padding: 10px; margin-left: 12px">
                                 PHILANTHROPY
                             </h3>
-                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/01/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
+                            <img src="https://csr-accreditation.co.uk/wp-content/uploads/2022/02/PHIL-ICON.png" alt="" srcset="" style="width: 100px; height: 100px; margin-left: auto; padding: 10px;">
                         </div>
                         <div>
 
