@@ -730,7 +730,10 @@ function sendEmail() {
     let userName =  $('input[name="userName"]').val()
     let companyName =  $('input[name="companyName"]').val()
 
-    let mailList = ['kole.audu@gmail.com']
+    let mailList = [
+        'kole.audu@gmail.com',
+        'jennifer@csr-accreditation.co.uk'
+    ]
 
     if(!userEmail){
         swal.fire("Email input cannot be empty")
