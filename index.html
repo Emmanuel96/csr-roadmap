@@ -17,13 +17,18 @@
     <script src="https://www.jsdelivr.com/package/npm/sweetalert2"></script>
 
     <title>CSR Roadmap</title>
+    <style>
+      .score-div{
+        width: 1%;
+        margin-right: 65px;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav style = "background-color: RGB(0,161,154) !important;" class="navbar navbar-expand-lg bg-success navbar-dark">
       <div class="container-fluid">
         <!-- <a href="#" class="navbar-brand"><img src="./assets/images/CSR-A_Logo-CMYK-REv COLOUR 2.png" alt="" style="height: 70px;"></a> -->
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -62,11 +67,8 @@
               <div class="carousel-caption d-none d-md-block d-sm-block start-0 end-0 bottom-0">
                 <div>
                   <div class="lead text-light p-3">
-                    <h1><b> CSR Road Map - Where are you?</b></h1>
-                  <p>This exercise is designed to give participants 'snapshot' of where their organization is located on the CSR road map
-                  of zero to full engagement. The questions included are generic with some flexibility for individual
-                  or specific action to influence the results. For a full list of CSR activity
-                  categorised under the CSR-A Four Pillars.</p>
+                    <h1 style="font-size: 400%; "><b>Welcome to the CSR-A Road Map - Find Out Where You Are!</b></h1>
+                  <p style="font-size: 135%; padding-right: 70px; padding-left: 70px;">This interactive questionnaire is designed to give participants an indicator of where their organisation is located in respect to current CSR engagement and activity.<br> It will give you a ‘snapshot’ of where you are doing well and where you could be doing better.</p>
                   </div>
                 </div>
               </div>
@@ -83,24 +85,21 @@
               <img src="./assets/images/CSR-A_Logo-RGB.jpg" alt="csr-logo" class="d-none d-lg-block" style="height: 70px;">
             </div>
             <div>
-              <h1 class="display-3 text-success">How to use the<strong> CSR road map...</strong> </h1>
+              <h1 style="font-size: 300%;" class="display-3 text-success">How to use the<strong> CSR road map...</strong> </h1>
             </div>
             <div class="pt-4">
               <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
                 This road map is intended to give you a quick visual representation of where your organisation sits in regard to socially responsible activity currently undertaken.
               </p>
               <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
-                The road map is separated into 4 sections that correspond to our Four Pillars system - <b>Environment, Workplace, Community</b> and <b>Philanthropy</b>. Each Pillar has 5 questions, with 4 possible responses and an optional 6th input that allows you to score for activity outside the scope of the questions.
+                The roadmap questions are split into of four sections, environment, workplace, community and philanthropy. These are our Four Pillars of CSR. Each Pillar has 5 questions, with 4 possible responses and an optional 6th input that allows you to score for activity outside the scope of the questions.
               </p>
               <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead">
-                Simply respond to the questions by checking the boxes that describes your level of activity. Because the roap map works by counting your positive responses you must click the boxes to the left of your answer too, so if you are involved in leading action also check the limited and positive boxes to score 3.
-              </p>
-              <p style="font-family: Arial, Helvetica, sans-serif;" class="text-dark lead"> 
-                When you have answered the questions count up all the positive 'green' squares and enter them into the total bar at the bottom of the page and more on to the next Pillar.
+                Simply respond to the questions by checking the boxes that describes your level of activity. When you tick either Positive Action or Leading Action, the previous boxes will be automatically ticked adding to your overall results.
               </p>
             </div>
-            <h1 class="text-success pt-2 display-6">
-              When you have completed all Four Pillars go to the results page which reveals you where you are on your journey...
+            <h1 style="font-size: 300%;" class="text-success pt-2 display-6">
+              When you have answered all the questions in each pillar scroll down to the results. You can enter your details here to receive an email which will provide you with a detailed record of your results.
             </h1>
           </div>
         </div>
@@ -121,36 +120,30 @@
               <img src="./assets/images/CSR-A_Logo-CMYK-REv COLOUR 2.png" style="height: 70px;" alt="">
             </div> -->
           </div>
-          <div class="d-flex flex-wrap justify-content-lg-center justify-content-md-center justify-content-sm-start py-3">
-              <label for="#" class="col-auto col-form-label">Current Position Locator For</label>
-              <div class="col-auto">
-                <input type="text" class="form-control ms-3" id="inputPassword">
-            </div>
-          </div>
 
-          <div class="d-flex flex-row">
-            <div class="col-lg-4 col-md-2 col-sm-2 flex-column p-2">
+          <div style="margin-right: 7%;" class="mt-3 d-flex flex-row p-2 justify-content-between">
+            <div class="col-lg-4 col-md-2 col-sm-2">
               <b>ACTIVITY LIST</b>
             </div>
-            <div class="flex-column p-2 me-lg-5">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-2">
               <b>NO ACTION</b>
               <span class="tips" data-bs-placement="left" title="You currently have no written policy in place that addresses this area or issue.">
                 <i class="bi bi-info-circle-fill text-light"></i>
               </span>
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>LIMITED ACTION</b>
               <span class="tips" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored.">
                 <i class="bi bi-info-circle-fill text-light"></i>
-              </span>
+              </span> 
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>POSITIVE ACTION</b>
               <span class="tips" data-bs-placement="left" title="You have a policy in place that is routinely actioned and regularly reviewed.">
                 <i class="bi bi-info-circle-fill text-light"></i>
               </span>
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>LEADING ACTION</b>
               <span class="tips" data-bs-placement="top" title="Innovative policy has been devised to provide positive outcomes in this area.">
                 <i class="bi bi-info-circle-fill text-light"></i>
@@ -158,111 +151,111 @@
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation implement and monitor energy saving initiatives such as LED and low energy lighting and heating systems?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'env' data-row = '1' class="env-no-action env-no-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'env' data-row = '1' class=" env-no-action env-no-action-row-1 form-check-input action" onclick="env_q1(0, 'env-q-1-check-1')" value="" style="width: 60px; height: 50px;" id="env-q-1-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'env' data-row = '1' class="env-action env-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'env' data-row = '1' class="env-action env-action-row-1 env-limit-action-1 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q1(1, 'env-q-1-check-2')" id="env-q-1-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 form-check-input env-positive-action action" value="" style="width: 60px; height: 50px;" onclick="env_q1(1, 'env-q-1-check-3')" id="env-q-1-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 env-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row = '1' data-pillar = 'env' class="env-action env-action-row-1 env-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="env_q1(1, 'env-q-1-check-4')" id="env-q-1-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-                <b>Does your organisation provide for sustainable resource use such as recycled paper, refillable printer catridges and fair trade suppliers?</b>
+                <b>Does your organisation provide for sustainable resource use such as recycled paper, refillable printer cartridges and fair trade suppliers?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-no-action env-no-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="second_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-no-action env-no-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q2(0, 'env-q-2-check-1')" id="env-q-2-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="second_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-limit-action-2 env-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q2(1, 'env-q-2-check-2')" id="env-q-2-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="second_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 env-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q2(1, 'env-q-2-check-3')" id="env-q-2-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" id="second_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row = '2' data-pillar = 'env' class="env-action env-action-row-2 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q2(1, 'env-q-2-check-4')" id="env-q-2-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
                 <b>Does your organisation have a travel policy in place such as low carbon driving incentives - hybrid and electric vehicles?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-no-action env-no-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="third_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-no-action env-no-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q3(0, 'env-q-3-check-1')" id="env-q-3-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="third_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 env-limit-action-3 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q3(1, 'env-q-3-check-2')" id="env-q-3-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="third_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-positive-action env-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q3(1, 'env-q-3-check-3')" id="env-q-3-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" id="third_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='3' data-pillar = 'env' class="env-action env-action-row-3 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q3(1, 'env-q-3-check-4')" id="env-q-3-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-                <b>Does your organisation operate sustainale supply chan policy to montor supplier actvity such as product miles and localise suppliers?</b>
+                <b>Does your organisation operate sustainable supply chain policy to monitor supplier activity such as product miles and local suppliers?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-no-action env-no-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="fourth_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-no-action env-no-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q4(0, 'env-q-4-check-1')" id="env-q-4-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="fourth_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 env-limit-action-4 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q4(1, 'env-q-4-check-2')" id="env-q-4-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="fourth_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-positive-action env-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q4(1, 'env-q-4-check-3')" id="env-q-4-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" id="fourth_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='4' data-pillar = 'env' class="env-action env-action-row-4 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q4(1, 'env-q-4-check-4')" id="env-q-4-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation have a waste management policy such as recycling used paper and card, furniture, computers and other equipment?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-no-action env-no-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="fifth_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-no-action env-no-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q5(0, 'env-q-5-check-1')" id="env-q-5-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="fifth_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 env-limit-action-5 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q5(1, 'env-q-5-check-2')" id="env-q-5-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="fifth_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 env-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q5(1, 'env-q-5-check-3')" id="env-q-5-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" id="fifth_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='5' data-pillar = 'env' class="env-action env-action-row-5 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q5(1, 'env-q-5-check-4')" id="env-q-5-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Please use this row for any other activity not previously mentioned. (OPTIONAL)</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-no-action env-no-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="sixth_option_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-no-action env-no-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q6(0, 'env-q-6-check-1')" id="env-q-6-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="sixth_option_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-action-row-6 env-limit-action-6 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q6(1, 'env-q-6-check-2')" id="env-q-6-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="sixth_option_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action env-positive-action env-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q6(1, 'env-q-6-check-3')" id="env-q-6-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action  env-action-row-6 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" id="sixth_option_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-row='6' data-pillar = 'env' class="env-action  env-action-row-6 env-leading-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="env_q6(1, 'env-q-6-check-4')" id="env-q-6-check-4"> 
             </div>
           </div>
 
@@ -270,7 +263,7 @@
           <div class="text-start m-2 flex-fill col-lg-2 col-md-2 col-sm-2">
             <b>TOTAL CURRENT ENVIRONMENTAL ACTIVITY</b> 
           </div>
-          <div class="flex-fill flex-wrap ms-5">
+          <div style="margin-left: 3%;" class="flex-fill flex-wrap ms-5">
             <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="first_option_total_environmental_no_action"> 
             <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="second_option_total_environmental_no_action"> 
             <input type="checkbox" class="env-result form-check-input" value="" style="width: 25px; height: 25px;" id="third_option_total_environmental_no_action"> 
@@ -319,36 +312,30 @@
               <h1 class="display-6 text-success">Workplace Activity Map</h1>
             </div>
           </div>
-          <div class="d-flex flex-wrap justify-content-lg-center justify-content-md-center justify-content-sm-start py-3">
-            <label for="#" class="col-auto col-form-label">Current Position Locator For</label>
-            <div class="col-auto">
-              <input type="text" class="form-control min-vw-50 ms-3" id="inputPassword">
-            </div>
-          </div>
 
-          <div class="d-flex flex-row">
-            <div class="col-lg-4 flex-column p-2">
+          <div style="margin-right: 7%;" class="mt-3 d-flex flex-row p-2 justify-content-between">
+            <div class="col-lg-4 col-md-2 col-sm-2">
               <b>ACTIVITY LIST</b>
             </div>
-            <div class="flex-column p-2 me-lg-5">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-2">
               <b>NO ACTION</b>
               <span class="tips" data-bs-placement="left" title="You currently have no written policy in place that addresses this area or issue.">
                 <i class="bi bi-info-circle-fill text-success"></i>
               </span>
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>LIMITED ACTION</b>
               <span class="tips" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored.">
                 <i class="bi bi-info-circle-fill text-success"></i>
-              </span>
+              </span> 
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>POSITIVE ACTION</b>
               <span class="tips" data-bs-placement="left" title="You have a policy in place that is routinely actioned and regularly reviewed.">
                 <i class="bi bi-info-circle-fill text-success"></i>
               </span>
             </div>
-            <div class="col-lg-2 flex-column p-2">
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
               <b>LEADING ACTION</b>
               <span class="tips" data-bs-placement="top" title="Innovative policy has been devised to provide positive outcomes in this area.">
                 <i class="bi bi-info-circle-fill text-success"></i>
@@ -356,111 +343,111 @@
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation have a CSR policy that includes an apprenticeship scheme?</b>
+              <b>Does your organisation have a policy that includes an apprenticeship scheme?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = '1' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = '1' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q1(0, 'wrk-q-1-check-1')" id="wrk-q-1-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '1' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '1' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-1 workplace-limit-action-1 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q1(1, 'wrk-q-1-check-2')" id="wrk-q-1-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '1' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '1' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-1 workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q1(1, 'wrk-q-1-check-3')" id="wrk-q-1-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '1' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-1 workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '1' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-1 workp workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q1(1, 'wrk-q-1-check-4')" id="wrk-q-1-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation have a CSR policy that includes a diversity & inclusion process?</b>
+              <b>Does your organisation have a policy that includes a diversity & inclusion process?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = '2' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = '2' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q2(0, 'wrk-q-2-check-1')" id="wrk-q-2-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '2' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '2' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-2 workplace-limit-action-2 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q2(1, 'wrk-q-2-check-2')" id="wrk-q-2-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '2' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '2' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-2 workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q2(1, 'wrk-q-2-check-3')" id="wrk-q-2-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '2' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-2 workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '2' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-2 workplace-leading-action workp form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q2(1, 'wrk-q-2-check-4')" id="wrk-q-2-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation have a CSR policy that includes training schemes, employee advancement, skills training?</b>
+              <b>Does your organisation have a policy that includes training schemes, employee advancement, and/or skills training?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = '3' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = '3' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q3(0, 'wrk-q-3-check-1')" id="wrk-q-3-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '3' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '3' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-3 workplace-limit-action-3 form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q3(1, 'wrk-q-3-check-2')" id="wrk-q-3-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '3' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '3' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-3 workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q3(1, 'wrk-q-3-check-3')" id="wrk-q-3-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '3' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-3 workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '3' data-pillar='workplace' type="checkbox" class="action workplace-action workplace-action-row-3 workplace-leading-action workp form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q3(1, 'wrk-q-3-check-4')" id="wrk-q-3-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation have a CSR policy that includes health & well-being programmes and education?</b>
+              <b>Does your organisation have a policy that includes health & well-being programmes and education?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = '4' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-4 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = '4' data-pillar='workplace' type="checkbox" class="action workplace-no-action workplace-no-action-row-4 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q4(0, 'wrk-q-4-check-1')" id="wrk-q-4-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '4' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-4 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '4' data-pillar='workplace'  type="checkbox" class="action workplace-action workplace-action-row-4 workplace-limit-action-4 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q4(1, 'wrk-q-4-check-2')" id="wrk-q-4-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '4' data-pillar='workplace'  type="checkbox" class="action  workplace-action workplace-action-row-4 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '4' data-pillar='workplace'  type="checkbox" class="action  workplace-action workplace-action-row-4 action workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q4(1, 'wrk-q-4-check-3')" id="wrk-q-4-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '4' data-pillar='workplace' type="checkbox" class="action workplace-action action workplace-action-row-4 workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '4' data-pillar='workplace' type="checkbox" class="action workplace-action action workplace-action-row-4 workplace-leading-action workp form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q4(1, 'wrk-q-4-check-4')" id="wrk-q-4-check-4"> 
             </div>
           </div>
           
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation have a CSR policy that includes family commitment, childcare subsidies, parental leave, carer facilities?</b>
+              <b>Does your organisation have a policy that includes family commitment, childcare subsidies, parental leave, and/or carer facilities?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = '5' data-pillar='workplace' type="checkbox" class="workplace-no-action workplace-no-action-row-5 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = '5' data-pillar='workplace' type="checkbox" class="workplace-no-action workplace-no-action-row-5 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q5(0, 'wrk-q-5-check-1')" id="wrk-q-5-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '5' data-pillar='workplace'  type="checkbox" class="workplace-action workplace-action-row-5 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '5' data-pillar='workplace'  type="checkbox" class="workplace-action workplace-action-row-5 workplace-limit-action-5 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q5(1, 'wrk-q-5-check-2')" id="wrk-q-5-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '5' data-pillar='workplace'  type="checkbox" class=" workplace-action workplace-action-row-5 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '5' data-pillar='workplace'  type="checkbox" class=" workplace-action workplace-action-row-5 action workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q5(1, 'wrk-q-5-check-3')" id="wrk-q-5-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '5' data-pillar='workplace' type="checkbox" class="workplace-action workplace-action-row-5 action workplace-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '5' data-pillar='workplace' type="checkbox" class="workplace-action workplace-action-row-5 action workplace-leading-action workp form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q5(1, 'wrk-q-5-check-4')" id="wrk-q-5-check-4"> 
             </div>
           </div>
           
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Please use this row for any policy not previously mentioned. (OPTIONAL)</b>
+              <b>Please use this row for any activity not previously mentioned. (OPTIONAL)</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input data-row = 6 data-pillar='workplace' type="checkbox" class="workplace-no-action workplace-no-action-row-6 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input data-row = 6 data-pillar='workplace' type="checkbox" class="workplace-no-action workplace-no-action-row-6 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q6(0, 'wrk-q-6-check-1')" id="wrk-q-6-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '6' data-pillar='workplace'  type="checkbox" class="workplace-action workplace-action-row-6 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '6' data-pillar='workplace'  type="checkbox" class="workplace-action workplace-action-row-6 workplace-limit-action-6 action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q6(1, 'wrk-q-6-check-2')" id="wrk-q-6-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '6' data-pillar='workplace'  type="checkbox" class=" workplace-action workplace-action-row-6 action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '6' data-pillar='workplace'  type="checkbox" class=" workplace-action workplace-action-row-6 action workplace-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q6(1, 'wrk-q-6-check-3')" id="wrk-q-6-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input data-row = '6' data-pillar='workplace' type="checkbox" class="workplace-action workplace-action-row-6 workplace-leading-action action form-check-input" value="" style="width: 60px; height: 50px;" id="workplace_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input data-row = '6' data-pillar='workplace' type="checkbox" class="workplace-action workplace-action-row-6 workplace-leading-action workp action form-check-input" value="" style="width: 60px; height: 50px;" onclick="wrk_q6(1, 'wrk-q-6-check-4')" id="wrk-q-6-check-4"> 
             </div>
           </div>
 
@@ -468,7 +455,7 @@
             <div class="text-start mx-2 flex-fill">
               <b>TOTAL CURRENT WORKPLACE ACTIVITY</b> 
             </div>
-            <div class="flex-fill flex-wrap">
+            <div style="margin-left: 3%;" class="flex-fill flex-wrap">
               <input type="checkbox" data-pillar="workplace" class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_one_no_action"> 
               <input type="checkbox" data-pillar="workplace"  class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_two_no_action" >
               <input type="checkbox" data-pillar="workplace"  class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_three_no_action" >
@@ -491,7 +478,6 @@
               <input type="checkbox" data-pillar="workplace"  class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_four_limited_action" > 
               <input type="checkbox" data-pillar="workplace"  class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_four_positive_action" > 
               <input type="checkbox" data-pillar="workplace"  class="workplace-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_four_leading_action" >    
-
               <!-- <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_five_limited_action" > 
               <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_five_positive_action" > 
               <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_question_five_leading_action" >   
@@ -517,36 +503,30 @@
               <h1 class="display-6 text-light">Community Activity Map</h1>
             </div>
           </div>
-          <div class="d-flex flex-wrap justify-content-lg-center justify-content-md-center justify-content-sm-start py-3">
-            <label for="#" class="col-auto col-form-label">Current Position Locator For</label>
-            <div class="col-auto">
-              <input type="text" class="form-control min-vw-50 ms-3" id="inputPassword">
-            </div>
-          </div>
 
-        <div class="d-flex flex-row">
-          <div class="col-lg-4 flex-column p-2">
+        <div style="margin-right: 7%;" class="mt-3 d-flex flex-row p-2 justify-content-between">
+          <div class="col-lg-4 col-md-2 col-sm-2">
             <b>ACTIVITY LIST</b>
           </div>
-          <div class="flex-column p-2 me-lg-5">
+          <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-2">
             <b>NO ACTION</b>
             <span class="tips" data-bs-placement="left" title="You currently have no written policy in place that addresses this area or issue.">
               <i class="bi bi-info-circle-fill text-light"></i>
             </span>
           </div>
-          <div class="col-lg-2 flex-column p-2">
+          <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
             <b>LIMITED ACTION</b>
             <span class="tips" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored.">
               <i class="bi bi-info-circle-fill text-light"></i>
-            </span>
+            </span> 
           </div>
-          <div class="col-lg-2 flex-column p-2">
+          <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
             <b>POSITIVE ACTION</b>
             <span class="tips" data-bs-placement="left" title="You have a policy in place that is routinely actioned and regularly reviewed.">
               <i class="bi bi-info-circle-fill text-light"></i>
             </span>
           </div>
-          <div class="col-lg-2 flex-column p-2">
+          <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
             <b>LEADING ACTION</b>
             <span class="tips" data-bs-placement="top" title="Innovative policy has been devised to provide positive outcomes in this area.">
               <i class="bi bi-info-circle-fill text-light"></i>
@@ -554,111 +534,111 @@
           </div>
         </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation support a community project such as community hub?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '1'  class="action community-no-action community-no-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="community_first_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '1'  class="action community-no-action community-no-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q1(0, 'com-q-1-check-1')" id="com-q-1-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="community_first_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 community-limit-action-1 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q1(1, 'com-q-1-check-2')" id="com-q-1-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 form-check-input" value="" style="width: 60px; height: 50px;" id="community_first_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q1(1, 'com-q-1-check-3')" id="com-q-1-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_first_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox"  data-pillar = 'community' data-row = '1' class="action community-action community-action-row-1 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q1(1, 'com-q-1-check-4')" id="com-q-1-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation provide support to your community in terms of local people employed and use of local business & services?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '2'   class="action community-no-action community-no-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '2'   class="action community-no-action community-no-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q2(0, 'com-q-2-check-1')" id="com-q-2-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 community-limit-action-2 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q2(1, 'com-q-2-check-2')" id="com-q-2-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q2(1, 'com-q-2-check-3')" id="com-q-2-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '2'  class="action community-action community-action-row-2 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q2(1, 'com-q-2-check-4')" id="com-q-2-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Does your organisation provide support to school & colleges?</b>
+              <b>Does your organisation provide support to schools & colleges?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '3'   class="action community-no-action community-no-action-row3 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '3'   class="action community-no-action community-no-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q3(0, 'com-q-3-check-1')" id="com-q-3-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 community-limit-action-3 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q3(1, 'com-q-3-check-2')" id="com-q-3-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q3(1, 'com-q-3-check-3')" id="com-q-3-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '3'  class="action community-action community-action-row-3 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q3(1, 'com-q-3-check-4')" id="com-q-3-check-4"> 
             </div>
           </div>
           
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation provide support to an enterprise scheme?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '4'   class="action community-no-action community-no-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '4'   class="action community-no-action community-no-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q4(0, 'com-q-4-check-1')" id="com-q-4-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 community-limit-action-4 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q4(1, 'com-q-4-check-2')" id="com-q-4-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q4(1, 'com-q-4-check-3')" id="com-q-4-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '4'  class="action community-action community-action-row-4 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q4(1, 'com-q-4-check-4')" id="com-q-4-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
               <b>Does your organisation record and impact report on outcomes from community involvement?</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '5'   class="action community-no-action community-no-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '5'   class="action community-no-action community-no-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q5(0, 'com-q-5-check-1')" id="com-q-5-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 community-limit-action-5 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q5(1, 'com-q-5-check-2')" id="com-q-5-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q5(1, 'com-q-5-check-3')" id="com-q-5-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '5'  class="action community-action community-action-row-5 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q5(1, 'com-q-5-check-4')" id="com-q-5-check-4"> 
             </div>
           </div>
 
-          <div class="d-flex flex-row p-2 justify-content-between">
+          <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
             <div class="col-lg-4 col-md-2 col-sm-2">
-              <b>Please use this row for any other community activity in which your organisation is involved. (OPTIONAL)</b>
+              <b>Please use this row for any other activity in which your organisation is involved. (OPTIONAL)</b>
             </div>
-            <div class="flex-fill ms-2">
-              <input type="checkbox" data-pillar = 'community' data-row = '6'   class="action community-no-action community-no-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_no_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+              <input type="checkbox" data-pillar = 'community' data-row = '6'   class="action community-no-action community-no-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q6(0, 'com-q-6-check-1')" id="com-q-6-check-1"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_limited_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 community-limit-action-6 form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q6(1, 'com-q-6-check-2')" id="com-q-6-check-2"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_positive_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 community-positive-action form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q6(1, 'com-q-6-check-3')" id="com-q-6-check-3"> 
             </div>
-            <div class="flex-fill ms-1">
-              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 community-leading-action form-check-input" value="" style="width: 60px; height: 50px;" id="community_second_question_leading_action"> 
+            <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+              <input type="checkbox" data-pillar = 'community' data-row = '6'  class="action community-action community-action-row-6 community-leading-action commu form-check-input" value="" style="width: 60px; height: 50px;" onclick="com_q6(1, 'com-q-6-check-4')" id="com-q-6-check-4"> 
             </div>
           </div>
           
@@ -666,7 +646,7 @@
             <div class="text-start mx-2 flex-fill">
               <b>TOTAL CURRENT COMMUNITY ACTIVITY</b> 
             </div>
-            <div class="flex-fill flex-wrap">
+            <div style="margin-left: 3%;" class="flex-fill flex-wrap">
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_one_no_action" > 
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_two_no_action" > 
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_three_no_action" > 
@@ -689,7 +669,7 @@
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_four_limited_action" > 
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_four_positive_action" > 
               <input type="checkbox" class="community-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_four_leading_action" >   
-<!-- 
+              <!-- 
               <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_five_limited_action" > 
               <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_five_positive_action" > 
               <input type="checkbox" class="form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_question_five_leading_action" >     
@@ -716,149 +696,142 @@
               <h1 class="display-6 text-success">Philanthropic Activity Map</h1>
             </div>
           </div>
-          <div class="d-flex flex-wrap justify-content-lg-center justify-content-md-center justify-content-sm-start py-3">
-            <label for="#" class="col-auto col-form-label">Current Position Locator For</label>
-            <div class="col-auto">
-              <input type="text" class="form-control min-vw-50 ms-3" id="inputPassword">
+
+          <div style="margin-right: 7%;" class="mt-3 d-flex flex-row p-2 justify-content-between">
+            <div class="col-lg-4 col-md-2 col-sm-2">
+              <b>ACTIVITY LIST</b>
+            </div>
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-2">
+              <b>NO ACTION</b>
+              <span class="tips" data-bs-placement="left" title="You currently have no written policy in place that addresses this area or issue.">
+                <i class="bi bi-info-circle-fill text-success"></i>
+              </span>
+            </div>
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
+              <b>LIMITED ACTION</b>
+              <span class="tips" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored.">
+                <i class="bi bi-info-circle-fill text-success"></i>
+              </span> 
+            </div>
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
+              <b>POSITIVE ACTION</b>
+              <span class="tips" data-bs-placement="left" title="You have a policy in place that is routinely actioned and regularly reviewed.">
+                <i class="bi bi-info-circle-fill text-success"></i>
+              </span>
+            </div>
+            <div style="width: 60px; display: flex; justify-content: center;" class="flex-fill ms-1">
+              <b>LEADING ACTION</b>
+              <span class="tips" data-bs-placement="top" title="Innovative policy has been devised to provide positive outcomes in this area.">
+                <i class="bi bi-info-circle-fill text-success"></i>
+              </span>
             </div>
           </div>
 
-
-        <div class="d-flex flex-row">
-          <div class="col-lg-4 flex-column p-2">
-            <b>ACTIVITY LIST</b>
-          </div>
-          <div class="flex-column p-2 me-lg-5">
-            <b>NO ACTION</b>
-            <span class="tips" data-bs-placement="left" title="You currently have no written policy in place that addresses this area or issue.">
-              <i class="bi bi-info-circle-fill text-success"></i>
-            </span>
-          </div>
-          <div class="col-lg-2 flex-column p-2">
-            <b>LIMITED ACTION</b>
-            <span class="tips" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored.">
-              <i class="bi bi-info-circle-fill text-success"></i>
-            </span>
-          </div>
-          <div class="col-lg-2 flex-column p-2">
-            <b>POSITIVE ACTION</b>
-            <span class="tips" data-bs-placement="left" title="You have a policy in place that is routinely actioned and regularly reviewed.">
-              <i class="bi bi-info-circle-fill text-success"></i>
-            </span>
-          </div>
-          <div class="col-lg-2 flex-column p-2">
-            <b>LEADING ACTION</b>
-            <span class="tips" data-bs-placement="top" title="Innovative policy has been devised to provide positive outcomes in this area.">
-              <i class="bi bi-info-circle-fill text-success"></i>
-            </span>
-          </div>
-        </div>
-
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <p class="fs-6">Does your organisation have a policy in place for supporting charities?</p>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '1' class="philanthropic-no-action philanthropic-no-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '1' class="philanthropic-no-action philanthropic-no-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q1(0, 'phl-q-1-check-1')" id="phl-q-1-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '1' class="philanthropic-action philanthropic-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '1' class="philanthropic-action philanthropic-action-row-1 philanthropic-limit-action-1 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q1(1, 'phl-q-1-check-2')" id="phl-q-1-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '1' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-1 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '1' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-1 philanthropic-positive-action  form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q1(1, 'phl-q-1-check-3')" id="phl-q-1-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '1' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-1 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '1' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-1 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q1(1, 'phl-q-1-check-4')" id="phl-q-1-check-4"> 
           </div>
         </div>
 
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <b>Does your organisation give financial donations to charity?</b>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '2' class="philanthropic-no-action philanthropic-no-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '2' class="philanthropic-no-action philanthropic-no-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q2(0, 'phl-q-2-check-1')" id="phl-q-2-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '2' class="philanthropic-action philanthropic-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '2' class="philanthropic-action philanthropic-action-row-2 philanthropic-limit-action-2 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q2(1, 'phl-q-2-check-2')" id="phl-q-2-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '2' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-2 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '2' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-2 philanthropic-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q2(1, 'phl-q-2-check-3')" id="phl-q-2-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '2' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-2 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '2' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-2 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q2(1, 'phl-q-2-check-4')" id="phl-q-2-check-4"> 
           </div>
         </div>
 
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <b>Does your organisation give to charity in terms of pro bono time and services?</b>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '3' class="philanthropic-no-action philanthropic-no-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '3' class="philanthropic-no-action philanthropic-no-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q3(0, 'phl-q-3-check-1')" id="phl-q-3-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '3' class="philanthropic-action philanthropic-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '3' class="philanthropic-action philanthropic-action-row-3 philanthropic-limit-action-3 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q3(1, 'phl-q-3-check-2')" id="phl-q-3-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '3' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-3 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '3' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-3 philanthropic-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q3(1, 'phl-q-3-check-3')" id="phl-q-3-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '3' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-3 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '3' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-3 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q3(1, 'phl-q-3-check-4')" id="phl-q-3-check-4"> 
           </div>
         </div>
 
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <b>Does your organisation support staff in any independent philanthropic activity?</b>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '4' class="philanthropic-no-action philanthropic-no-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '4' class="philanthropic-no-action philanthropic-no-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q4(0, 'phl-q-4-check-1')" id="phl-q-4-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '4' class="philanthropic-action philanthropic-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '4' class="philanthropic-action philanthropic-action-row-4 philanthropic-limit-action-4 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q4(1, 'phl-q-4-check-2')" id="phl-q-4-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '4' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-4 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '4' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-4 philanthropic-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q4(1, 'phl-q-4-check-3')" id="phl-q-4-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '4' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-4 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '4' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-4 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q4(1, 'phl-q-4-check-4')" id="phl-q-4-check-4"> 
           </div>
         </div>
 
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <b>Does your organisation record and impact report on outcomes from philanthropic involvement?</b>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '5' class="philanthropic-no-action philanthropic-no-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '5' class="philanthropic-no-action philanthropic-no-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q5(0, 'phl-q-5-check-1')" id="phl-q-5-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '5' class="philanthropic-action philanthropic-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '5' class="philanthropic-action philanthropic-action-row-5 philanthropic-limit-action-5 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q5(1, 'phl-q-5-check-2')" id="phl-q-5-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '5' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-5 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '5' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-5 philanthropic-positive-action  form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q5(1, 'phl-q-5-check-3')" id="phl-q-5-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '5' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-5 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '5' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-5 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q5(1, 'phl-q-5-check-4')" id="phl-q-5-check-4"> 
           </div>
         </div>
 
-         <div class="d-flex flex-row p-2 justify-content-between">
+         <div style="margin-right: 7%;" class="d-flex flex-row p-2 justify-content-between">
           <div class="col-lg-4 col-md-2 col-sm-2">
             <b>Please use this row for any other activity not previously mentioned. (OPTIONAL)</b>
           </div>
-          <div class="flex-fill ms-2">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '6' class="philanthropic-no-action philanthropic-no-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_no_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-2">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '6' class="philanthropic-no-action philanthropic-no-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q6(0, 'phl-q-6-check-1')" id="phl-q-6-check-1"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-pillar = 'philanthropic' data-row = '6' class="philanthropic-action philanthropic-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_limited_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-pillar = 'philanthropic' data-row = '6' class="philanthropic-action philanthropic-action-row-6 philanthropic-limit-action-6 form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q6(1, 'phl-q-6-check-2')" id="phl-q-6-check-2"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '6' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-6 form-check-input action" value="" style="width: 60px; height: 50px;" id="first_option_positive_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '6' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-6 philanthropic-positive-action form-check-input action" value="" style="width: 60px; height: 50px;" onclick="phl_q6(1, 'phl-q-6-check-3')" id="phl-q-6-check-3"> 
           </div>
-          <div class="flex-fill ms-1">
-            <input type="checkbox" data-row = '6' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-6 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" id="first_option_leading_action"> 
+          <div style="display: flex; justify-content: center;" class="flex-fill ms-1">
+            <input type="checkbox" data-row = '6' data-pillar = 'philanthropic' class="philanthropic-action philanthropic-action-row-6 philanthropic-leading-action form-check-input action"  value="" style="width: 60px; height: 50px;" onclick="phl_q6(1, 'phl-q-6-check-4')" id="phl-q-6-check-4"> 
           </div>
         </div>
 
@@ -866,7 +839,7 @@
           <div class="mx-2 text-start flex-fill">
             <b>TOTAL CURRENT PHILANTHROPIC ACTIVITY</b> 
           </div>
-          <div class="flex-fill flex-wrap">
+          <div style="margin-left: 2%;" class="flex-fill flex-wrap">
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_one_no_action" > 
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_two_no_action" > 
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_three_no_action" > 
@@ -885,7 +858,6 @@
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_three_limited_action" >
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_three_positive_action" > 
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_three_leading_action" >   
-
             <input type="checkbox" class="form-check-input philanthropic-result " value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_four_limited_action" > 
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_four_positive_action" > 
             <input type="checkbox" class="philanthropic-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_question_four_leading_action" > 
@@ -903,239 +875,460 @@
       </div>
     </section>
 
-    
-
     <section class="bg-success text-light" id="location">
       <div class="containter-fluid p-5">
         <div class="row">
-          <div class="">
-            <h1 class="display-5 text-start text-light">Your Location on the CSR Activity Map</h1>
+          <div class="mb-5">
+            <h1 class="display-5 text-center text-light">Your Location on the CSR Activity Map</h1>
           </div>
           <!-- <div class="col-2 d-none d-md-block text-end">
             <img src="./assets/images/CSR-A_Logo-CMYK-REv COLOUR 2.png" style="height: 70px;" alt="">
           </div> -->
         </div>
-        <div class="row p-3">
-          <label for="#" class="text-start col-lg-3 col-md-6 col-sm-4 col-form-label">Current Position Locator For</label>
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <input type="text" class="form-control" id="inputPassword">
-        </div>
-      </div>
 
-        <div class="d-flex justify-content-around flex-row py-2">
-          <div class="flex-column flex-fill">
-            <p class="me-2">NO ACTION</p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You currently take no action in this area or are not aware of any taken.">
-              <i class="bi bi-info-circle-fill text-light"></i>
-            </span> -->
+        <div style="padding-left: 23%;" class="d-flex justify-content-around flex-row py-2 mb-3">
+          <div class="flex-column flex-fill score-div">
+            <p class="">
+              CSR AWARE
+            </p>
+            <p> 
+              There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
+            </p>
           </div>
-          <div class="flex-column flex-fill">
-            <p class="me-2">CSR AWARE</p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.">
-              <i class="bi bi-info-circle-fill text-light"></i>
-            </span> -->
-          </div>
-          <div class="flex-column flex-fill">
-            <p class="me-2">CSR ACTIVE</p>
-            <!-- <span class="tips d-md-none" data-bs-placement="top" title="You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
-            Protects the environment
-            Looks after staff
-            Actively engages with community
-            Gives to charity
-            Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.">
-              <i class="bi bi-info-circle-fill text-light"></i> -->
+          <div class="flex-column flex-fill score-div">
+            <p class="">CSR ACTIVE</p>
+            <p>
+              You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations. CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.
+            </p>
             <!-- </span> -->
           </div>
-          <div class="flex-column flex-fill">
-            <p class="me-2">CSR PROFICIENT</p>
-          </div>
-          <div class="flex-column flex-fill">
-            <p class="me-2">CSR LEADER</p>
-          </div>
-        </div>
-
-        <div class="d-flex flex-row justify-content-between">
-          <div class="flex-column flex-fill col-2 py-2 d-none d-md-block">
-            You currently take no action in this area or are not aware of any taken.
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            There has been some action in this area but it is ad hoc and unmonitored. You are re-active rather than pro-active. There are no CSR processes and no clear roles and responsibilities in place.
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You do not necessarily have a policy in place but there is routine action in some areas. You may benefit from a dedicated CSR process and integrating CSR policy into your operations.
-          </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
+          <div class="flex-column flex-fill score-div">
+            <p class="">CSR PROFICIENT</p>
+            <p>
+              You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement.
               <li>Protects the environment</li>
               <li>Looks after staff</li>
               <li>Actively engages with community</li>
               <li>Gives to charity</li>
             Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.
+            </p>
           </div>
-          <div class="flex-column flex-fill col-3 p-2 d-none d-md-block">
-            You are a socially responsible organisation that records and constantly improves.
-              <li>Protects and enhances the environment (including supply chain partners).</li>
-              <li>First class staff engagement and HR policies.</li>
-              <li>Is a leader in the community.</li>
+          <div class="flex-column flex-fill score-div">
+            <p class="">CSR LEADER</p>
+            <p>
+              You are a socially responsible organisation that records and constantly improves.
+              <li>Protects and enhances the environment (including supply chain partners)</li>
+              <li>First class staff engagement and HR policies</li>
+              <li>You are a leader in the community</li>
               <li>Promotes, supports and engages with charity long-term</li>
-            You are a productive, profitable and resilent organisation.
+              <li>You are a productive, profitable and resilent organisation</li>
+            </p>
           </div>
         </div>
 
+        <div style="padding-left: 4%;" class="d-flex flex-row">
+          <div class="flex-column flex-fill score-div">
+            <div class="p-2 text-start flex-fill">
+              <span><img src="./assets/images/ENV-ICON.png" alt="ENV-ICON" style="width: 19px; height: 17px;" class="me-2"> Environment</span>
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Environment Col-1 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_one"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_two"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_three"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_four"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_five"> 
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Environment Col-2 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_six">  
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_one"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_two"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_three"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_four">
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Environment Col-3 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_five"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_six">
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_one"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_two">  
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Environment Col-4 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_three"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_four"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_five"> 
+              <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_six">  
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-left: 4%;" class="d-flex flex-row">
+          
+          <div class="flex-column flex-fill score-div">
+            <div class="p-2 text-start flex-fill">
+              <span><img src="./assets/images/WORK-ICON.png" alt="WORK-ICON" style="height: 18px; width: 19px;" class="me-2"> Workplace</span>
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            
+            <!-- Workplace Col-1 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_one"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_two"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_three"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_four"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_five">  
+            </div>
+
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Workplace Col-2 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_six"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_one"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_two"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_three"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_four">  
+            </div>
+
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+
+            <!-- Workplace Col-3 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_five"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_six">  
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_one"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_two"> 
+            </div>
+
+          </div>
+          <div class="flex-column flex-fill score-div">
+
+            <!-- Workplace Col-4 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_three"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_four"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_five"> 
+              <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_six">  
+            </div>
+
+          </div>
+        </div>
+
+        <div style="padding-left: 4%;" class="d-flex flex-row">
+          
+          <div class="flex-column flex-fill score-div">
+            <div class="p-2 text-start flex-fill">
+              <span style="padding-right: 3px;"><img src="./assets/images/COMM-ICON.png" alt="COMM-ICON" style="height: 19px; width: 18px;" class="me-2"> Community</span>
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Community Col-1 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_one"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_two"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_three"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_four"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_five">  
+            </div>  
+
+          </div>
+
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Community Col-2 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_six">
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_one"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_two"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_three"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_four">   
+            </div>  
+
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Community Col-3 -->
+            <div>            
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_five"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_six"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_one"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_two">  
+            </div>
+
+          </div>
+          <div class="flex-column flex-fill score-div">
+            <!-- Community Col-4 -->
+            <div>              
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_three"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_four"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_five"> 
+              <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_six">  
+            </div>
+
+          </div>
+        </div>
+
+
+        <div style="padding-left: 4%;" class="d-flex flex-row">
+          
+          <div class="flex-column flex-fill score-div">
+            <div class="p-2 text-start flex-fill">
+              <span><img src="./assets/images/PHIL-ICON.png" alt="PHIL-ICON" style="height: 19px; width: 19px;" class="me-2"> Philanthropic</span>
+            </div>
+          </div>
+
+          <div class="flex-column flex-fill score-div">         
+            <!-- Philantrophy Col-1 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_one"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_two"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_three"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_four"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_five">
+            </div>
+
+          </div>
+
+          <div class="flex-column flex-fill score-div">         
+            <!-- Philantrophy Col-2 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_six">
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_one"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_two"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_three"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_four">   
+            </div>
+
+          </div>
+
+          <div class="flex-column flex-fill score-div">
+            <!-- Philantrophy Col-3 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_five"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_six">  
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_one"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_two"> 
+            </div>
+
+          </div>
+          <div class="flex-column flex-fill score-div">
+            <!-- Philantrophy Col-4 -->
+            <div>
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_three"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_four"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_five"> 
+              <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_six">  
+            </div>
+
+          </div>
+        </div>
+
+
+      <!-- Old version of result checkboxes -->
+      <!-- <div>    
         <div class="d-flex flex-row justify-content-between">
+          <div class="flex-column flex-fill col-2 py-2 d-none d-md-block">
+          </div>
+        </div>
+
+        <div style="margin-left: 80px;" class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/ENV-ICON.png" alt="ENV-ICON" style="width: 17px; height: 17px;" class="me-2"> Environment</span>
+            <span><img src="./assets/images/ENV-ICON.png" alt="ENV-ICON" style="width: 19px; height: 17px;" class="me-2"> Environment</span>
           </div>
           <div class="flex-fill flex-wrap ms-1">
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_one"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_two"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_three"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_four"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_five"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_six">  
-          </div><div class="flex-fill flex-wrap">
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_one"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_two"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_three"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_four"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_five"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_six">  
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_one"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_two"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_three"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_four"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_five"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_no_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_one"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_two"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_three"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_four"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_five"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_limited_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_one"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_two"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_three"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_four"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_five"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_six">  
           </div>
           <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_one"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_two"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_three"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_four"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_five"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_positive_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_one"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_two"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_three"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_four"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_five"> 
-            <input type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_six">  
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_one"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_two"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_three"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_four"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_five"> 
+            <input onclick="return false" type="checkbox" class="env-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_environmental_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex flex-row justify-content-between">
+        <div style="margin-left: 80px;" class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/WORK-ICON.png" alt="WORK-ICON" style="height: 18px; width: 18px;" class="me-2"> Workplace</span>
+            <span><img src="./assets/images/WORK-ICON.png" alt="WORK-ICON" style="height: 18px; width: 19px;" class="me-2"> Workplace</span>
           </div>
           <div class="flex-fill flex-wrap ms-3">
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_one"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_two"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_three"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_four"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_five"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_six">  
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_one"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_two"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_three"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_four"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_five"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_no_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_one"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_two"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_three"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_four"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_five"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_one"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_two"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_three"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_four"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_five"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_six">  
           </div>
           <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_one"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_two"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_three"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_four"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_five"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_limited_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_one"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_two"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_three"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_four"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_five"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_positive_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_one"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_two"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_three"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_four"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_five"> 
-            <input type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_six">  
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_one"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_two"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_three"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_four"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_five"> 
+            <input onclick="return false" type="checkbox" class="workplace-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_workplace_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex flex-row justify-content-between">
+        <div style="margin-left: 80px;" class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
-            <span><img src="./assets/images/COMM-ICON.png" alt="COMM-ICON" style="height: 18px; width: 18px;" class="me-2"> Community</span>
+            <span style="padding-right: 3px;"><img src="./assets/images/COMM-ICON.png" alt="COMM-ICON" style="height: 19px; width: 18px;" class="me-2"> Community</span>
           </div>
           <div class="flex-fill ms-2 flex-wrap">
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_one"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_two"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_three"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_four"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_five"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_six">  
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_one"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_two"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_three"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_four"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_five"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_no_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_one"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_two"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_three"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_four"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_five"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_one"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_two"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_three"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_four"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_five"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_six">  
           </div>
           <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_one"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_two"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_three"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_four"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_five"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_limited_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_one"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_two"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_three"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_four"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_five"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_positive_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_one"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_two"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_three"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_four"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_five"> 
-            <input type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_six">  
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_one"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_two"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_three"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_four"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_five"> 
+            <input onclick="return false" type="checkbox" class="community-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_community_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex flex-row justify-content-between">
+        <div style="margin-left: 80px;" class="d-flex flex-row justify-content-between">
           <div class="p-2 text-start flex-fill">
             <span><img src="./assets/images/PHIL-ICON.png" alt="PHIL-ICON" style="height: 19px; width: 19px;" class="me-2"> Philanthropic</span>
           </div>
           <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_one"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_two"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_three"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_four"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_five"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_six">  
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_one"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_two"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_three"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_four"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_five"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_no_action_six">  
+          </div>
+          <div style="margin-left: 40px;"  class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_one"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_two"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_three"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_four"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_five"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_six">  
+          </div>
+          <div style="margin-left: 40px;" class="flex-fill flex-wrap">
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_one"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_two"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_three"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_four"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_five"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_six">  
           </div>
           <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_one"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_two"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_three"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_four"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_five"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_limited_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_one"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_two"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_three"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_four"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_five"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_positive_action_six">  
-          </div>
-          <div class="flex-fill flex-wrap">
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_one"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_two"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_three"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_four"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_five"> 
-            <input type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_six">  
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_one"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_two"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_three"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_four"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_five"> 
+            <input onclick="return false" type="checkbox" class="philanthropic-final-result form-check-input" value="" style="width: 25px; height: 25px;" id="total_philanthropic_leading_action_six">  
           </div>
         </div>
-        <div class="d-flex flex-column align-items-center text-center justify-content-center mt-5">
-          <h1 class=""><b>Please enter your email address to get your results</b></h1>
-          <div class="w-50 mt-3 mb-3">
-            <input placeholder="Enter email" name= "userEmail" type = "email" class = "form-control"/>
+      </div>   -->
+
+
+        <div class="d-flex flex-column align-items-center justify-content-center mt-5">
+          <h3 class="font"><b>Please enter your details to get your results.</b></h3>
+          <div class="mt-3 mb-3" style = "width: 35%;">
+            <form id = "submission-form">
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" name = "userEmail" class="form-control"  aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" name = "userName" class="form-control"  required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Company Name</label>
+                <input type="text" name = "companyName" class="form-control"  required>
+              </div>
+              <!-- <input placeholder="Enter full name" name= "userName" type = "text" class = "form-control mx-auto w-50"/>
+              <input placeholder="Enter email" name= "userEmail" type = "email" class = "form-control my-2 mx-auto w-50"/>
+              <input placeholder="Enter company name" name= "userNumber" type = "text" class = "form-control mx-auto w-50"/> -->
+              <div class = "text-center">
+                <button class="btn btn-success w-50" type="submit">Get Result</button>
+              </div>
+
+            </form>
+            
           </div>
           <br/>
-          <button class="btn btn-success" type="button" onclick="sendEmail()">Get Result</button>
         </div>
       </div>
     </section>
@@ -1237,8 +1430,7 @@
                         <h6 class="display-6" style="color: RGB(0,161,154);">
                             <strong>Become CSR Accredited Click Here to Register for FREE</strong>
                         </h6>
-                        <p class="lead">
-                            CSR Accreditation provides independent recognition of an organisation's
+                        <p>CSR Accreditation provides independent recognition of an organisation's
                             socially responsible activities. We encourage you to build on these results
                             and register for CSR Accreditation. Registration is FREE and we will supply 
                             you with guidance, tools and the confidence to develop an effective CSR policy
@@ -1258,7 +1450,7 @@
       <div class="container-fluid p-5">
         <div class="row">
           <div class="col">
-            <h1 class="lead text-success">
+            <h1 clcess">
               Demonstrate your commitment now <b>and become a CSR Leader.</b>
             </h1>
           </div>
@@ -1266,10 +1458,10 @@
         <div class="row">
          <div class="col-sm-6 p-3">
           <p class="text-success d-inline-block">
-            Call <b>01494 444494</b> to find out more abour application or visit <b>www.csr-accreditation.co.uk</b>         
+            Call <b>01494 444494</b> to find out more about application or visit <b>www.csr-accreditation.co.uk</b>         
           </p>
           <p class="text-success d-inline-block">
-            Take our free CSR Accreditation assesment survey online visit www.csr-accreditation.co.uk/csr-assessmenet-survery/
+            Take our free CSR Accreditation assesment survey online visit www.csr-accreditation.co.uk/csr-assessment-survey/
           </p>
           <p class="text-success d-inline-block">
             CSR-Accreditation, 97 Cock Lane, High Wycombe, Bucks HP13 7DZ
@@ -1324,4 +1516,3 @@
     </script>
   </body>
 </html>
-
