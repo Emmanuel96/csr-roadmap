@@ -746,9 +746,9 @@ function sendEmail() {
 
     else{
         Email.send({
-            Host : "smtp.gmail.com",
+            Host : "smtp.elasticemail.com",
             Username : "csraccreditation@gmail.com",
-            Password : "bulgpxbnklszzcsn",
+            Password : "218FCB350FEB83861FDE451AB32874E9BD2E",
             To : userEmail,
             From :     "csraccreditation@gmail.com",
             Subject : "Roadmap Result",
@@ -982,9 +982,9 @@ function sendEmail() {
         }).then((sent)=>{
             if(sent == "OK"){
                 Email.send({
-                    Host : "smtp.gmail.com",
+                    Host : "smtp.elasticemail.com",
                     Username : "csraccreditation@gmail.com",
-                    Password : "bulgpxbnklszzcsn",
+                    Password : "218FCB350FEB83861FDE451AB32874E9BD2E",
                     To : mailList,
                     From :     "csraccreditation@gmail.com",
                     Subject : "Roadmap Result",
