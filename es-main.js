@@ -722,7 +722,7 @@ $('.action').on('change', handle_pillars)
 
 $('#submission-form').on('submit', (e)=>{
     e.preventDefault(); 
-    sendEmail();
+    console.log(sendEmail());
 })
 
 function sendEmail() {
@@ -731,9 +731,9 @@ function sendEmail() {
     let companyName =  $('input[name="companyName"]').val()
 
     let mailList = [
-        'kole.audu@gmail.com',
-        'jennifer@csr-accreditation.co.uk',
-        'paul@csr-accreditation.co.uk'
+        'kole.audu@gmail.com'
+        // 'jennifer@csr-accreditation.co.uk',
+        // 'rich@csr-accreditation.co.uk'
     ]
 
     if(!userEmail){
@@ -747,13 +747,13 @@ function sendEmail() {
     else{
         mailList.push(userEmail);
         Email.send({
-            Host : "smtp.gmail.com",
-            Username : "csraccreditation@gmail.com",
-            Password : "bulgpxbnklszzcsn",
-            To : mailList,
-            From :     "csraccreditation@gmail.com",
-            Subject : "Roadmap Result",
-            Body : `
+          Host: "smtp.elasticemail.com",
+          Username: "csraccreditation@gmail.com",
+          Password: "30A84B344B14809390F8FD474AEF06E4FF37",
+          To: mailList,
+          From: "csraccreditation@gmail.com",
+          Subject: "Roadmap Result",
+          Body: `
             <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -957,7 +957,7 @@ function sendEmail() {
                 <section style="margin-top: 30px; background-color: white; padding: 10px;">
                     <div class="container">
                         <h1 style="color: #00a199;">
-                            <strong>Become CSR Accredited! Click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/apply-for-csr-accreditation/">here</a> to Register for FREE.</strong>
+                            <strong>Become CSR Accredited! Click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/register-for-csr-accreditation/">here</a> to Register for FREE.</strong>
                         </h1>
                             <h1 style="color: #00a199;">
                             <strong>If you're interested in our CSR training, click <a style="color: #00A19A;" href="https://csr-accreditation.co.uk/csr-training-course-online/">here</a>.</strong>
@@ -979,15 +979,18 @@ function sendEmail() {
     </div>
 </body>
 </html>
-            `
-        }).then(()=>{
+            `,
+        })
+          .then(() => {
             Swal.fire({
-                title: "Your result has been successfully sent",
-                confirmButtonText: 'Okay',
-              }).then((result) => {
-                window.location.href = "https://csr-accreditation.co.uk/apply-for-csr-accreditation/";
-              })
-        }).catch(() => swal.fire('Your email was not sent.'))
+              title: "Your result has been successfully sent",
+              confirmButtonText: "Okay",
+            }).then((result) => {
+              window.location.href =
+                "https://csr-accreditation.co.uk/register-for-csr-accreditation/";
+            });
+          })
+          .catch(() => swal.fire("Your email was not sent."));
     }
 
 }
