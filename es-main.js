@@ -731,7 +731,7 @@ function sendEmail() {
     let companyName =  $('input[name="companyName"]').val()
 
     let mailList = [
-        'kole.audu@gmail.com'
+        'kole.audu@gmail.com',
         'jennifer@csr-accreditation.co.uk',
         'rich@csr-accreditation.co.uk'
     ]
