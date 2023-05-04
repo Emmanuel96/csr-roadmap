@@ -732,8 +732,8 @@ function sendEmail() {
 
     let mailList = [
         'kole.audu@gmail.com'
-        // 'jennifer@csr-accreditation.co.uk',
-        // 'rich@csr-accreditation.co.uk'
+        'jennifer@csr-accreditation.co.uk',
+        'rich@csr-accreditation.co.uk'
     ]
 
     if(!userEmail){
