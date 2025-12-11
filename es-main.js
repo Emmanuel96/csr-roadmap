@@ -734,7 +734,8 @@ function sendEmail() {
         'kole.audu@gmail.com',
         'jennifer@csr-accreditation.co.uk',
         'rich@csr-accreditation.co.uk',
-        'philippa@csr-accreditation.co.uk'
+        'philippa@csr-accreditation.co.uk',
+        'kole.audu@gmail.com'
     ]
 
     if(!userEmail){
@@ -747,14 +748,18 @@ function sendEmail() {
 
     else{
         mailList.push(userEmail);
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "csraccreditation@gmail.com",
-          Password: "30A84B344B14809390F8FD474AEF06E4FF37",
-          To: mailList,
-          From: "csraccreditation@gmail.com",
-          Subject: "Roadmap Result",
-          Body: `
+        
+        // Use fetch to call our local PHP script instead of smtpjs
+        fetch('send-email.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                to: mailList.join(','),
+                from: "csraccreditation@gmail.com",
+                subject: "Roadmap Result",
+                body: `
             <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -982,16 +987,22 @@ function sendEmail() {
 </html>
             `,
         })
-          .then(() => {
-            Swal.fire({
-              title: "Your result has been successfully sent",
-              confirmButtonText: "Okay",
-            }).then((result) => {
-              window.location.href =
-                "https://csr-accreditation.co.uk/register-for-csr-accreditation/";
-            });
-          })
-          .catch(() => swal.fire("Your email was not sent."));
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                 Swal.fire({
+                  title: "Your result has been successfully sent",
+                  confirmButtonText: "Okay",
+                }).then((result) => {
+                  window.location.href =
+                    "https://csr-accreditation.co.uk/register-for-csr-accreditation/";
+                });
+            } else {
+                swal.fire("Your email was not sent. Error: " + (data.error || "Unknown"));
+            }
+        })
+        .catch(() => swal.fire("Your email was not sent."));
     }
 
 }
