@@ -726,6 +726,29 @@ $('#submission-form').on('submit', (e)=>{
 })
 
 function sendEmail() {
+
+
+    let recaptchaResponse = '';
+
+    if (typeof grecaptcha === 'undefined' || typeof grecaptcha.getResponse !== 'function') {
+        Swal.fire('reCAPTCHA is unavailable. Please reload the page and try again.');
+        return;
+    }
+
+    try {
+        recaptchaResponse = grecaptcha.getResponse();
+    } catch (err) {
+        console.error("Error while accessing reCAPTCHA:", err);
+        Swal.fire('There was a problem verifying reCAPTCHA. Please try again.');
+        return;
+    }
+
+    if (!recaptchaResponse) {
+        Swal.fire('Please confirm you are not a robot');
+        return;
+    }
+
+
     let userEmail = $('input[name="userEmail"]').val()
     let userName =  $('input[name="userName"]').val()
     let companyName =  $('input[name="companyName"]').val()
@@ -739,11 +762,11 @@ function sendEmail() {
     ]
 
     if(!userEmail){
-        swal.fire("Email input cannot be empty")
+        Swal.fire("Email input cannot be empty")
     }
 
     else if(!/\S+@\S+\.\S+/.test(userEmail)){
-        swal.fire("Email address is invalid")
+        Swal.fire("Email address is invalid")
     }
 
     else{
@@ -991,6 +1014,9 @@ function sendEmail() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
+                if (typeof grecaptcha !== "undefined" && grecaptcha && typeof grecaptcha.reset === "function") {
+                    grecaptcha.reset();
+                }
                  Swal.fire({
                   title: "Your result has been successfully sent",
                   confirmButtonText: "Okay",
@@ -999,10 +1025,10 @@ function sendEmail() {
                     "https://csr-accreditation.co.uk/register-for-csr-accreditation/";
                 });
             } else {
-                swal.fire("Your email was not sent. Error: " + (data.error || "Unknown"));
+                Swal.fire("Your email was not sent. Error: " + (data.error || "Unknown"));
             }
         })
-        .catch(() => swal.fire("Your email was not sent."));
+        .catch(() => Swal.fire("Your email was not sent."));
     }
 
 }
