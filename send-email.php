@@ -3,12 +3,7 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
-header("Content-Security-Policy: 
-    default-src 'self'; 
-    script-src 'self' https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/; 
-    frame-src https://www.google.com/recaptcha/; 
-    style-src 'self' 'unsafe-inline';
-");
+header("Content-Security-Policy: default-src 'self'; script-src 'self' https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/; frame-src https://www.google.com/recaptcha/; style-src 'self' 'unsafe-inline';");
 
 
 $RECAPTCHA_SECRET_KEY = '6LdxThYsAAAAABlXcytkH8-J2QW30QuBHuCislVw';

@@ -737,6 +737,9 @@ function sendEmail() {
 
     try {
         recaptchaResponse = grecaptcha.getResponse();
+        console.log('CAPTCHA TOKEN LENGTH:', grecaptcha.getResponse()?.length);
+        console.log("Captcha Token ", recaptchaResponse);
+
     } catch (err) {
         console.error("Error while accessing reCAPTCHA:", err);
         Swal.fire('There was a problem verifying reCAPTCHA. Please try again.');
