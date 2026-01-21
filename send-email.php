@@ -3,13 +3,12 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
-header('Content-Security-Policy: default-src');
 
 
 $RECAPTCHA_SECRET_KEY = '6LdxThYsAAAAABlXcytkH8-J2QW30QuBHuCislVw';
 $RECAPTCHA_SITE_KEY   = '6LdxThYsAAAAAIaaP6jSLGRrK9tBkwhaU1EF8hz_';
 
-$apiky = 'BA61E63B158879E7965FE61F379F066280C9DFC3AD20946C76A7874546154CA2ED7166384FFDB2308A22473067664598';
+$apiKey = 'BA61E63B158879E7965FE61F379F066280C9DFC3AD20946C76A7874546154CA2ED7166384FFDB2308A22473067664598';
 $url = 'https://api.elasticemail.com/v2/email/send';
 
 // Get JSON input
@@ -22,6 +21,9 @@ if (!$input) {
 
 // CHECK CAPTCHA TOKEN
 $recaptchaToken = $input['recaptchaToken'] ?? null;
+
+error_log('reCAPTCHA token present: ' . ($recaptchaToken ? 'YES' : 'NO'));
+error_log('reCAPTCHA token length: ' . ($recaptchaToken ? strlen($recaptchaToken) : 0));
 
 if (!$recaptchaToken) {
     echo json_encode(['success' => false, 'error' => 'Missing reCAPTCHA token']);
@@ -49,6 +51,8 @@ $context = stream_context_create([
 $verifyResponse = file_get_contents($verifyUrl, false, $context);
 $captchaResult = json_decode($verifyResponse, true);
 
+error_log('reCAPTCHA VERIFY RESPONSE: ' . json_encode($captchaResult));
+
 if (!$captchaResult || empty($captchaResult['success'])) {
     echo json_encode([
         'success' => false,
@@ -59,7 +63,7 @@ if (!$captchaResult || empty($captchaResult['success'])) {
 
 
 $postData = [
-    'apikey' => $apiky,
+    'apikey' => $apiKey,
     'subject' => $input['subject'],
     'from' => $input['from'],
     'to' => $input['to'],
@@ -76,6 +80,9 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
+error_log('Elastic Email HTTP Code: ' . $httpCode);
+error_log('Elastic Email Raw Response: ' . $response);
+
 
 $result = json_decode($response, true);
 
