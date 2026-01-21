@@ -779,6 +779,7 @@ function sendEmail() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
+                recaptchaToken: recaptchaResponse,
                 to: mailList.join(','),
                 from: "csraccreditation@gmail.com",
                 subject: "Roadmap Result",
