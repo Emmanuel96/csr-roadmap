@@ -17,6 +17,27 @@ let csr_active = `you are CSR Active. <br> You do not necessarily have a policy 
 let csr_proficient = `you are CSR Proficient. <br> You have a CSR policy in place that is routinely actioned and regularly reviewed. Success in many areas but with room for improvement. Excellent progress but you are yet to fully connect commercial benefits to your CSR policy.  CSR-A Offers a variety of services including consultation and advice to help your formulate policy and an independent Accreditation to validate your activity.`
 let csr_leader = `you are CSR Leader. <br> You are a socially responsible organisation that records and constantly improves. Why not publicise and validate your CSR credentials with our independent CSR Accreditation.`
 
+// ===== reCAPTCHA setup (GLOBAL) =====
+let recaptchaWidgetId = null;
+
+window.onload = function () {
+  if (typeof grecaptcha !== 'undefined') {
+    const el = document.querySelector('.g-recaptcha');
+    if (!el) {
+      console.error('reCAPTCHA element not found');
+      return;
+    }
+
+    recaptchaWidgetId = grecaptcha.render(el, {
+      sitekey: '6LdxThYsAAAAAIaaP6jSLGRrK9tBkwhaU1EF8hz_'
+    });
+
+    console.log('reCAPTCHA widget rendered:', recaptchaWidgetId);
+  } else {
+    console.error('grecaptcha not loaded');
+  }
+};
+
 
 function getValue(value){
     let returnValue = ""; 
@@ -736,7 +757,7 @@ function sendEmail() {
     }
 
     try {
-        recaptchaResponse = grecaptcha.getResponse();
+        recaptchaResponse = grecaptcha.getResponse(recaptchaWidgetId);
         console.log('CAPTCHA TOKEN LENGTH:', grecaptcha.getResponse()?.length);
         console.log("Captcha Token ", recaptchaResponse);
 
@@ -1019,7 +1040,7 @@ function sendEmail() {
         .then(data => {
             if (data.success) {
                 if (typeof grecaptcha !== "undefined" && grecaptcha && typeof grecaptcha.reset === "function") {
-                    grecaptcha.reset();
+                    grecaptcha.reset(recaptchaWidgetId);
                 }
                  Swal.fire({
                   title: "Your result has been successfully sent",
