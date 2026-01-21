@@ -727,11 +727,27 @@ $('#submission-form').on('submit', (e)=>{
 
 function sendEmail() {
 
-    const recaptchaResponse = grecaptcha.getResponse();
-    if(!recaptchaResponse) {
-        Swal.fire("Please confirm you're not a robot");
+
+    let recaptchaResponse = '';
+
+    if (typeof grecaptcha === 'undefined' || typeof grecaptcha.getResponse !== 'function') {
+        Swal.fire('reCAPTCHA is unavailable. Please reload the page and try again.');
         return;
     }
+
+    try {
+        recaptchaResponse = grecaptcha.getResponse();
+    } catch (err) {
+        console.error("Error while accessing reCAPTCHA:", err);
+        Swal.fire('There was a problem verifying reCAPTCHA. Please try again.');
+        return;
+    }
+
+    if (!recaptchaResponse) {
+        Swal.fire('Please confirm you are not a robot');
+        return;
+    }
+
 
     let userEmail = $('input[name="userEmail"]').val()
     let userName =  $('input[name="userName"]').val()
@@ -998,7 +1014,9 @@ function sendEmail() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                grecaptcha.reset()
+                if (typeof grecaptcha !== "undefined" && grecaptcha && typeof grecaptcha.reset === "function") {
+                    grecaptcha.reset();
+                }
                  Swal.fire({
                   title: "Your result has been successfully sent",
                   confirmButtonText: "Okay",
@@ -1007,10 +1025,10 @@ function sendEmail() {
                     "https://csr-accreditation.co.uk/register-for-csr-accreditation/";
                 });
             } else {
-                swal.fire("Your email was not sent. Error: " + (data.error || "Unknown"));
+                Swal.fire("Your email was not sent. Error: " + (data.error || "Unknown"));
             }
         })
-        .catch(() => swal.fire("Your email was not sent."));
+        .catch(() => Swal.fire("Your email was not sent."));
     }
 
 }
