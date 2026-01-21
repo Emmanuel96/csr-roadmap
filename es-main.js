@@ -726,6 +726,13 @@ $('#submission-form').on('submit', (e)=>{
 })
 
 function sendEmail() {
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    if(!recaptchaResponse) {
+        Swal.fire("Please confirm you're not a robot");
+        return;
+    }
+
     let userEmail = $('input[name="userEmail"]').val()
     let userName =  $('input[name="userName"]').val()
     let companyName =  $('input[name="companyName"]').val()
@@ -739,11 +746,11 @@ function sendEmail() {
     ]
 
     if(!userEmail){
-        swal.fire("Email input cannot be empty")
+        Swal.fire("Email input cannot be empty")
     }
 
     else if(!/\S+@\S+\.\S+/.test(userEmail)){
-        swal.fire("Email address is invalid")
+        Swal.fire("Email address is invalid")
     }
 
     else{
@@ -991,6 +998,7 @@ function sendEmail() {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
+                grecaptcha.reset()
                  Swal.fire({
                   title: "Your result has been successfully sent",
                   confirmButtonText: "Okay",
